@@ -6,8 +6,8 @@ Departamento: Departamento de Ciência da Computação (DCC) - UFMG
 
 ## Ofertas e Material
 
-1. [2019.1](https://icd-ufmg.github.io/2019.1/)
-1. [2019.2](https://icd-ufmg.github.io/2019.2/)
+1. [2019.2](https://github.com/icd-ufmg/2019.2)
+1. [2019.1](https://github.com/icd-ufmg/2019.1)
 
 ## Bibliografia
 
