@@ -1,7 +1,3 @@
-|----------|------------|----------|----------------|
-| [Slides] | [Material] | [Listas] | [Bibliografia] |
-- - -
-
 # DCC212: Introdução à Ciência dos Dados
 
 Professores: Flavio Figueiredo
