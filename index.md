@@ -1,5 +1,6 @@
-| [Slides] | [Material] | [Listas] | [Bibliografia] |
 |----------|------------|----------|----------------|
+| [Slides] | [Material] | [Listas] | [Bibliografia] |
+
 - - -
 
 # DCC212: Introdução à Ciência dos Dados
