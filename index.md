@@ -1,6 +1,6 @@
 ---
 layout: home
-  title: Introdução à Ciência de Dados
+  title: "Introdução à Ciência de Dados"
 nav_exclude: true
 seo:
   type: Course

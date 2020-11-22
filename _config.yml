@@ -72,5 +72,8 @@ compress_html:
   blanklines: false
   profile: false
 
+default_locale: "pt_BR"
+timezone: America/Sao_Paulo
+
 plugins:
   - jekyll-seo-tag

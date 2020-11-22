@@ -4,7 +4,7 @@ title: Calendário
 description: Listing of course modules and topics.
 ---
 
-# Calendar
+# Calendário
 
 {% for module in site.modules %}
 {{ module }}
