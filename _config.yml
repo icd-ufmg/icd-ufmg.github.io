@@ -14,8 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Introdução à Ciência de Dados
-tagline: Um Curso de Estatística com um Viés Computacional
-description: Curso de Introdução à Ciência de Dados do DCC-UFMG
+tagline: Introdução à Ciência de Dados
+description: DCC-UFMG
 author: Flavio Figueiredo
 baseurl: '/'
 url: 'https://icd-ufmg.github.io'

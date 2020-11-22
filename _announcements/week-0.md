@@ -1,8 +1,8 @@
 ---
-title: Week 0 Announcement
+title: Link das Aulas
 week: 0
-date: 2019-04-01
+date: 2020-30-11
 ---
 
-Hello world!
+Colocar link!
 {: .fs-5 }
