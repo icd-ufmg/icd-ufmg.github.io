@@ -1,6 +1,6 @@
 ---
 layout: home
-  title: "Introdução à Ciência de Dados"
+title: ICD
 nav_exclude: true
 seo:
   type: Course
@@ -145,4 +145,3 @@ de apresentar o discente ao aprendizado de máquina.
 [Material]: #material
 [Exemplos]: ./aulas/
 [Listas]: https://drive.google.com/open?id=11j-wgQ-MLn8Hj1fkYuFfkm3uinUxt1lq
->>>>>>> 705df652ebe5f2fb52ff49a01502714359be3481

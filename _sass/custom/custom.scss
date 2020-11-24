@@ -2,9 +2,7 @@
 @import 'card';
 
 // Just the Class styles
-@import 'announcement';
 @import 'module';
-@import 'schedule';
 @import 'staffer';
 
 // Overrides
@@ -92,6 +90,15 @@ summary {
   .katex {
     font-size: 1.1em;
   }
+}
+
+.inline-icon {
+  background-color: #f5f6fa;
+  border-radius: 4px;
+  height: 1.5em;
+  margin-bottom: -0.4em;
+  padding: 0.4em;
+  vertical-align: baseline;
 }
 
 [style*="--aspect-ratio"] > :first-child {

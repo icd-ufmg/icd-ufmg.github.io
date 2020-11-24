@@ -1,15 +1,17 @@
 ---
-title: Introdução ao Curso e Motivação
+title: Introdução ao Curso
 ---
 
-## Introdução ao Curso e Motivação
+## {{ page.title }}
 {: .text-gamma }
 
 30 Nov
-: [Introdução ao Curso e Motivação](#)
+: [**Apresentação do Curso**]({{ site.baseurl }}{% link _lessons/apresentacao/apresentacao.md %})
+  : BJP 8
 
-02 Nov
-: **Assíncrona**{: .label .label-purple }[Tabelas e Tipos de Dados.](#)
-: **Síncrona**{: .label .label-purple }[Sessão de Código 01](#)
-  : **Lab**{: .label .label-purple }[Revisão Python](#)
-  : **Quiz**{: .label .label-purple }[Quiz 01](#)
+02 Dez
+: [**Tabelas e Tipos de Dados**]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
+  : BJP 9.5, 10.2
+: 1. Describe the relationships between client vs. implementer and interface vs. class.
+  1. Define methods that accept instances of the same class as parameters.
+  1. Define classes that implement public interfaces such as `Comparable`.

@@ -22,32 +22,29 @@ url: 'https://icd-ufmg.github.io'
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
 # Theme settings
-remote_theme: pmarsceill/just-the-docs@v0.3.3
+remote_theme: pdmosses/just-the-docs@pages-and-collections
 color_scheme: light
 search_enabled: true
 heading_anchors: true
 permalink: pretty
 # aux_links:
-#   Kevin Lin:
-#     - 'https://kevinl.info'
-#   Just the Class on GitHub:
-#    - 'https://github.com/kevinlin1/just-the-class'
-footer_content:
+#   Ed:
+#     - 'https://us.edstem.org/courses/631/'
+#   Advising:
+#     - 'https://cs.washington.edu/academics/ugrad/advising'
+#   Feedback:
+#     - 'https://feedback.cs.washington.edu/'
+# aux_links_new_tab: true
+footer_content: 'Flavio Figueiredo &copy; 2020 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>'
 
 # Collections for website data
 collections:
-  staffers:
   modules:
-  schedules:
-  announcements:
+  lessons:
+    permalink: '/:path/'
+    output: true
 # Default layouts for each collection type
 defaults:
-  - scope:
-      path: ''
-      type: staffers
-    values:
-      layout: staffer
-      subpath: '/assets/images/'
   - scope:
       path: ''
       type: modules
@@ -55,14 +52,17 @@ defaults:
       layout: module
   - scope:
       path: ''
-      type: schedules
+      type: lessons
     values:
-      layout: schedule
-  - scope:
-      path: ''
-      type: announcements
-    values:
-      layout: announcement
+      layout: page
+# Configure collections for Just the Docs
+just_the_docs:
+  collections:
+    lessons:
+      name: Lessons
+
+default_locale: "pt_BR"
+timezone: America/Sao_Paulo
 
 compress_html:
   clippings: all
@@ -72,8 +72,6 @@ compress_html:
   blanklines: false
   profile: false
 
-default_locale: "pt_BR"
-timezone: America/Sao_Paulo
-
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap

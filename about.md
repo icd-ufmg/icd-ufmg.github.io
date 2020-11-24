@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About
+title: Sobre o Curso
 description: >-
-    Course policies and information.
+    Informações do Curso.
 ---
 
 # About
