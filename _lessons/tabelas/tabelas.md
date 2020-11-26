@@ -1,8 +1,13 @@
+---
+layout: page
+title: Tabelas e Tipos de Dados
+---
+
 # Aula 03 - Tabelas e Tipos de Dados
 
 ## Introdução
 
-Neste notebook vamos explorar um pouco de dados tabulares. A principal biblioteca para leitura de dados tabulares em Python se chama **pandas**. A mesma é bastante poderosa implementando uma série de operações de bancos de dados (e.g., groupby e join). Nossa discussão será focada em algumas das funções principais do pandas que vamos explorar no curso. Existe uma série ampla de funcionalidades que a biblioteca (além de outras) vai trazer. 
+Neste notebook vamos explorar um pouco de dados tabulares. A principal biblioteca para leitura de dados tabulares em Python se chama **pandas**. A mesma é bastante poderosa implementando uma série de operações de bancos de dados (e.g., groupby e join). Nossa discussão será focada em algumas das funções principais do pandas que vamos explorar no curso. Existe uma série ampla de funcionalidades que a biblioteca (além de outras) vai trazer.
 
 Caso necessite de algo além da aula, busque na documentação da biblioteca. Por fim, durante esta aula, também vamos aprender um pouco de bash.
 
@@ -1253,7 +1258,7 @@ gb.sum()['Count'].sort_values()
     Makenlie          5
     Makinlee          5
     Makua             5
-                 ...   
+                 ...
     William     3839236
     Michael     4312975
     Robert      4725713
@@ -1279,7 +1284,7 @@ gb.sum()['Count'].sort_values()
     Makenlie          5
     Makinlee          5
     Makua             5
-                 ...   
+                 ...
     William     3839236
     Michael     4312975
     Robert      4725713
@@ -1312,7 +1317,7 @@ df.groupby('Name').sum().sort_values(by='Count')['Count']
     Makenlie          5
     Makinlee          5
     Makua             5
-                 ...   
+                 ...
     William     3839236
     Michael     4312975
     Robert      4725713
@@ -1510,7 +1515,7 @@ df['TEAM'] == 'Houston Rockets'
     2      False
     3      False
     4      False
-           ...  
+           ...
     412    False
     413    False
     414    False
@@ -1993,7 +1998,7 @@ people = pd.DataFrame(
      ["Karina",    "green",  np.nan,  "F"],
      ["Fernando",  "pink",        9,  "M"],
      ["Nhi",       "blue",        3,  "F"],
-     ["Sam",       "pink",   np.nan,  "M"]], 
+     ["Sam",       "pink",   np.nan,  "M"]],
     columns = ["Name", "Color", "Age", "Gender"])
 people
 ```
@@ -2090,7 +2095,7 @@ email = pd.DataFrame(
      ["Joey", "jegonzal@cs.berkeley.edu"],
      ["Weiwei", "weiwzhang@berkeley.edu"],
      ["Weiwei", np.nan],
-     ["Karina", "kgoot@berkeley.edu"]], 
+     ["Karina", "kgoot@berkeley.edu"]],
     columns = ["User Name", "Email"])
 email
 ```
@@ -2164,7 +2169,7 @@ email
 
 
 ```python
-people.merge(email, 
+people.merge(email,
              how = "inner",
              left_on = "Name", right_on = "User Name")
 ```

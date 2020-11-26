@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Projeto
-description: Descrição do Projeto Final.
+title: Avaliações
+description: Descrição das Avaliações
 ---
 
 # Projeto Final

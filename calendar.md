@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Calendário
-description: Listing of course modules and topics.
+description: Lista dos Módulos e Tópicos.
 ---
 
 # Calendário

@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Introdução à Ciência de Dados"
-tagline: "Introdução à Ciência de Dados"
-description: "Curso Ofertado Pelo DCC-UFMG"
+title: Introdução à Ciência de Dados
+tagline: Introdução à Ciência de Dados
+description: Curso Ofertado Pelo DCC-UFMG
 author: Flavio Figueiredo
 baseurl: '/'
 url: 'https://icd-ufmg.github.io'
@@ -27,14 +27,7 @@ color_scheme: light
 search_enabled: true
 heading_anchors: true
 permalink: pretty
-# aux_links:
-#   Ed:
-#     - 'https://us.edstem.org/courses/631/'
-#   Advising:
-#     - 'https://cs.washington.edu/academics/ugrad/advising'
-#   Feedback:
-#     - 'https://feedback.cs.washington.edu/'
-# aux_links_new_tab: true
+aux_links_new_tab: true
 footer_content: 'Flavio Figueiredo &copy; 2020 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>'
 
 # Collections for website data
@@ -55,14 +48,12 @@ defaults:
       type: lessons
     values:
       layout: page
+
 # Configure collections for Just the Docs
 just_the_docs:
   collections:
     lessons:
-      name: Lessons
-
-default_locale: "pt_BR"
-timezone: America/Sao_Paulo
+      name: Material
 
 compress_html:
   clippings: all
