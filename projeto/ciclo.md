@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ciclo de Trabalho do Cientista de Dados
+title: Ciclo de Trabalho
 parent: Projeto
 nav_order: 1
 ---

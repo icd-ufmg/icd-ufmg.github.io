@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Análise Exploratório
+title: Análise Exploratória
 parent: Projeto
 nav_order: 2
 ---

@@ -5,27 +5,52 @@ description: Descrição do Curso.
 nav_order: 1
 ---
 
-## Parte Zero: Motivação (1 aula, reduzir não precisa de duas aqui)
+# Sobre o Curso
 
-## Objetivos de Aprendizado
+{: .no_toc .mb-2 }
+
+Uma introdução ao ciclo de ciência de dados em quatro partes.
+{: .fs-6 .fw-300 }
+
+## Sumário
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+O curso de Introdução à Ciência de Dados (DCC212) do DCC-UFMG tem como
+principal objetivo trazer para os discentes um conhecimento estatístico através
+de um ponto de vista computacional. O curso é fortemente inspirado nas ofertas
+chamadas de [Data8](data8.org) e [Data100](ds100.org) da universidade de
+Berkeley. Tais ementas (Data8 e Data100) foram adaptadas para a realidade de
+discentes da graduação da UFMG. Em particular, foi levado em conta que na
+nossa grade, os discentes já passaram por matérias como:
+**Álgebra Linear Computacional** e **Probabilidade**.
+
+Abaixo descrevemos as 4 partes (5 se contar a introdução) junto com os
+resultados de aprendizado esperados em cada.
+
+# Parte Zero: Motivação (1 aula)
+
+Uma breve motivação em 1 aula.
+
+**Objetivos de Aprendizado**
 
 1. Motivar o curso e a carreira
 1. Falar do grande problema de ciência de dados (causa e efeito)
 
-## Material
+# Parte Um: Análise Exploratória de Dados e Revisões (6 aulas)
 
-1. [Apresentação do Curso](https://github.com/icd-ufmg/material/blob/master/aulas/01-Apresentacao/Aula01-Apresentacao.ipynb)
-1. [Causa e Efeito (Tratamento, Controle)](https://github.com/icd-ufmg/material/blob/master/aulas/02-Causa-e-Efeito/README.md)
+Ao terminar esta parte do curso o discente deve saber o mínimo sobre como ler e
+plotar dados. Além do mais, deve ter feito uma revisão do seu curso de
+Probabilidade (Probabilidade I) ou Probabilidade e Estatística.
 
-## Parte Um: Análise Exploratória de Dados e Revisões (6 aulas, adicionar limpeza de dados)
-
-Ao terminar esta parte do curso o discente deve saber o mínimo sobre como ler e plotar dados. Além do mais, deve ter feito
-uma revisão do seu curso de Probabilidade (Probabilidade I) ou Probabilidade e Estatística.
-
-## Objetivos de Aprendizado
+**Objetivos de Aprendizado**
 
 1. Aprender sobre tabelas de dados, csvs e tipos de colunas
-1. Bons príncipios de visualização
+1. Bons princípios de visualização
 1. Análise exploratória e limpeza e dados
 1. Tendências Centrais
     1. Média, Mediana, Desvio Padrão etc.
@@ -34,23 +59,16 @@ uma revisão do seu curso de Probabilidade (Probabilidade I) ou Probabilidade e 
     1. A Normal
     1. Estimadores da média e sua variâncias
 
-## Material
+# Segunda Parte: Testes de Hipótese (6 aulas)
 
-1. [Tabelas e Tipos de Dados](https://github.com/icd-ufmg/material/blob/master/aulas/03-Tabelas-e-Tipos-de-Dados/Aula03-Tabelas.ipynb)
-1. [Visualização de Dados](https://github.com/icd-ufmg/material/blob/master/aulas/04-EDA-e-Vis/Aula04-EDA-Vis.ipynb)
-   * Sugiro também uma leitura do Capítulos 6.4, 6.5 e 6.6 do [Data100](https://www.textbook.ds100.org/). São novos e não foi possível adaptar para a aula. Material simples com princípios bem interessantes.
-1. [Tendências Centrais](https://github.com/icd-ufmg/material/blob/master/aulas/05-Tendencias-Centrais/Aula05-Tendencias-Centrais.ipynb)
-1. [Probabilidade](https://github.com/icd-ufmg/material/blob/master/aulas/06-Probabilidade/Aula06%20-%20Probabilidade.ipynb)
-1. [Risco e Variância de Estimador](https://github.com/icd-ufmg/material/blob/master/aulas/07-Risco/Aula07%20-%20Risco.ipynb)
+Ao terminar esta parte do curso o discente deve saber o mínimo sobre como o
+essencial de testes de hipóteses. Este curso não cobre uma diversidade de
+testes. O foco maior é no entendimento de conceitos como: intervalos de
+confiança, valores p, testes a/b e noções de assuntos avançados (poder e testes
+múltiplos). Além do mais, usamos o arcabouço de testes para falar de ciência no
+geral vs ciência de dados.
 
-## Segunda Parte: Testes de Hipótese (6 aulas)
-
-Ao terminar esta parte do curso o discente deve saber o mínimo sobre como o essencial de testes de hipóteses. Este curso
-não cobre uma diversidade de testes. O foco maior é no entendimento de conceitos como: intervalos de confiança, valores p,
-testes a/b e noções de assuntos avançados (poder e testes múltiplos). Além do mais, usamos o aracabouço de testes para
-falar de ciência no geral vs ciência de dados.
-
-## Objetivos de Aprendizado
+**Objetivos de Aprendizado**
 
 1. Intervalos de Confiança
 1. Bootstrap
@@ -63,48 +81,55 @@ falar de ciência no geral vs ciência de dados.
        O foco é no conceito via métodos computacionais.
 1. Ciência vs Ciência de Dados
 
-## Material
+# Terceira Parte: Correlação e Regressão (6 aulas)
 
-1. [Teorema Central do Limite](TODO)
-1. [Intervalos de Confiança](https://github.com/icd-ufmg/material/blob/master/aulas/09-ICs/09%20-%20Bootstrap.ipynb)
-1. [Comparando Médias - Testes A/B](https://github.com/icd-ufmg/material/blob/master/aulas/10-AB/10%20-%20AB.ipynb)
-1. [Testes de Hipóteses](https://github.com/icd-ufmg/material/blob/master/aulas/11-Hipoteses/11%20-%20Hipoteses.ipynb)
-1. [Replicação e Método Científico](https://github.com/icd-ufmg/material/blob/master/aulas/13-CausalidadeRCT/13%20-%20Causalidade.ipynb)
-1. [Fechamento Testes: Poder e Múltiplos](https://github.com/icd-ufmg/material/blob/master/aulas/12-Poder/12%20-%20Poder.ipynb)
+Toda esta parte do curso foca apenas em Regressão. Embora pareça ser muitas
+aulas para o assunto, a ideia é seguir a filosofia do curso de aprendizado de
+máquina do Andre Ng (Coursera). Regressão é usado não apenas como conceito
+estatístico, mas sim como uma forma de apresentar o discente ao aprendizado de
+máquina. Ou seja, aqui vamos explorar conceitos como funções de perda e
+verossimilhança.
 
-## Terceira Parte: Correlação e Regressão (6 aulas, reorganizar)
-
-Toda esta parte do curso foca apenas em Regressão. Embora pareça ser muitas aulas para o assunto, a ideia é seguir a filosofia do
-curso de aprendizado de máquina do Andre Ng (Coursera). Regressão é usado não apenas como conceito estatístico, mas sim como uma forma
-de apresentar o discente ao aprendizado de máquina.
-
-## Objetivos de Aprendizado
+**Objetivos de Aprendizado**
 
 1. Correlação de Dados
+  1. Pearson e Spearman
 1. Regressão Linear
+  1. Qual o problema sendo resolvido
+  1. Como fazer regressão múltipla e polinomial
 1. Mínimos Quadrados
+  1. Funções de Perda e Gradiente Descendente
 1. Verossimilhança
+  1. Funções de Ganho e Gradiente Ascendente
+1. Regressão na Prática
+  1. Engenharia de Atributos
+  1. Introdução ao problema de previsão
 
-## Material
+# Quarta Parte: Classificação e um Pouco de ML (6 aulas)
 
-1. [Correlação](https://github.com/icd-ufmg/material/blob/master/aulas/15-Correlacao/15%20-%20Correlacao.ipynb)
-1. [Regressão Linear](https://github.com/icd-ufmg/material/blob/master/aulas/16-RegressaoLinear/16%20-%20Regressao%20Linear.ipynb)
-1. [Verossimilhançca](https://github.com/icd-ufmg/material/blob/master/aulas/17-Verossimilhanca/17%20-%20Verossimilhanca.ipynb)
-1. [Gradiente Descendente](https://github.com/icd-ufmg/material/blob/master/aulas/18-GradienteDescendente/18%20-%20Gradiente.ipynb)
-1. [Regressão Múltipla](https://github.com/icd-ufmg/material/blob/master/aulas/19-Multipla/19%20-%20Multipla.ipynb)
-1. [Treino, Validação e Testes (Sem Material, ver data100)](https://www.textbook.ds100.org/ch/15/bias_intro.html)
+**Objetivos de Aprendizado**
 
-## Quarta Parte: Classificação e um Pouco de ML (6 aulas, reorganizar)
-
-1. Regularização
+1. Regularização e o Ciclo do Aprendizado de Máquina
+  1. Falar de hiper-parâmetros e de treino, teste e validação.
 1. Logística Parte 1
+  1. Uma introdução a regressão logística via a função de verossimilhança
 1. Logística Parte 2
-1. KNN e Previsão na Prática
+  1. Logística na prática e entropia cruzada
+1. KNN e Aprendizado na Prática
+  1. Aula mais focada em fechar todo o ciclo, comparação entre KNNRegressor e
+     Regressão Linear além de KNNClassifier e a Logística.
 1. Aprendizado não Supervisionado (SVD e K-Means)
-1. Ética e Ciência de Dados
+  1. SVD e PCA
+  1. Kmeans
+
+# Projeto
+
+Com o [Projeto](/projeto) os discentes tem a chance de praticar o conhecimento
+adquirido nos quatro módulos acima. É sugerida uma leitura detalhada do
+material sobre o projeto neste sítio para um entendimento melhor de como
+fazer uso de todo conhecimento de forma coerente.
 
 # Bibliografia
-
 
   1. [Principles and Techniques of Data Science](https://www.textbook.ds100.org/) <br>
       Sam Lau, Joey Gonzalez, and Deb Nolan. <br>
@@ -125,11 +150,3 @@ de apresentar o discente ao aprendizado de máquina.
   1. [An Introduction to Statistical Learning](www-bcf.usc.edu/~gareth/ISL/) <br>
       Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani <br>
      **Apenas em inglês. Aberto!**
-
-[Slides]: https://drive.google.com/drive/folders/1ZIwHz7U8vKAgjvHwkL_R1hZlE_4dsmah?usp=sharing
-[Informes]: #informes
-[TPs]: #tps
-[Bibliografia]: #bibliografia
-[Material]: #material
-[Exemplos]: ./aulas/
-[Listas]: https://drive.google.com/open?id=11j-wgQ-MLn8Hj1fkYuFfkm3uinUxt1lq

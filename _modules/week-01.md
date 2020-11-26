@@ -7,11 +7,8 @@ title: Introdução ao Curso
 
 30 Nov
 : [**Apresentação do Curso**]({{ site.baseurl }}{% link _lessons/apresentacao/apresentacao.md %})
-  : BJP 8
+  : Data8 Capt-1, Data100 Capt-1
 
 02 Dez
-: [**Tabelas e Tipos de Dados**]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
-  : BJP 9.5, 10.2
-: 1. Describe the relationships between client vs. implementer and interface vs. class.
-  1. Define methods that accept instances of the same class as parameters.
-  1. Define classes that implement public interfaces such as `Comparable`.
+: [**Causalidade e Experimentos**]({{ site.baseurl }}{% link _lessons/causalidade/causalidade.md %})
+  : Data8 Capt-2, Data100 Capt-2
