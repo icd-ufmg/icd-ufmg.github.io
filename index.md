@@ -63,7 +63,7 @@ Uma breve motivação em 1 aula.
 1. Motivar o curso e a carreira
 1. Falar do grande problema de ciência de dados (causa e efeito)
 
-# Módulo 1: Análise Exploratória de Dados e Revisões
+# Módulo 1: Análise Exploratória
 
 Ao terminar esta parte do curso o discente deve saber o mínimo sobre como ler e
 plotar dados. Além do mais, deve ter feito uma revisão do seu curso de
@@ -128,6 +128,13 @@ verossimilhança.
     1. Introdução ao problema de previsão
 
 # Módulo 4: Classificação e um Pouco de ML
+
+Neste módulo o discente vai abordar o problema de inferência para problemas
+de classificação. O módulo é uma continuação do anterior, sendo necessário
+o aprendizado de Regressão antes de assistir as aulas daqui. O objetivo é
+que com os módulos três e quatro, o discente aprenda diferentes formas de
+relacionar variáveis explanatórias com respostas. Observe que tais relações
+são complementares ao aprendizado do módulo um.
 
 **Objetivos de Aprendizado**
 
