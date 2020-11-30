@@ -1,3 +1,8 @@
+---
+layout: page
+title: Visualização de Dados
+---
+
 # Aula 04 - Exploração e Visualização
 
 Uma parte fundamental do kit de ferramentas do cientista de dados é a visualização de dados. Embora seja muito fácil criar visualizações, é muito mais difícil produzir boas visualizações.
@@ -66,7 +71,7 @@ people = pd.DataFrame(
      ["Karina",    "green",  np.nan,  "F"],
      ["Fernando",  "pink",        9,  "M"],
      ["Nhi",       "blue",        3,  "F"],
-     ["Sam",       "pink",   np.nan,  "M"]], 
+     ["Sam",       "pink",   np.nan,  "M"]],
     columns = ["Name", "Color", "Age", "Gender"])
 people
 ```
@@ -163,7 +168,7 @@ email = pd.DataFrame(
      ["Joey", "jegonzal@cs.berkeley.edu"],
      ["Weiwei", "weiwzhang@berkeley.edu"],
      ["Weiwei", np.nan],
-     ["Karina", "kgoot@berkeley.edu"]], 
+     ["Karina", "kgoot@berkeley.edu"]],
     columns = ["User Name", "Email"])
 email
 ```
@@ -237,7 +242,7 @@ email
 
 
 ```python
-people.merge(email, 
+people.merge(email,
              how = "inner",
              left_on = "Name", right_on = "User Name")
 ```
@@ -1146,15 +1151,15 @@ plt.xlabel('')
 
 ### matplotlib
 
-Existe uma grande variedade de ferramentas para visualizar dados. 
+Existe uma grande variedade de ferramentas para visualizar dados.
 
-Nós usaremos a biblioteca `matplotlib`, que é amplamente utilizada (embora mostre sua idade). 
+Nós usaremos a biblioteca `matplotlib`, que é amplamente utilizada (embora mostre sua idade).
 
 Se você estiver interessado em produzir visualizações interativas elaboradas para a Web, provavelmente não é a escolha certa, mas para gráficos de barras simples, gráficos de linhas e diagramas de dispersão, funciona muito bem.
 
 Em particular, estamos usando o módulo `matplotlib.pyplot`.
 
-Em seu uso mais simples, o `pyplot` mantém um estado interno no qual você constrói uma visualização passo a passo. 
+Em seu uso mais simples, o `pyplot` mantém um estado interno no qual você constrói uma visualização passo a passo.
 
 Quando terminar, você poderá salvá-lo (com `savefig()`) ou exibi-lo (com `show()`).
 
@@ -1309,7 +1314,7 @@ ax = plt.gca()
 for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
              ax.get_xticklabels() + ax.get_yticklabels()):
     item.set_fontsize(20)
-    
+
 ```
 
 
@@ -1990,7 +1995,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 ![png](viz_files/viz_46_0.png)
 
 
-Obtendo a densidade de pontos em cada barra. Note que isto nem sempre vai traduzir para um valor entre `[0, 1]`. Depende do eixo-x. 
+Obtendo a densidade de pontos em cada barra. Note que isto nem sempre vai traduzir para um valor entre `[0, 1]`. Depende do eixo-x.
 
 
 ```python
