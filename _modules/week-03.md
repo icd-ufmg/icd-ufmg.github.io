@@ -22,7 +22,7 @@ title: Módulo 03 - Regressão
 
 10 Fev
 : [Maximizando e Minimizando Funções](TODO)
-  : [Data 8 Capt-11](https://www.textbook.ds100.org/ch/11/gradient_descent.html)
+  : [Data 100 Capt-11](https://www.textbook.ds100.org/ch/11/gradient_descent.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCKfamZgFXYgWPx2-uUsQYIm)
 
 22 Fev
