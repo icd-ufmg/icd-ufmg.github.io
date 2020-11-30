@@ -39,3 +39,44 @@
 [NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
 [NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
 [NotebookApp | INFO] Starting buffering for c02b7620-4f71-4a79-b7d4-26f764f3846d:a750b7c819484fb883a152c7d443219a
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/flaviovdf/workspace/icd-ufmg/icd-ufmg.github.io/_lessons
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8889/?token=3246842556e26f3adde70e508cf0027887657e839633ef3c
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-88295-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=3246842556e26f3adde70e508cf0027887657e839633ef3c
+[NotebookApp | INFO] Kernel started: 8bee9338-1ed8-46da-bee4-0ea0a6d6c74f
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 8bee9338-1ed8-46da-bee4-0ea0a6d6c74f
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Starting buffering for 8bee9338-1ed8-46da-bee4-0ea0a6d6c74f:271a3e6aebd344359eacc4439fe785cb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 8bee9338-1ed8-46da-bee4-0ea0a6d6c74f
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Starting buffering for 8bee9338-1ed8-46da-bee4-0ea0a6d6c74f:f98aa1d2d42b4a82834fda2aa7d85e8c
+[NotebookApp | WARNING] Notebook apresentacao/apresentacao.ipynb is not trusted
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 8bee9338-1ed8-46da-bee4-0ea0a6d6c74f
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | WARNING] Notebook apresentacao/apresentacao.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | WARNING] Notebook apresentacao/apresentacao.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | WARNING] Notebook apresentacao/apresentacao.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | WARNING] Notebook apresentacao/apresentacao.ipynb is not trusted
+[NotebookApp | WARNING] Notebook tabelas/tabelas.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: a54f94d0-d070-457e-bf2d-41a4ecd77c07
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel a54f94d0-d070-457e-bf2d-41a4ecd77c07
+[NotebookApp | INFO] Saving file at /tabelas/tabelas.ipynb
+[NotebookApp | WARNING] Notebook tabelas/tabelas.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /tabelas/tabelas.ipynb
+[NotebookApp | WARNING] Notebook tabelas/tabelas.ipynb is not trusted
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down 2 kernels
+[NotebookApp | INFO] Kernel shutdown: 8bee9338-1ed8-46da-bee4-0ea0a6d6c74f
+[NotebookApp | INFO] Kernel shutdown: a54f94d0-d070-457e-bf2d-41a4ecd77c07

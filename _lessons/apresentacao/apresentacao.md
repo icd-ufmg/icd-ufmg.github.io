@@ -3,8 +3,11 @@ layout: page
 title: Apresentação
 ---
 
-{: .no_toc .text-delta }
-Apresentação ao Curso
+# Apresentação
+{: .no_toc .mb-2 }
+
+Um breve resumo de alguns comandos python.
+{: .fs-6 .fw-300 }
 
 {: .no_toc .text-delta }
 Objetivo
@@ -22,6 +25,10 @@ Resultado Esperado
 1. TOC
 {:toc}
 ---
+
+## Introdução
+
+TODO
 
 ## Imports básicos
 

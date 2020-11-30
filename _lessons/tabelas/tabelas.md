@@ -3,23 +3,36 @@ layout: page
 title: Tabelas e Tipos de Dados
 ---
 
-# Aula 03 - Tabelas e Tipos de Dados
+# Tabelas e Tipos de Dados
+{: .no_toc .mb-2 }
+
+Um breve resumo de alguns comandos python.
+{: .fs-6 .fw-300 }
+
+{: .no_toc .text-delta }
+Objetivo
+
+* Aprender Pandas
+* Entender diferentes tipos de dados
+* Básico de filtros e seleções
+
+
+{: .no_toc .text-delta }
+Resultado Esperado
+
+* Aplicação de filtros básicos para gerar insights nos dados de dados tabulares
+
+---
+**Sumário**
+1. TOC
+{:toc}
+---
 
 ## Introdução
 
 Neste notebook vamos explorar um pouco de dados tabulares. A principal biblioteca para leitura de dados tabulares em Python se chama **pandas**. A mesma é bastante poderosa implementando uma série de operações de bancos de dados (e.g., groupby e join). Nossa discussão será focada em algumas das funções principais do pandas que vamos explorar no curso. Existe uma série ampla de funcionalidades que a biblioteca (além de outras) vai trazer.
 
 Caso necessite de algo além da aula, busque na documentação da biblioteca. Por fim, durante esta aula, também vamos aprender um pouco de bash.
-
-## Objetivos
-
-1. Aprender Pandas
-2. Entender diferentes tipos de dados
-3. Básico de filtros e seleções
-
-## Resultado Esperado
-
-1. Aplicação de filtros básicos para gerar insights nos dados de dados tabulares
 
 ## Imports básicos
 
@@ -31,6 +44,7 @@ A chamada `plt.ion` habilita gráficos do matplotlib no notebook diretamente. Ca
 
 
 ```python
+#In:
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -44,12 +58,14 @@ Existem dois tipos base de dados em pandas. O primeiro, Series, representa uma c
 
 
 ```python
+#In:
 data = pd.Series([0.25, 0.5, 0.75, 1.0],
                  index=['a', 'b', 'c', 'd'])
 ```
 
 
 ```python
+#In:
 data
 ```
 
@@ -68,6 +84,7 @@ Note que podemos usar como um vetor
 
 
 ```python
+#In:
 data[0]
 ```
 
@@ -82,6 +99,7 @@ Porém o índice nos ajuda. Para um exemplo trivial como este não será tão in
 
 
 ```python
+#In:
 data.index
 ```
 
@@ -99,6 +117,7 @@ Com .loc acessamos uma linha do índice com base no nome. Então:
 
 
 ```python
+#In:
 data.loc['a']
 ```
 
@@ -111,6 +130,7 @@ data.loc['a']
 
 
 ```python
+#In:
 data.loc['b']
 ```
 
@@ -125,6 +145,7 @@ Com `iloc` acessamos por número da linha, estilho um vetor.
 
 
 ```python
+#In:
 data.iloc[0]
 ```
 
@@ -137,6 +158,7 @@ data.iloc[0]
 
 
 ```python
+#In:
 data[0]
 ```
 
@@ -156,6 +178,7 @@ index->value
 
 
 ```python
+#In:
 area_dict = {'California': 423967,
              'Texas': 695662,
              'New York': 141297,
@@ -167,6 +190,7 @@ A linha abaixo pega todas as chaves.
 
 
 ```python
+#In:
 list(area_dict.keys())
 ```
 
@@ -181,6 +205,7 @@ Agora todas as colunas
 
 
 ```python
+#In:
 list(area_dict.values())
 ```
 
@@ -195,6 +220,7 @@ Acessando um valor.
 
 
 ```python
+#In:
 area_dict['California']
 ```
 
@@ -209,6 +235,7 @@ Podemos criar a série a partir do dicionário, cada chave vira um elemento do �
 
 
 ```python
+#In:
 area = pd.Series(area_dict)
 area
 ```
@@ -229,6 +256,7 @@ Agora, vamos criar outro dicionário com a população dos estados.
 
 
 ```python
+#In:
 pop_dict = {'California': 38332521,
             'Texas': 26448193,
             'New York': 19651127,
@@ -254,6 +282,7 @@ Por fim, observe que o DataFrame é uma combinação de Series. Cada uma das Ser
 
 
 ```python
+#In:
 data = pd.DataFrame({'area':area, 'pop':pop})
 data
 ```
@@ -319,6 +348,7 @@ Agora o use de `.loc e .iloc` deve ficar mais claro, observe os exemplos abaixo.
 
 
 ```python
+#In:
 data.loc['California']
 ```
 
@@ -333,6 +363,7 @@ data.loc['California']
 
 
 ```python
+#In:
 data.loc[['California', 'Texas']]
 ```
 
@@ -382,6 +413,7 @@ Note que o uso de `iloc` retorna a i-ésima linha. O problema é que nem sempre 
 
 
 ```python
+#In:
 data.iloc[0]
 ```
 
@@ -399,6 +431,7 @@ data.iloc[0]
 Agora, podemos realizar slicing no DataFrame. Slicing é uma operação Python que retorna sub-listas/sub-vetores. Caso não conheça, tente executar o exemplo abaixo:
 
 ```python
+#In:
 l = []
 l = [7, 1, 3, 5, 9]
 print(l[0])
@@ -411,6 +444,7 @@ print(l[1:4])
 
 
 ```python
+#In:
 l = []
 l = [7, 1, 3, 5, 9]
 print(l[0])
@@ -431,6 +465,7 @@ Voltando para o nosso **dataframe**, podemos realizar o slicing usando o `.iloc`
 
 
 ```python
+#In:
 data.iloc[2:4]
 ```
 
@@ -482,6 +517,7 @@ Series e DataFrames são objetos mutáveis em Python. Podemos adicionar novas co
 
 
 ```python
+#In:
 data['density'] = data['pop'] / data['area']
 data.loc['Texas']
 ```
@@ -498,11 +534,13 @@ data.loc['Texas']
 
 
 ```python
+#In:
 df = data
 ```
 
 
 ```python
+#In:
 df.index
 ```
 
@@ -521,44 +559,38 @@ Tudo que executamos com `!` é um comando do terminal do unix. Então, este note
 
 
 ```python
+#In:
 !ls .
 ```
 
-    baby.csv  tabelas.ipynb
+    tabelas.ipynb  tabelas.md
 
 
 Com a opção -lha, mostramos meta-dados dos arquivos como o owner, tamanho e permissões. Note que todos os arquivos são .csv, isto é comma separated.
 
 
 ```python
+#In:
 !ls -lha .
 ```
 
-    total 148M
-    drwxr-xr-x 1 flaviovdf flaviovdf 4.0K Nov 24 10:47 .
-    drwxr-xr-x 1 flaviovdf flaviovdf 4.0K Nov 24 10:31 ..
-    -rw-r--r-- 1 flaviovdf flaviovdf 148M Nov 24 10:38 baby.csv
-    drwxr-xr-x 1 flaviovdf flaviovdf 4.0K Nov 24 10:38 .ipynb_checkpoints
-    -rw-r--r-- 1 flaviovdf flaviovdf  86K Nov 24 10:48 tabelas.ipynb
+    total 176K
+    drwxr-xr-x 3 flaviovdf flaviovdf 4.0K Nov 30 13:20 .
+    drwxr-xr-x 6 flaviovdf flaviovdf 4.0K Nov 30 12:56 ..
+    drwxr-xr-x 2 flaviovdf flaviovdf 4.0K Nov 30 09:22 .ipynb_checkpoints
+    -rw-r--r-- 1 flaviovdf flaviovdf 124K Nov 30 13:24 tabelas.ipynb
+    -rw-r--r-- 1 flaviovdf flaviovdf  39K Nov 30 09:22 tabelas.md
 
 
 Vamos identificar qual a cara de um csv. O programa `head` imprime as primeiras `n` linhas de um arquivo.
 
 
 ```python
+#In:
 !head baby.csv
 ```
 
-    Id,Name,Year,Gender,State,Count
-    1,Mary,1910,F,AK,14
-    2,Annie,1910,F,AK,12
-    3,Anna,1910,F,AK,10
-    4,Margaret,1910,F,AK,8
-    5,Helen,1910,F,AK,7
-    6,Elsie,1910,F,AK,6
-    7,Lucy,1910,F,AK,6
-    8,Dorothy,1910,F,AK,5
-    9,Mary,1911,F,AK,12
+    head: cannot open 'baby.csv' for reading: No such file or directory
 
 
 ## Baby Names
@@ -567,6 +599,7 @@ Vamos identificar qual a cara de um csv. O programa `head` imprime as primeiras 
 
 
 ```python
+#In:
 df = pd.read_csv('https://media.githubusercontent.com/media/icd-ufmg/material/master/aulas/03-Tabelas-e-Tipos-de-Dados/baby.csv')
 df = df.drop('Id', axis='columns') # remove a coluna id, serve de nada
 df
@@ -642,12 +675,412 @@ df
       <td>7</td>
     </tr>
     <tr>
+      <th>5</th>
+      <td>Elsie</td>
+      <td>1910</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Lucy</td>
+      <td>1910</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Dorothy</td>
+      <td>1910</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Mary</td>
+      <td>1911</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Margaret</td>
+      <td>1911</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Ruth</td>
+      <td>1911</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Annie</td>
+      <td>1911</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Elizabeth</td>
+      <td>1911</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Helen</td>
+      <td>1911</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Mary</td>
+      <td>1912</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Elsie</td>
+      <td>1912</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Agnes</td>
+      <td>1912</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Anna</td>
+      <td>1912</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Helen</td>
+      <td>1912</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Louise</td>
+      <td>1912</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Jean</td>
+      <td>1912</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Ruth</td>
+      <td>1912</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Alice</td>
+      <td>1912</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Esther</td>
+      <td>1912</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Ethel</td>
+      <td>1912</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Margaret</td>
+      <td>1912</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Marie</td>
+      <td>1912</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Mary</td>
+      <td>1913</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Elizabeth</td>
+      <td>1913</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Margaret</td>
+      <td>1913</td>
+      <td>F</td>
+      <td>AK</td>
+      <td>8</td>
+    </tr>
+    <tr>
       <th>...</th>
       <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
+    </tr>
+    <tr>
+      <th>5647396</th>
+      <td>Brooks</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647397</th>
+      <td>Calvin</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647398</th>
+      <td>Cameron</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647399</th>
+      <td>Dalton</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647400</th>
+      <td>Dawson</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647401</th>
+      <td>Edward</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647402</th>
+      <td>Elias</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647403</th>
+      <td>Gage</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647404</th>
+      <td>Hayden</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647405</th>
+      <td>Jasper</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647406</th>
+      <td>Jose</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647407</th>
+      <td>Kaiden</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647408</th>
+      <td>Kaleb</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647409</th>
+      <td>Kasen</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647410</th>
+      <td>Kyson</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647411</th>
+      <td>Lukas</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647412</th>
+      <td>Myles</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647413</th>
+      <td>Nathaniel</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647414</th>
+      <td>Nolan</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647415</th>
+      <td>Oakley</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647416</th>
+      <td>Odin</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647417</th>
+      <td>Paxton</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647418</th>
+      <td>Raymond</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647419</th>
+      <td>Richard</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5647420</th>
+      <td>Rowan</td>
+      <td>2014</td>
+      <td>M</td>
+      <td>WY</td>
+      <td>5</td>
     </tr>
     <tr>
       <th>5647421</th>
@@ -700,6 +1133,7 @@ O método `head` do notebook retorna as primeiras `n` linhas do mesmo. Use tal m
 
 
 ```python
+#In:
 df.head()
 ```
 
@@ -782,6 +1216,7 @@ O método `head` do notebook retorna as primeiras `n` linhas do mesmo. Use tal m
 
 
 ```python
+#In:
 df.head(6)
 ```
 
@@ -870,6 +1305,7 @@ df.head(6)
 
 
 ```python
+#In:
 df[10:15]
 ```
 
@@ -950,6 +1386,7 @@ df[10:15]
 
 
 ```python
+#In:
 df.iloc[0:6]
 ```
 
@@ -1038,6 +1475,7 @@ df.iloc[0:6]
 
 
 ```python
+#In:
 df[['Name', 'Gender']].head(6)
 ```
 
@@ -1108,6 +1546,7 @@ df[['Name', 'Gender']].head(6)
 Vamos responder algumas perguntas com a função groupby. Lembrando a ideia é separar os dados com base em valores comuns, ou seja, agrupar por nomes e realizar alguma operação. O comando abaixo agrupa todos os recem-náscidos por nome. Imagine a mesma fazendo uma operação equivalente ao laço abaixo:
 
 ```python
+#In:
 buckets = {}                    # Mapa de dados
 names = set(df['Name'])         # Conjunto de nomes únicos
 for idx, row in df.iterrows():  # Para cada linha dos dados
@@ -1121,6 +1560,7 @@ O código acima é bastante lento!!! O groupby é optimizado. Com base na linha 
 
 
 ```python
+#In:
 gb = df.groupby('Name')
 type(gb)
 ```
@@ -1135,6 +1575,7 @@ type(gb)
 Agora posso agregar todos os nomes com alguma operação. Por exemplo, posso somar a quantidade de vezes que cada nome ocorre. Em python, seria o seguinte código.
 
 ```python
+#In:
 sum_ = {}                       # Mapa de dados
 for name in buckets:            # Para cada nomee
     sum_[name] = 0
@@ -1146,6 +1587,7 @@ Observe o resultado da agregação abaixo. Qual o problema com a coluna `Year`??
 
 
 ```python
+#In:
 gb.mean()
 ```
 
@@ -1206,9 +1648,259 @@ gb.mean()
       <td>6.000000</td>
     </tr>
     <tr>
+      <th>Aadhya</th>
+      <td>2012.875000</td>
+      <td>11.325000</td>
+    </tr>
+    <tr>
+      <th>Aadi</th>
+      <td>2008.794872</td>
+      <td>8.025641</td>
+    </tr>
+    <tr>
+      <th>Aadil</th>
+      <td>2003.000000</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>Aadin</th>
+      <td>2008.000000</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>Aadit</th>
+      <td>2009.666667</td>
+      <td>6.000000</td>
+    </tr>
+    <tr>
+      <th>Aaditya</th>
+      <td>2008.285714</td>
+      <td>6.928571</td>
+    </tr>
+    <tr>
+      <th>Aadya</th>
+      <td>2012.638889</td>
+      <td>8.333333</td>
+    </tr>
+    <tr>
+      <th>Aadyn</th>
+      <td>2010.363636</td>
+      <td>6.272727</td>
+    </tr>
+    <tr>
+      <th>Aahan</th>
+      <td>2008.000000</td>
+      <td>7.000000</td>
+    </tr>
+    <tr>
+      <th>Aahana</th>
+      <td>2011.000000</td>
+      <td>8.266667</td>
+    </tr>
+    <tr>
+      <th>Aahil</th>
+      <td>2009.750000</td>
+      <td>7.812500</td>
+    </tr>
+    <tr>
+      <th>Aahna</th>
+      <td>2014.000000</td>
+      <td>7.000000</td>
+    </tr>
+    <tr>
+      <th>Aaiden</th>
+      <td>2011.250000</td>
+      <td>8.500000</td>
+    </tr>
+    <tr>
+      <th>Aaima</th>
+      <td>2013.000000</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>Aakash</th>
+      <td>2002.250000</td>
+      <td>6.568182</td>
+    </tr>
+    <tr>
+      <th>Aalaya</th>
+      <td>2014.000000</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>Aalayah</th>
+      <td>2011.411765</td>
+      <td>5.823529</td>
+    </tr>
+    <tr>
+      <th>Aaleah</th>
+      <td>2012.000000</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>Aaleyah</th>
+      <td>2010.937500</td>
+      <td>8.343750</td>
+    </tr>
+    <tr>
+      <th>Aalia</th>
+      <td>2012.000000</td>
+      <td>5.666667</td>
+    </tr>
+    <tr>
+      <th>Aaliah</th>
+      <td>2008.080000</td>
+      <td>9.480000</td>
+    </tr>
+    <tr>
+      <th>Aalijah</th>
+      <td>2010.000000</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>Aaliya</th>
+      <td>2008.200000</td>
+      <td>6.620000</td>
+    </tr>
+    <tr>
+      <th>Aaliyah</th>
+      <td>2004.319876</td>
+      <td>71.697723</td>
+    </tr>
+    <tr>
+      <th>Aaliyha</th>
+      <td>2006.800000</td>
+      <td>5.400000</td>
+    </tr>
+    <tr>
       <th>...</th>
       <td>...</td>
       <td>...</td>
+    </tr>
+    <tr>
+      <th>Zyire</th>
+      <td>2007.000000</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>Zykeria</th>
+      <td>2005.059701</td>
+      <td>10.044776</td>
+    </tr>
+    <tr>
+      <th>Zykeriah</th>
+      <td>2008.000000</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>Zykerria</th>
+      <td>2003.900000</td>
+      <td>7.100000</td>
+    </tr>
+    <tr>
+      <th>Zykia</th>
+      <td>2002.538462</td>
+      <td>6.923077</td>
+    </tr>
+    <tr>
+      <th>Zykierra</th>
+      <td>2007.000000</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>Zykira</th>
+      <td>2006.333333</td>
+      <td>6.333333</td>
+    </tr>
+    <tr>
+      <th>Zykiria</th>
+      <td>2006.000000</td>
+      <td>5.500000</td>
+    </tr>
+    <tr>
+      <th>Zyla</th>
+      <td>2011.705882</td>
+      <td>6.235294</td>
+    </tr>
+    <tr>
+      <th>Zylah</th>
+      <td>2011.800000</td>
+      <td>6.200000</td>
+    </tr>
+    <tr>
+      <th>Zylan</th>
+      <td>2011.000000</td>
+      <td>5.500000</td>
+    </tr>
+    <tr>
+      <th>Zylen</th>
+      <td>2013.500000</td>
+      <td>6.000000</td>
+    </tr>
+    <tr>
+      <th>Zyler</th>
+      <td>2011.071429</td>
+      <td>6.285714</td>
+    </tr>
+    <tr>
+      <th>Zymari</th>
+      <td>2009.000000</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>Zymarion</th>
+      <td>2009.666667</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>Zymere</th>
+      <td>2009.785714</td>
+      <td>7.500000</td>
+    </tr>
+    <tr>
+      <th>Zymier</th>
+      <td>2010.333333</td>
+      <td>5.333333</td>
+    </tr>
+    <tr>
+      <th>Zymiere</th>
+      <td>2010.666667</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>Zymir</th>
+      <td>2009.139535</td>
+      <td>8.023256</td>
+    </tr>
+    <tr>
+      <th>Zymire</th>
+      <td>2012.000000</td>
+      <td>5.000000</td>
+    </tr>
+    <tr>
+      <th>Zyon</th>
+      <td>2007.656805</td>
+      <td>8.230769</td>
+    </tr>
+    <tr>
+      <th>Zyonna</th>
+      <td>2009.818182</td>
+      <td>5.545455</td>
+    </tr>
+    <tr>
+      <th>Zyquan</th>
+      <td>2005.777778</td>
+      <td>5.777778</td>
+    </tr>
+    <tr>
+      <th>Zyquavious</th>
+      <td>2010.000000</td>
+      <td>6.000000</td>
+    </tr>
+    <tr>
+      <th>Zyra</th>
+      <td>2012.142857</td>
+      <td>6.000000</td>
     </tr>
     <tr>
       <th>Zyrah</th>
@@ -1246,6 +1938,7 @@ Não faz tanto sentido somar o ano, embora seja um número aqui representa uma c
 
 
 ```python
+#In:
 gb.sum()['Count'].sort_values()
 ```
 
@@ -1253,17 +1946,67 @@ gb.sum()['Count'].sort_values()
 
 
     Name
-    Zyshonne          5
-    Makenlee          5
-    Makenlie          5
-    Makinlee          5
-    Makua             5
-                 ...
-    William     3839236
-    Michael     4312975
-    Robert      4725713
-    John        4845414
-    James       4957166
+    Zyshonne             5
+    Makenlee             5
+    Makenlie             5
+    Makinlee             5
+    Makua                5
+    Cathaleya            5
+    Makyia               5
+    Makynzee             5
+    Malacai              5
+    Catello              5
+    Malai                5
+    Catcher              5
+    Malajah              5
+    Maleeha              5
+    Maleigh              5
+    Castin               5
+    Maleko               5
+    Malini               5
+    Malissia             5
+    Malissie             5
+    Makaylie             5
+    Makay                5
+    Makalynn             5
+    Makailyn             5
+    Mahesh               5
+    Caylynn              5
+    Caylyn               5
+    Mahin                5
+    Mahjabeen            5
+    Mahreen              5
+                    ...
+    Brian          1159034
+    Joshua         1174451
+    Edward         1212969
+    Andrew         1239305
+    Kenneth        1261928
+    Steven         1272459
+    George         1324735
+    Mark           1341573
+    Paul           1357785
+    Anthony        1397105
+    Donald         1403439
+    Barbara        1424544
+    Linda          1448063
+    Jennifer       1464686
+    Elizabeth      1502094
+    Matthew        1551706
+    Patricia       1569944
+    Daniel         1857096
+    Christopher    1997925
+    Thomas         2219967
+    Charles        2252146
+    Joseph         2485220
+    Richard        2534949
+    David          3562278
+    Mary           3740495
+    William        3839236
+    Michael        4312975
+    Robert         4725713
+    John           4845414
+    James          4957166
     Name: Count, Length: 30274, dtype: int64
 
 
@@ -1272,6 +2015,7 @@ E ordenar...
 
 
 ```python
+#In:
 gb.sum()['Count'].sort_values()
 ```
 
@@ -1279,17 +2023,67 @@ gb.sum()['Count'].sort_values()
 
 
     Name
-    Zyshonne          5
-    Makenlee          5
-    Makenlie          5
-    Makinlee          5
-    Makua             5
-                 ...
-    William     3839236
-    Michael     4312975
-    Robert      4725713
-    John        4845414
-    James       4957166
+    Zyshonne             5
+    Makenlee             5
+    Makenlie             5
+    Makinlee             5
+    Makua                5
+    Cathaleya            5
+    Makyia               5
+    Makynzee             5
+    Malacai              5
+    Catello              5
+    Malai                5
+    Catcher              5
+    Malajah              5
+    Maleeha              5
+    Maleigh              5
+    Castin               5
+    Maleko               5
+    Malini               5
+    Malissia             5
+    Malissie             5
+    Makaylie             5
+    Makay                5
+    Makalynn             5
+    Makailyn             5
+    Mahesh               5
+    Caylynn              5
+    Caylyn               5
+    Mahin                5
+    Mahjabeen            5
+    Mahreen              5
+                    ...
+    Brian          1159034
+    Joshua         1174451
+    Edward         1212969
+    Andrew         1239305
+    Kenneth        1261928
+    Steven         1272459
+    George         1324735
+    Mark           1341573
+    Paul           1357785
+    Anthony        1397105
+    Donald         1403439
+    Barbara        1424544
+    Linda          1448063
+    Jennifer       1464686
+    Elizabeth      1502094
+    Matthew        1551706
+    Patricia       1569944
+    Daniel         1857096
+    Christopher    1997925
+    Thomas         2219967
+    Charles        2252146
+    Joseph         2485220
+    Richard        2534949
+    David          3562278
+    Mary           3740495
+    William        3839236
+    Michael        4312975
+    Robert         4725713
+    John           4845414
+    James          4957166
     Name: Count, Length: 30274, dtype: int64
 
 
@@ -1305,6 +2099,7 @@ ORDERBY SUM(Count)
 
 
 ```python
+#In:
 df.groupby('Name').sum().sort_values(by='Count')['Count']
 ```
 
@@ -1312,17 +2107,67 @@ df.groupby('Name').sum().sort_values(by='Count')['Count']
 
 
     Name
-    Zyshonne          5
-    Makenlee          5
-    Makenlie          5
-    Makinlee          5
-    Makua             5
-                 ...
-    William     3839236
-    Michael     4312975
-    Robert      4725713
-    John        4845414
-    James       4957166
+    Zyshonne             5
+    Makenlee             5
+    Makenlie             5
+    Makinlee             5
+    Makua                5
+    Cathaleya            5
+    Makyia               5
+    Makynzee             5
+    Malacai              5
+    Catello              5
+    Malai                5
+    Catcher              5
+    Malajah              5
+    Maleeha              5
+    Maleigh              5
+    Castin               5
+    Maleko               5
+    Malini               5
+    Malissia             5
+    Malissie             5
+    Makaylie             5
+    Makay                5
+    Makalynn             5
+    Makailyn             5
+    Mahesh               5
+    Caylynn              5
+    Caylyn               5
+    Mahin                5
+    Mahjabeen            5
+    Mahreen              5
+                    ...
+    Brian          1159034
+    Joshua         1174451
+    Edward         1212969
+    Andrew         1239305
+    Kenneth        1261928
+    Steven         1272459
+    George         1324735
+    Mark           1341573
+    Paul           1357785
+    Anthony        1397105
+    Donald         1403439
+    Barbara        1424544
+    Linda          1448063
+    Jennifer       1464686
+    Elizabeth      1502094
+    Matthew        1551706
+    Patricia       1569944
+    Daniel         1857096
+    Christopher    1997925
+    Thomas         2219967
+    Charles        2252146
+    Joseph         2485220
+    Richard        2534949
+    David          3562278
+    Mary           3740495
+    William        3839236
+    Michael        4312975
+    Robert         4725713
+    John           4845414
+    James          4957166
     Name: Count, Length: 30274, dtype: int64
 
 
@@ -1331,6 +2176,7 @@ Podemos inverter com ::-1
 
 
 ```python
+#In:
 df.groupby(['Name', 'Year']).sum()
 ```
 
@@ -1388,12 +2234,223 @@ df.groupby(['Name', 'Year']).sum()
       <td>5</td>
     </tr>
     <tr>
+      <th>Aadarsh</th>
+      <th>2009</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th rowspan="9" valign="top">Aaden</th>
+      <th>2005</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2007</th>
+      <td>98</td>
+    </tr>
+    <tr>
+      <th>2008</th>
+      <td>939</td>
+    </tr>
+    <tr>
+      <th>2009</th>
+      <td>1242</td>
+    </tr>
+    <tr>
+      <th>2010</th>
+      <td>414</td>
+    </tr>
+    <tr>
+      <th>2011</th>
+      <td>228</td>
+    </tr>
+    <tr>
+      <th>2012</th>
+      <td>167</td>
+    </tr>
+    <tr>
+      <th>2013</th>
+      <td>153</td>
+    </tr>
+    <tr>
+      <th>2014</th>
+      <td>180</td>
+    </tr>
+    <tr>
+      <th>Aadhav</th>
+      <th>2014</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th rowspan="6" valign="top">Aadhya</th>
+      <th>2007</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2009</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2011</th>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>2012</th>
+      <td>66</td>
+    </tr>
+    <tr>
+      <th>2013</th>
+      <td>135</td>
+    </tr>
+    <tr>
+      <th>2014</th>
+      <td>221</td>
+    </tr>
+    <tr>
+      <th rowspan="8" valign="top">Aadi</th>
+      <th>2003</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2004</th>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>2005</th>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>2006</th>
+      <td>43</td>
+    </tr>
+    <tr>
+      <th>2007</th>
+      <td>33</td>
+    </tr>
+    <tr>
+      <th>2008</th>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>2009</th>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>2010</th>
+      <td>27</td>
+    </tr>
+    <tr>
       <th>...</th>
       <th>...</th>
       <td>...</td>
     </tr>
     <tr>
-      <th rowspan="4" valign="top">Zyriah</th>
+      <th rowspan="2" valign="top">Zyquan</th>
+      <th>2008</th>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2010</th>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>Zyquavious</th>
+      <th>2010</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th rowspan="5" valign="top">Zyra</th>
+      <th>2008</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2011</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2012</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2013</th>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2014</th>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">Zyrah</th>
+      <th>2011</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2013</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>Zyren</th>
+      <th>2013</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th rowspan="10" valign="top">Zyria</th>
+      <th>1998</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2001</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2003</th>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>2005</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2007</th>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>2008</th>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>2009</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2011</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2012</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2014</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th rowspan="8" valign="top">Zyriah</th>
+      <th>2006</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2007</th>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>2008</th>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>2009</th>
+      <td>5</td>
+    </tr>
+    <tr>
       <th>2011</th>
       <td>6</td>
     </tr>
@@ -1427,6 +2484,7 @@ Por fim, vamos explorar alguns dados da NBA para entender a indexação booleana
 
 
 ```python
+#In:
 df = pd.read_csv('https://media.githubusercontent.com/media/icd-ufmg/material/master/aulas/03-Tabelas-e-Tipos-de-Dados/nba_salaries.csv')
 df.head()
 ```
@@ -1504,6 +2562,7 @@ Por fim, vamos indexar nosso DataFrame por booleanos. A linha abaixo pega um vet
 
 
 ```python
+#In:
 df['TEAM'] == 'Houston Rockets'
 ```
 
@@ -1515,7 +2574,57 @@ df['TEAM'] == 'Houston Rockets'
     2      False
     3      False
     4      False
+    5      False
+    6      False
+    7      False
+    8      False
+    9      False
+    10     False
+    11     False
+    12     False
+    13     False
+    14     False
+    15     False
+    16     False
+    17     False
+    18     False
+    19     False
+    20     False
+    21     False
+    22     False
+    23     False
+    24     False
+    25     False
+    26     False
+    27     False
+    28     False
+    29     False
            ...
+    387    False
+    388    False
+    389    False
+    390    False
+    391    False
+    392    False
+    393    False
+    394    False
+    395    False
+    396    False
+    397    False
+    398    False
+    399    False
+    400    False
+    401    False
+    402    False
+    403    False
+    404    False
+    405    False
+    406    False
+    407    False
+    408    False
+    409    False
+    410    False
+    411    False
     412    False
     413    False
     414    False
@@ -1535,6 +2644,7 @@ WHERE TEAM = 'Houston Rockets'
 
 
 ```python
+#In:
 filtro = df['TEAM'] == 'Houston Rockets'
 df[filtro]
 ```
@@ -1661,6 +2771,7 @@ Assim como pegar os salários maior do que um certo valor!
 
 
 ```python
+#In:
 df[df['SALARY'] > 20]
 ```
 
@@ -1767,6 +2878,7 @@ Abaixo temos algumas chamadas em pandas. Tente explicar cada uma delas.
 
 
 ```python
+#In:
 df[['POSITION', 'SALARY']].groupby('POSITION').mean()
 ```
 
@@ -1827,6 +2939,7 @@ df[['POSITION', 'SALARY']].groupby('POSITION').mean()
 
 
 ```python
+#In:
 df[['TEAM', 'SALARY']].groupby('TEAM').mean().sort_values('SALARY')
 ```
 
@@ -1991,6 +3104,7 @@ Agora, vamos explorar algumas chamadas que fazem opereações de merge.
 
 
 ```python
+#In:
 people = pd.DataFrame(
     [["Joey",      "blue",       42,  "M"],
      ["Weiwei",    "blue",       50,  "F"],
@@ -2088,6 +3202,7 @@ people
 
 
 ```python
+#In:
 email = pd.DataFrame(
     [["Deb",  "deborah_nolan@berkeley.edu"],
      ["Sam",  np.nan],
@@ -2169,6 +3284,7 @@ email
 
 
 ```python
+#In:
 people.merge(email,
              how = "inner",
              left_on = "Name", right_on = "User Name")
@@ -2263,8 +3379,3 @@ people.merge(email,
 </div>
 
 
-
-## Para exploração futura
-
-* Veja a documentação do pandas. https://pandas.pydata.org/
-* O livro do Jake Vanderplas explora várias funções pandas. https://jakevdp.github.io/PythonDataScienceHandbook/
