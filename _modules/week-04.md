@@ -6,24 +6,24 @@ title: Módulo 04 - Aprendizado de Máquina Simples
 {: .text-gamma }
 
 03 Mar
-: [Regularização]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
+: [Regularização](TODO)
   : Data100 Capt-3
 
 08 Mar
-: [Regressão Logística]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
+: [Regressão Logística](TODO)
   : Data100 Capt-4
 
 10 Mar
-: [KNN e o Fluxo de Trabalho do Aprendizado]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
+: [KNN e o Fluxo de Trabalho do Aprendizado](TODO)
 
 15 Mar
-: [Árvores e Florestas]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
+: [Árvores e Florestas](TODO)
 
 17 Mar
-: [Aprendizado sem Supervisão 1]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
+: [Aprendizado sem Supervisão 1](TODO)
 
 22 Mar
-: [Aprendizado sem Supervisão 2]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
+: [Aprendizado sem Supervisão 2](TODO)
 
 24 Mar
 : Revisão Síncrona e Fechamento
