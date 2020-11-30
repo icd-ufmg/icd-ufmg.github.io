@@ -1,0 +1,41 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/flaviovdf/workspace/icd-ufmg/icd-ufmg.github.io/_lessons
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=9ee09d0f2540dbb18eb5b1114b9ac23ebbbe8f4560e967ea
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-74349-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=9ee09d0f2540dbb18eb5b1114b9ac23ebbbe8f4560e967ea
+[NotebookApp | WARNING] Notebook apresentacao/apresentacao.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 214ba55c-d0a5-4c04-9c15-916f9168b104
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 214ba55c-d0a5-4c04-9c15-916f9168b104
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Starting buffering for 214ba55c-d0a5-4c04-9c15-916f9168b104:bc154a2b19144b9080c568d9a57a9ab8
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 214ba55c-d0a5-4c04-9c15-916f9168b104
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Starting buffering for 214ba55c-d0a5-4c04-9c15-916f9168b104:5556092cf549465b8e1685e97dec9077
+[NotebookApp | INFO] Kernel shutdown: 214ba55c-d0a5-4c04-9c15-916f9168b104
+[NotebookApp | INFO] 302 GET / (127.0.0.1) 0.40ms
+[NotebookApp | INFO] Kernel started: 020528c8-fc8e-4176-8b8d-1d16b50066e1
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 020528c8-fc8e-4176-8b8d-1d16b50066e1
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Starting buffering for 020528c8-fc8e-4176-8b8d-1d16b50066e1:8b52a7a93fbc4926a9d6921af84b95db
+[NotebookApp | INFO] Kernel shutdown: 020528c8-fc8e-4176-8b8d-1d16b50066e1
+[NotebookApp | INFO] Kernel started: c02b7620-4f71-4a79-b7d4-26f764f3846d
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel c02b7620-4f71-4a79-b7d4-26f764f3846d
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | INFO] Starting buffering for c02b7620-4f71-4a79-b7d4-26f764f3846d:a750b7c819484fb883a152c7d443219a
