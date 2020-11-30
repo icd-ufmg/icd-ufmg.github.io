@@ -19,23 +19,31 @@ title: Módulo 02 - Testes de Hipótese
 
 11 Jan
 : [Intervalos de Confiança]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
-  : Data100 Capt-4
+  : [Data 8 Capt-13](https://www.inferentialthinking.com/chapters/13/Estimation.html)
+: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCKSlU6M0AGEMz6PG9Fll7WW)
 
 13 Jan
 : [Bootstrap e Testes A/B]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
-  : Data100 Capt-3
+  : [Data 8 Capt-13](https://www.inferentialthinking.com/chapters/13/Estimation.html)
+  : [Data 100 Capt-18](https://www.textbook.ds100.org/ch/18/hyp_intro.html)
+: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCIALxnvBUBz6OEWPeDYEZSd)
 
 18 Jan
 : [Testes de Hipóteses via Permutação]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
-  : Data100 Capt-4
+  : [Data 8 Capt-11](https://www.inferentialthinking.com/chapters/11/Testing_Hypotheses.html)
+  : [Data 8 Capt-12](https://www.inferentialthinking.com/chapters/12/Comparing_Two_Samples.html)
+  : [Data 100 Capt-18](https://www.textbook.ds100.org/ch/18/hyp_intro.html)
+: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLXYzhcdDEUby8280aCyCsl)
 
 20 Jan
 : [Ciência e Ciência de Dados (Relembrando Causalidade)]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
-  : Data100 Capt-4
+  : [Data 100 Capt-18](https://www.textbook.ds100.org/ch/18/hyp_intro.html)
+: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLFtqPq8nl_OCrVlZHsAoeC)
 
 25 Jan
 : [Fim Testes (Entendendo Poder/Múltiplos)]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
-  : Data100 Capt-4
+  : [Data 100 Capt-18](https://www.textbook.ds100.org/ch/18/hyp_intro.html)
+: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLS5laDUoNKh2pgp7CF3juU)
 
 27 Jan
 : Revisão Síncrona
