@@ -4,16 +4,14 @@ title: Avaliações
 description: Descrição das Avaliações
 ---
 
-# Projeto Final
+# Avaliações
 
 {: .no_toc .mb-2 }
 
-Create something you want to share.[^1]
+Forma de Avaliação no Ensino Remoto Emergencial
 {: .fs-6 .fw-300 }
 
-[^1]: CS50. 2020. Final Project. In CS50 Spring 2020. <https://cs50.harvard.edu/college/2020/spring/project/>
-
-## Table of contents
+## Sumário
 {: .no_toc .text-delta }
 
 1. TOC
