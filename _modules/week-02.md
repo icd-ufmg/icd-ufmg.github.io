@@ -12,8 +12,8 @@ title: Módulo 02 - Testes de Hipótese
 
 06 Jan
 : [Teorema Central do Limite]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
-  : [Data8 Capt-10](https://www.inferentialthinking.com/chapters/10/Sampling_and_Empirical_Distributions.html)
-  : [Data8 Capt-14](https://www.inferentialthinking.com/chapters/14/Why_the_Mean_Matters.html)
+  : [Data8 Capt-10](https://www.inferentialthinking.com/chapters/10/Sampling_and_Empirical_Distributions.html),
+  : [Data8 Capt-14](https://www.inferentialthinking.com/chapters/14/Why_the_Mean_Matters.html),
   : [Data100 Capt-12](https://www.textbook.ds100.org/ch/12/prob_and_gen.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCJTfEuPbRXfb8UcH1Z_Tbjt)
 
@@ -24,14 +24,14 @@ title: Módulo 02 - Testes de Hipótese
 
 13 Jan
 : [Bootstrap e Testes A/B]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
-  : [Data 8 Capt-13](https://www.inferentialthinking.com/chapters/13/Estimation.html)
+  : [Data 8 Capt-13](https://www.inferentialthinking.com/chapters/13/Estimation.html),
   : [Data 100 Capt-18](https://www.textbook.ds100.org/ch/18/hyp_intro.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCIALxnvBUBz6OEWPeDYEZSd)
 
 18 Jan
 : [Testes de Hipóteses via Permutação]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
-  : [Data 8 Capt-11](https://www.inferentialthinking.com/chapters/11/Testing_Hypotheses.html)
-  : [Data 8 Capt-12](https://www.inferentialthinking.com/chapters/12/Comparing_Two_Samples.html)
+  : [Data 8 Capt-11](https://www.inferentialthinking.com/chapters/11/Testing_Hypotheses.html),
+  : [Data 8 Capt-12](https://www.inferentialthinking.com/chapters/12/Comparing_Two_Samples.html),
   : [Data 100 Capt-18](https://www.textbook.ds100.org/ch/18/hyp_intro.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLXYzhcdDEUby8280aCyCsl)
 
