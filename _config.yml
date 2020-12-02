@@ -17,7 +17,7 @@ title: Introdução à Ciência de Dados
 tagline: Introdução à Ciência de Dados
 description: Curso Ofertado Pelo DCC-UFMG
 author: Flavio Figueiredo
-baseurl: '/'
+baseurl: ~
 url: 'https://icd-ufmg.github.io'
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
@@ -54,6 +54,11 @@ just_the_docs:
   collections:
     lessons:
       name: Material
+
+markdown: kramdown
+kramdown:
+   math_engine: mathjax
+
 
 compress_html:
   clippings: all

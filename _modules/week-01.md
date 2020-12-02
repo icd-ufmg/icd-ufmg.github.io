@@ -10,13 +10,13 @@ title: Módulo 01 - Análise Exploratória de Dados
   : [Data8 Capt-1](https://www.inferentialthinking.com/chapters/01/what-is-data-science.html),
   : [Data8 Capt-2](https://www.inferentialthinking.com/chapters/02/causality-and-experiments.html),
   : [Data100 Capt-1](https://www.textbook.ds100.org/ch/01/lifecycle_intro.html)
-: [Videoaula](Em Breve)
+: [Videoaula](https://www.youtube.com/watch?v=fa5VilPUlcQ)
 
 02 Dez
 : [Tabelas e Tipos de Dados]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
   : [Data100 Capt-4](https://www.textbook.ds100.org/ch/04/eda_data_types.html),
   : [Data100 Capt-3](https://www.textbook.ds100.org/ch/03/pandas_intro.html)
-: [Videoaula](Em Breve)
+: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCK952UN4pch9XKHZ3WqpVeb)
 
 07 Dez
 : [Análise Exploratória e Visualização de Dados I]({{ site.baseurl }}{% link _lessons/viz/viz.md %})
