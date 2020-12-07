@@ -18,11 +18,14 @@ title: Módulo 01 - Análise Exploratória de Dados
   : [Data100 Capt-3](https://www.textbook.ds100.org/ch/03/pandas_intro.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCK952UN4pch9XKHZ3WqpVeb)
 
+Live de Código
+: [Live Cobrindo as Últimas Aulas](https://www.youtube.com/watch?v=ssdytP7fbiQ)
+
 07 Dez
 : [Análise Exploratória e Visualização de Dados I]({{ site.baseurl }}{% link _lessons/viz/viz.md %})
   : [Data100 Capt-4](https://www.textbook.ds100.org/ch/04/eda_data_types.html),
   : [Data100 Capt-6](https://www.textbook.ds100.org/ch/06/viz_intro.html)
-: [Videoaula](Em Breve)
+: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCIZU1IrnrdeAMim8mj3pVe4)
 
 09 Dez
 : [Análise Exploratória e Visualização de Dados II]({{ site.baseurl }}{% link _lessons/viz/viz.md %})
