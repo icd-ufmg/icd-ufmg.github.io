@@ -18,7 +18,7 @@ title: Módulo 01 - Análise Exploratória de Dados
   : [Data100 Capt-3](https://www.textbook.ds100.org/ch/03/pandas_intro.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCK952UN4pch9XKHZ3WqpVeb)
 
-Live de Código
+Live
 : [Live Cobrindo as Últimas Aulas](https://www.youtube.com/watch?v=ssdytP7fbiQ)
 
 07 Dez
