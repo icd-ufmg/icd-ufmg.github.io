@@ -31,7 +31,7 @@ Live
 : [Análise Exploratória e Visualização de Dados II]({{ site.baseurl }}{% link _lessons/viz/viz.md %})
   : [Data100 Capt-4](https://www.textbook.ds100.org/ch/04/eda_data_types.html),
   : [Data100 Capt-6](https://www.textbook.ds100.org/ch/06/viz_intro.html)
-: [Videoaula](Em Breve)
+: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLj07qACbfwrXJf2_-F0oAq)
 
 14 Dez
 : [Estatísticas Básicas]({{ site.baseurl }}{% link _lessons/tabelas/tabelas.md %})
