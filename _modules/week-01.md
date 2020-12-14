@@ -36,12 +36,12 @@ Live
 14 Dez
 : [Estatísticas Básicas]({{ site.baseurl }}{% link _lessons/04-stat.md %})
   : Sem Leitura Extra
-: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLRQi3cQ9FWDriusBFYBaU7)
+: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCIlIfvBX2DchddE5sqieelH)
 
 16 Dez
 : [Revisão de Probabilidade]({{ site.baseurl }}{% link _lessons/05-prob.md %})
   : [Data100 Capt-2](https://www.textbook.ds100.org/ch/02/design_intro.html#)
-: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCIlIfvBX2DchddE5sqieelH)
+: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLRQi3cQ9FWDriusBFYBaU7)
 
 19 Dez
 : Revisão Síncrona
