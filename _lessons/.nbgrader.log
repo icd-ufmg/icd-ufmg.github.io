@@ -322,3 +322,12 @@
 [LabApp | WARNING] Notebook 04-stat.ipynb is not trusted
 [LabApp | INFO] Saving file at /02-tabelas.ipynb
 [LabApp | WARNING] Notebook 02-tabelas.ipynb is not trusted
+[LabApp | INFO] Starting buffering for 5ffe0c45-4d37-43ea-b43e-4192e69d3ae0:8a2a8b46-492d-430d-80a5-833db17a4e5c
+[LabApp | INFO] Starting buffering for fd9ab85e-6429-4330-b63e-23ba1d056563:5d859b09-39db-47d1-8d13-24a557f37c64
+[LabApp | INFO] Starting buffering for 1130dea4-1626-483b-868b-7c8a48ae1b08:07ae3083-f69b-4935-9fe2-e39c60795b54
+[LabApp | INFO] interrupted
+[LabApp | CRITICAL] Shutdown confirmed
+[LabApp | INFO] Shutting down 3 kernels
+[LabApp | INFO] Kernel shutdown: 1130dea4-1626-483b-868b-7c8a48ae1b08
+[LabApp | INFO] Kernel shutdown: 5ffe0c45-4d37-43ea-b43e-4192e69d3ae0
+[LabApp | INFO] Kernel shutdown: fd9ab85e-6429-4330-b63e-23ba1d056563
