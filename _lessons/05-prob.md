@@ -92,7 +92,7 @@ np.random.rand()
 
 
 
-    0.2725093394936332
+    0.338144486266044
 
 
 
@@ -105,7 +105,7 @@ np.random.rand()
 
 
 
-    3.6643686418231267
+    3.7135138408121042
 
 
 
@@ -119,7 +119,7 @@ round(1 + np.random.rand() * 5)
 
 
 
-    1
+    2
 
 
 
@@ -152,7 +152,7 @@ np.random.randint(1, 7)
 
 
 
-    6
+    5
 
 
 
@@ -176,12 +176,12 @@ pd.Series(count)
 
 
 
-    0    1660.0
-    1    1664.0
-    2    1661.0
-    3    1771.0
-    4    1620.0
-    5    1624.0
+    0    1596.0
+    1    1696.0
+    2    1692.0
+    3    1680.0
+    4    1686.0
+    5    1650.0
     dtype: float64
 
 
@@ -218,7 +218,7 @@ prob
 
 
 
-    array([0.166 , 0.1664, 0.1661, 0.1771, 0.162 , 0.1624])
+    array([0.1596, 0.1696, 0.1692, 0.168 , 0.1686, 0.165 ])
 
 
 
@@ -286,7 +286,7 @@ plt.plot(p6)
 
 
 
-    [<matplotlib.lines.Line2D at 0x7fdf94776160>]
+    [<matplotlib.lines.Line2D at 0x7f57f870c128>]
 
 
 
@@ -369,8 +369,8 @@ print ("P(both | either): ", both_girls / either_girl)
 
 ```
 
-    P(both | older): 0.5061928934010153
-    P(both | either):  0.3346308724832215
+    P(both | older): 0.49766022380467956
+    P(both | either):  0.32858678130037616
 
 
 Podemos resolver de forma mais simples com numpy + pandas
@@ -385,13 +385,13 @@ X
 
 
 
-    array([['girl', 'boy'],
-           ['boy', 'girl'],
+    array([['boy', 'boy'],
+           ['girl', 'girl'],
            ['boy', 'girl'],
            ...,
-           ['boy', 'boy'],
            ['girl', 'boy'],
-           ['boy', 'girl']], dtype='<U4')
+           ['girl', 'boy'],
+           ['girl', 'boy']], dtype='<U4')
 
 
 
@@ -430,12 +430,12 @@ df
   <tbody>
     <tr>
       <th>0</th>
-      <td>girl</td>
+      <td>boy</td>
       <td>boy</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>boy</td>
+      <td>girl</td>
       <td>girl</td>
     </tr>
     <tr>
@@ -450,17 +450,17 @@ df
     </tr>
     <tr>
       <th>4</th>
-      <td>girl</td>
+      <td>boy</td>
       <td>girl</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>boy</td>
-      <td>boy</td>
+      <td>girl</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>boy</td>
+      <td>girl</td>
       <td>girl</td>
     </tr>
     <tr>
@@ -470,17 +470,17 @@ df
     </tr>
     <tr>
       <th>8</th>
+      <td>boy</td>
+      <td>girl</td>
+    </tr>
+    <tr>
+      <th>9</th>
       <td>girl</td>
       <td>boy</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
       <th>10</th>
-      <td>boy</td>
+      <td>girl</td>
       <td>girl</td>
     </tr>
     <tr>
@@ -491,17 +491,17 @@ df
     <tr>
       <th>12</th>
       <td>boy</td>
-      <td>girl</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>13</th>
-      <td>girl</td>
+      <td>boy</td>
       <td>boy</td>
     </tr>
     <tr>
       <th>14</th>
-      <td>girl</td>
-      <td>girl</td>
+      <td>boy</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>15</th>
@@ -510,13 +510,13 @@ df
     </tr>
     <tr>
       <th>16</th>
-      <td>girl</td>
-      <td>girl</td>
+      <td>boy</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>17</th>
       <td>girl</td>
-      <td>boy</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>18</th>
@@ -531,32 +531,32 @@ df
     <tr>
       <th>20</th>
       <td>boy</td>
-      <td>boy</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>21</th>
-      <td>boy</td>
       <td>girl</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>22</th>
       <td>boy</td>
-      <td>boy</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>23</th>
-      <td>boy</td>
-      <td>boy</td>
+      <td>girl</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>24</th>
       <td>boy</td>
-      <td>boy</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>25</th>
       <td>boy</td>
-      <td>girl</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>26</th>
@@ -566,17 +566,17 @@ df
     <tr>
       <th>27</th>
       <td>girl</td>
-      <td>girl</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>28</th>
-      <td>boy</td>
+      <td>girl</td>
       <td>girl</td>
     </tr>
     <tr>
       <th>29</th>
-      <td>boy</td>
       <td>girl</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>...</th>
@@ -586,22 +586,22 @@ df
     <tr>
       <th>4970</th>
       <td>girl</td>
-      <td>boy</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>4971</th>
-      <td>boy</td>
-      <td>boy</td>
+      <td>girl</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>4972</th>
-      <td>boy</td>
+      <td>girl</td>
       <td>boy</td>
     </tr>
     <tr>
       <th>4973</th>
-      <td>girl</td>
-      <td>girl</td>
+      <td>boy</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>4974</th>
@@ -615,8 +615,8 @@ df
     </tr>
     <tr>
       <th>4976</th>
-      <td>boy</td>
-      <td>boy</td>
+      <td>girl</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>4977</th>
@@ -626,11 +626,11 @@ df
     <tr>
       <th>4978</th>
       <td>boy</td>
-      <td>girl</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>4979</th>
-      <td>girl</td>
+      <td>boy</td>
       <td>boy</td>
     </tr>
     <tr>
@@ -641,17 +641,17 @@ df
     <tr>
       <th>4981</th>
       <td>boy</td>
-      <td>boy</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>4982</th>
       <td>boy</td>
-      <td>girl</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>4983</th>
       <td>girl</td>
-      <td>girl</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>4984</th>
@@ -660,32 +660,32 @@ df
     </tr>
     <tr>
       <th>4985</th>
-      <td>girl</td>
-      <td>girl</td>
+      <td>boy</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>4986</th>
       <td>boy</td>
-      <td>boy</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>4987</th>
       <td>girl</td>
-      <td>boy</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>4988</th>
-      <td>girl</td>
-      <td>girl</td>
+      <td>boy</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>4989</th>
       <td>girl</td>
-      <td>girl</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>4990</th>
-      <td>boy</td>
+      <td>girl</td>
       <td>girl</td>
     </tr>
     <tr>
@@ -700,7 +700,7 @@ df
     </tr>
     <tr>
       <th>4993</th>
-      <td>boy</td>
+      <td>girl</td>
       <td>girl</td>
     </tr>
     <tr>
@@ -710,17 +710,17 @@ df
     </tr>
     <tr>
       <th>4995</th>
-      <td>girl</td>
-      <td>girl</td>
+      <td>boy</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>4996</th>
-      <td>boy</td>
+      <td>girl</td>
       <td>boy</td>
     </tr>
     <tr>
       <th>4997</th>
-      <td>boy</td>
+      <td>girl</td>
       <td>boy</td>
     </tr>
     <tr>
@@ -730,8 +730,8 @@ df
     </tr>
     <tr>
       <th>4999</th>
-      <td>boy</td>
       <td>girl</td>
+      <td>boy</td>
     </tr>
   </tbody>
 </table>
@@ -750,7 +750,7 @@ len(filtro)
 
 
 
-    2501
+    2543
 
 
 
@@ -763,7 +763,7 @@ len(filtro)
 
 
 
-    0.5200974421437271
+    0.5066991473812423
 
 
 
@@ -777,8 +777,8 @@ df[df['second'] == 'girl'].groupby('first').size()
 
 
     first
-    boy     1220
-    girl    1281
+    boy     1295
+    girl    1248
     dtype: int64
 
 
@@ -1087,7 +1087,7 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x7fdf9223f940>
+    <matplotlib.legend.Legend at 0x7f57f8529940>
 
 
 
@@ -1195,7 +1195,7 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x7fdf91de9da0>
+    <matplotlib.legend.Legend at 0x7f57f5d01908>
 
 
 
@@ -1422,7 +1422,7 @@ df.groupby('Start Station').size().sort_values()[::-1][:20].plot.bar()
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x7fdf900946d8>
+    <matplotlib.axes._subplots.AxesSubplot at 0x7f57f4031080>
 
 
 
@@ -1517,7 +1517,7 @@ df.groupby('End Station').size().sort_values()[::-1].plot.bar()
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x7fdf91caf160>
+    <matplotlib.axes._subplots.AxesSubplot at 0x7f57f5ff55c0>
 
 
 

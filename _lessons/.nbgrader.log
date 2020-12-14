@@ -236,3 +236,89 @@
 [NotebookApp | INFO] Kernel shutdown: c47d84e6-72a7-42f1-a5fe-804c2bce7543
 [NotebookApp | INFO] Kernel shutdown: 5990ba54-3836-4c2d-a6cc-769c5f5059b0
 [NotebookApp | INFO] Kernel shutdown: e4d6b071-bda5-4ccf-ad09-d65f0885f8b6
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/flaviovdf/workspace/icd-ufmg/icd-ufmg.github.io/_lessons
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=e805df929f0a378ca3db722fa71bf6dde7cdc2ea0449ee6a
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-154440-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=e805df929f0a378ca3db722fa71bf6dde7cdc2ea0449ee6a
+[NotebookApp | WARNING] Notebook 02-tabelas.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: c0486458-45c7-426f-979b-371f5c347e5d
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel c0486458-45c7-426f-979b-371f5c347e5d
+[NotebookApp | INFO] Saving file at /02-tabelas.ipynb
+[NotebookApp | WARNING] Notebook 02-tabelas.ipynb is not trusted
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: c0486458-45c7-426f-979b-371f5c347e5d
+[LabApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[LabApp | INFO] Loading the validate_assignment nbgrader serverextension
+[LabApp | WARNING] JupyterLab server extension not enabled, manually loading...
+[LabApp | INFO] JupyterLab extension loaded from /home/flaviovdf/miniconda3/envs/teaching/lib/python3.6/site-packages/jupyterlab
+[LabApp | INFO] JupyterLab application directory is /home/flaviovdf/miniconda3/envs/teaching/share/jupyter/lab
+[LabApp | INFO] Serving notebooks from local directory: /home/flaviovdf/workspace/icd-ufmg/icd-ufmg.github.io/_lessons
+[LabApp | INFO] The Jupyter Notebook is running at:
+[LabApp | INFO] http://localhost:8888/?token=446bb4e77a56a3be3f66b0fe6ddf36fb9466ee383d4bdb2f
+[LabApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[LabApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-157476-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=446bb4e77a56a3be3f66b0fe6ddf36fb9466ee383d4bdb2f
+[LabApp | INFO] Node v15.3.0
+    
+[LabApp | WARNING] Build recommended
+[LabApp | WARNING] @ijmbarr/jupyterlab_spellchecker needs to be included in build
+[LabApp | WARNING] 404 GET /api/contents/03-Tabelas-e-Tipos-de-Dados?1607962091091 (127.0.0.1): No such file or directory: 03-Tabelas-e-Tipos-de-Dados
+[LabApp | WARNING] No such file or directory: 03-Tabelas-e-Tipos-de-Dados
+[LabApp | WARNING] 404 GET /api/contents/03-Tabelas-e-Tipos-de-Dados?1607962091091 (127.0.0.1) 1.89ms referer=http://localhost:8888/lab
+[LabApp | WARNING] 404 GET /api/contents/04-EDA-e-Vis/Aula04-EDA-Vis.ipynb?content=0&1607962091091 (127.0.0.1): No such file or directory: 04-EDA-e-Vis/Aula04-EDA-Vis.ipynb
+[LabApp | WARNING] No such file or directory: 04-EDA-e-Vis/Aula04-EDA-Vis.ipynb
+[LabApp | WARNING] 404 GET /api/contents/04-EDA-e-Vis/Aula04-EDA-Vis.ipynb?content=0&1607962091091 (127.0.0.1) 2.58ms referer=http://localhost:8888/lab
+[LabApp | WARNING] 404 GET /api/contents/03-Tabelas-e-Tipos-de-Dados/Aula03-Tabelas.ipynb?content=0&1607962091092 (127.0.0.1): No such file or directory: 03-Tabelas-e-Tipos-de-Dados/Aula03-Tabelas.ipynb
+[LabApp | WARNING] No such file or directory: 03-Tabelas-e-Tipos-de-Dados/Aula03-Tabelas.ipynb
+[LabApp | WARNING] 404 GET /api/contents/03-Tabelas-e-Tipos-de-Dados/Aula03-Tabelas.ipynb?content=0&1607962091092 (127.0.0.1) 2.60ms referer=http://localhost:8888/lab
+[LabApp | INFO] Node v15.3.0
+    
+[LabApp | INFO] > node /home/flaviovdf/miniconda3/envs/teaching/lib/python3.6/site-packages/jupyterlab/staging/yarn.js install
+[LabApp | WARNING] Notebook 02-tabelas.ipynb is not trusted
+[LabApp | INFO] Kernel started: 1130dea4-1626-483b-868b-7c8a48ae1b08
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 1130dea4-1626-483b-868b-7c8a48ae1b08
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 1130dea4-1626-483b-868b-7c8a48ae1b08
+[LabApp | WARNING] 404 GET /api/kernels/c0486458-45c7-426f-979b-371f5c347e5d/channels?session_id=16bec798207e4bf488dc9c3f7806223b (127.0.0.1): Kernel does not exist: c0486458-45c7-426f-979b-371f5c347e5d
+[LabApp | WARNING] 404 GET /api/kernels/c0486458-45c7-426f-979b-371f5c347e5d/channels?session_id=16bec798207e4bf488dc9c3f7806223b (127.0.0.1) 64.85ms referer=None
+[LabApp | WARNING] Notebook 03-viz.ipynb is not trusted
+[LabApp | INFO] Kernel started: 5ffe0c45-4d37-43ea-b43e-4192e69d3ae0
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5ffe0c45-4d37-43ea-b43e-4192e69d3ae0
+[LabApp | INFO] > node /home/flaviovdf/miniconda3/envs/teaching/lib/python3.6/site-packages/jupyterlab/staging/yarn.js run build
+[LabApp | INFO] Starting buffering for 1130dea4-1626-483b-868b-7c8a48ae1b08:e98d0003-56a7-4b17-b29f-c10ff5b3c4a5
+[LabApp | INFO] Starting buffering for 5ffe0c45-4d37-43ea-b43e-4192e69d3ae0:80d92b6c-5a69-415d-bf1e-0a6e6b4d4c52
+[LabApp | INFO] Node v15.3.0
+    
+[LabApp | WARNING] Build recommended
+[LabApp | WARNING] @ijmbarr/jupyterlab_spellchecker needs to be included in build
+[LabApp | WARNING] Notebook 02-tabelas.ipynb is not trusted
+[LabApp | WARNING] Notebook 03-viz.ipynb is not trusted
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 1130dea4-1626-483b-868b-7c8a48ae1b08
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5ffe0c45-4d37-43ea-b43e-4192e69d3ae0
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5ffe0c45-4d37-43ea-b43e-4192e69d3ae0
+[LabApp | INFO] Saving file at /03-viz.ipynb
+[LabApp | WARNING] Notebook 03-viz.ipynb is not trusted
+[LabApp | INFO] Saving file at /03-viz.ipynb
+[LabApp | WARNING] Notebook 03-viz.ipynb is not trusted
+[LabApp | INFO] Saving file at /02-tabelas.ipynb
+[LabApp | WARNING] Notebook 02-tabelas.ipynb is not trusted
+[LabApp | WARNING] Notebook 04-stat.ipynb is not trusted
+[LabApp | INFO] Kernel started: fd9ab85e-6429-4330-b63e-23ba1d056563
+[LabApp | INFO] Adapting to protocol v5.1 for kernel fd9ab85e-6429-4330-b63e-23ba1d056563
+[LabApp | INFO] Saving file at /04-stat.ipynb
+[LabApp | WARNING] Notebook 04-stat.ipynb is not trusted
+[LabApp | INFO] Saving file at /02-tabelas.ipynb
+[LabApp | WARNING] Notebook 02-tabelas.ipynb is not trusted

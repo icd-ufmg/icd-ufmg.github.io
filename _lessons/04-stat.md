@@ -228,6 +228,7 @@ plt.hist(data, bins=20, edgecolor='k')
 plt.xlabel('Duração em minutos')
 plt.ylabel('Frequência.')
 despine(plt.gca())
+plt.show()
 ```
 
 
@@ -263,6 +264,7 @@ plt.plot(x, y)
 plt.xlabel('Duração em minutos')
 plt.ylabel('$P(X \leq x)$')
 despine()
+plt.show()
 ```
 
 
@@ -282,6 +284,7 @@ plt.plot(x, y)
 plt.xlabel('Duração em minutos')
 plt.ylabel('$P(X \leq x)$')
 despine()
+plt.show()
 ```
 
 
@@ -518,6 +521,7 @@ plt.xlabel('Duração em minutos')
 plt.ylabel('P(X = x)')
 plt.legend()
 despine()
+plt.show()
 ```
 
 
@@ -605,6 +609,7 @@ plt.xlabel('Duração em minutos')
 plt.ylabel('Freq')
 plt.legend()
 despine()
+plt.show()
 ```
 
 
@@ -626,17 +631,11 @@ Vamos agora observar o boxplot das durações. Um boxplot representa a variaçã
 plt.boxplot([data], sym='', vert=True, whis=[5, 95])
 ax = plt.gca()
 ax.set_yticklabels(['Duração'])
+plt.show()
 ```
 
 
-
-
-    [Text(0, 0, 'Duração')]
-
-
-
-
-![png](04-stat_files/04-stat_57_1.png)
+![png](04-stat_files/04-stat_57_0.png)
 
 
 Claramente, a média é mais simples de calcular e varia suavemente conforme nossos dados são alterados. Se tivermos `n` pontos de dados e um deles aumentar em alguma quantidade pequena `e`, então necessariamente a média aumentará em `e/n`. (Isso torna a média passível de todo tipo de truque de cálculo.) No entanto, para encontrar a mediana, temos que ordenar nossos dados. E alterar um dos nossos pontos de dados em uma pequena quantidade `e` pode aumentar a mediana por `e`, por algum número menor que `e` ou não a modificar de qualquer forma (dependendo do resto dos dados).
@@ -755,26 +754,26 @@ palavras.head(20)
 
 
 
-    insane       116
-    rotting        2
-    truth        393
-    by          1551
-    think       1851
-    peace        176
-    cant        2833
-    women        256
-    gone         921
-    love        3280
-    finished      61
-    got         3782
-    woman        277
-    sorrow        32
-    pissed        36
-    race          78
-    runnin       254
-    tell        2124
-    brain        185
-    colorado       7
+    bottle        215
+    get          3577
+    be           4442
+    peace         176
+    jealous        83
+    truth         393
+    liquor         97
+    still        1532
+    carlo           6
+    think        1851
+    of           4909
+    winnin         37
+    me           5901
+    new          1063
+    pissed         36
+    bartender      24
+    been         2064
+    it           5674
+    lennon          7
+    cant         2833
     dtype: int64
 
 
@@ -788,6 +787,7 @@ plt.hist(palavras, bins=100, edgecolor='k')
 plt.xlabel('Popularidade da palavra')
 plt.ylabel('Freq.')
 despine()
+plt.show()
 ```
 
 
@@ -805,6 +805,7 @@ ax.set_xscale('log')
 plt.xlabel('Popularidade da palavra')
 plt.ylabel('Freq.')
 despine()
+plt.show()
 ```
 
 
@@ -947,8 +948,8 @@ print("IQR:", interquartile_range(palavras))
 
     Dispersão para as palavras:
     Intervalo: 6527
-    Variância: 35806.28050708676
-    Desvio padrão: 189.225475312091
+    Variância: 35806.28050708674
+    Desvio padrão: 189.22547531209094
     IQR: 3
 
 

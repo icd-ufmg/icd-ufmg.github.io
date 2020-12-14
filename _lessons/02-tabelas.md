@@ -13,15 +13,15 @@ Um breve resumo de alguns comandos python.
 {: .no_toc .text-delta }
 Objetivo
 
-*. Aprender Pandas
-*. Entender diferentes tipos de dados
-*. Básico de filtros e seleções
+* Aprender Pandas
+* Entender diferentes tipos de dados
+* Básico de filtros e seleções
 
 
 {: .no_toc .text-delta }
 Resultado Esperado
 
-*. Aplicação de filtros básicos para gerar insights nos dados de dados tabulares
+* Aplicação de filtros básicos para gerar insights nos dados de dados tabulares
 
 ---
 **Sumário**
@@ -35,7 +35,7 @@ Neste notebook vamos explorar um pouco de dados tabulares. A principal bibliotec
 
 Caso necessite de algo além da aula, busque na documentação da biblioteca. Por fim, durante esta aula, também vamos aprender um pouco de bash.
 
-## Imports básicos
+### Imports básicos
 
 A maioria dos nossos notebooks vai iniciar com os imports abaixo.
 1. pandas: dados tabulates
@@ -580,35 +580,35 @@ Com a opção -lha, mostramos meta-dados dos arquivos como o owner, tamanho e pe
 !ls -lha .
 ```
 
-    total 3.1M
-    drwxr-xr-x 12 flaviovdf flaviovdf 4.0K Dec 14 12:50 .
-    drwxr-xr-x  9 flaviovdf flaviovdf 4.0K Dec  7 16:51 ..
+    total 3.2M
+    drwxr-xr-x 12 flaviovdf flaviovdf 4.0K Dec 14 13:13 .
+    drwxr-xr-x  9 flaviovdf flaviovdf 4.0K Dec 14 12:59 ..
     -rw-r--r--  1 flaviovdf flaviovdf  593 Dec 14 12:38 01-causalidade.md
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 12:51 02-tabelas
-    -rw-r--r--  1 flaviovdf flaviovdf 124K Dec 14 12:29 02-tabelas.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  59K Dec 14 12:43 02-tabelas.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Dec 14 12:45 03-viz
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 12:45 03-viz_files
-    -rw-r--r--  1 flaviovdf flaviovdf 863K Dec 14 12:49 03-viz.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  85K Dec 14 12:45 03-viz.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Dec 14 12:45 04-stat
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 12:45 04-stat_files
-    -rw-r--r--  1 flaviovdf flaviovdf 286K Dec 14 12:50 04-stat.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  26K Dec 14 12:45 04-stat.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Dec 14 12:46 05-prob
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 12:46 05-prob_files
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 13:13 02-tabelas
+    -rw-r--r--  1 flaviovdf flaviovdf 124K Dec 14 13:13 02-tabelas.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  60K Dec 14 12:52 02-tabelas.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Dec 14 12:54 03-viz
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 12:54 03-viz_files
+    -rw-r--r--  1 flaviovdf flaviovdf 863K Dec 14 13:12 03-viz.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  85K Dec 14 12:54 03-viz.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Dec 14 12:54 04-stat
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 12:54 04-stat_files
+    -rw-r--r--  1 flaviovdf flaviovdf 286K Dec 14 13:13 04-stat.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  26K Dec 14 12:54 04-stat.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Dec 14 12:55 05-prob
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 12:55 05-prob_files
     -rw-r--r--  1 flaviovdf flaviovdf 929K Dec 14 12:40 05-prob.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  42K Dec 14 12:46 05-prob.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Dec 14 12:46 27-revisao
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 12:46 27-revisao_files
+    -rw-r--r--  1 flaviovdf flaviovdf  42K Dec 14 12:55 05-prob.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Dec 14 12:55 27-revisao
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 12:55 27-revisao_files
     -rw-r--r--  1 flaviovdf flaviovdf  63K Dec 14 12:37 27-revisao.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  16K Dec 14 12:46 27-revisao.md
+    -rw-r--r--  1 flaviovdf flaviovdf  16K Dec 14 12:55 27-revisao.md
     -rw-r--r--  1 flaviovdf flaviovdf 172K Nov 30 09:22 capital.json
     -rw-r--r--  1 flaviovdf flaviovdf   85 Dec 14 12:42 compile_all.sh
     -rw-r--r--  1 flaviovdf flaviovdf 1016 Dec 14 12:42 compile_notebook.sh
     -rw-r--r--  1 flaviovdf flaviovdf 401K Nov 30 09:22 dom-casmurro.txt
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 12:50 .ipynb_checkpoints
-    -rw-r--r--  1 flaviovdf flaviovdf  18K Dec 14 12:50 .nbgrader.log
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 13:04 .ipynb_checkpoints
+    -rw-r--r--  1 flaviovdf flaviovdf  26K Dec 14 13:13 .nbgrader.log
 
 
 Vamos identificar qual a cara de um csv. O programa `head` imprime as primeiras `n` linhas de um arquivo.
