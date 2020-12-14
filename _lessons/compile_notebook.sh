@@ -21,8 +21,8 @@ if [[ -d $fname_noext/$support_files ]]; then
   rm -rf $fname_noext/$support_files
 fi
 
-jupyter nbconvert --execute --ExecutePreprocessor.enabled=True \
-        --ExecutePreprocessor.timeout=600 --to notebook --inplace $1
+# jupyter nbconvert --execute --ExecutePreprocessor.enabled=True \
+#         --ExecutePreprocessor.timeout=600 --to notebook --inplace $1
 jupyter nbconvert --execute --ExecutePreprocessor.enabled=True \
         --ExecutePreprocessor.timeout=600 --to markdown $1
 

@@ -80,3 +80,159 @@
 [NotebookApp | INFO] Shutting down 2 kernels
 [NotebookApp | INFO] Kernel shutdown: 8bee9338-1ed8-46da-bee4-0ea0a6d6c74f
 [NotebookApp | INFO] Kernel shutdown: a54f94d0-d070-457e-bf2d-41a4ecd77c07
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/flaviovdf/workspace/icd-ufmg/icd-ufmg.github.io/_lessons
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=95f4e3fe5698d719035751db1faa248c972b3ac75d0ff4a3
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-121843-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=95f4e3fe5698d719035751db1faa248c972b3ac75d0ff4a3
+[NotebookApp | WARNING] Notebook apresentacao/apresentacao.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 1176c685-f239-490f-9d4e-e23c15b8e7d0
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 1176c685-f239-490f-9d4e-e23c15b8e7d0
+[NotebookApp | WARNING] Notebook estatisticas/estatisticas.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 28399568-0b6f-4048-ac53-6dce35f5df36
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 28399568-0b6f-4048-ac53-6dce35f5df36
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | WARNING] Notebook apresentacao/apresentacao.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /estatisticas/estatisticas.ipynb
+[NotebookApp | WARNING] Notebook estatisticas/estatisticas.ipynb is not trusted
+[NotebookApp | INFO] Starting buffering for 28399568-0b6f-4048-ac53-6dce35f5df36:792454c83af5411e8d01267e69d55dab
+[NotebookApp | INFO] Kernel restarted: 28399568-0b6f-4048-ac53-6dce35f5df36
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 28399568-0b6f-4048-ac53-6dce35f5df36
+[NotebookApp | INFO] Restoring connection for 28399568-0b6f-4048-ac53-6dce35f5df36:792454c83af5411e8d01267e69d55dab
+[NotebookApp | INFO] Replaying 6 buffered messages
+[NotebookApp | WARNING] Notebook viz/viz.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 950fae2e-9a1a-4e89-91c1-6b5ee79dc581
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 950fae2e-9a1a-4e89-91c1-6b5ee79dc581
+[NotebookApp | INFO] Saving file at /estatisticas/estatisticas.ipynb
+[NotebookApp | INFO] Starting buffering for 28399568-0b6f-4048-ac53-6dce35f5df36:792454c83af5411e8d01267e69d55dab
+[NotebookApp | INFO] Kernel restarted: 28399568-0b6f-4048-ac53-6dce35f5df36
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 28399568-0b6f-4048-ac53-6dce35f5df36
+[NotebookApp | INFO] Restoring connection for 28399568-0b6f-4048-ac53-6dce35f5df36:792454c83af5411e8d01267e69d55dab
+[NotebookApp | INFO] Replaying 6 buffered messages
+[NotebookApp | INFO] Starting buffering for 950fae2e-9a1a-4e89-91c1-6b5ee79dc581:dfeeff6c3af04b508251245705b0a991
+[NotebookApp | INFO] Kernel restarted: 950fae2e-9a1a-4e89-91c1-6b5ee79dc581
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 950fae2e-9a1a-4e89-91c1-6b5ee79dc581
+[NotebookApp | INFO] Restoring connection for 950fae2e-9a1a-4e89-91c1-6b5ee79dc581:dfeeff6c3af04b508251245705b0a991
+[NotebookApp | INFO] Replaying 6 buffered messages
+[NotebookApp | INFO] Starting buffering for 950fae2e-9a1a-4e89-91c1-6b5ee79dc581:dfeeff6c3af04b508251245705b0a991
+[NotebookApp | INFO] Kernel restarted: 950fae2e-9a1a-4e89-91c1-6b5ee79dc581
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 950fae2e-9a1a-4e89-91c1-6b5ee79dc581
+[NotebookApp | INFO] Restoring connection for 950fae2e-9a1a-4e89-91c1-6b5ee79dc581:dfeeff6c3af04b508251245705b0a991
+[NotebookApp | INFO] Replaying 6 buffered messages
+[NotebookApp | WARNING] Notebook tabelas/tabelas.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: a1f23eb9-9fb0-4660-9149-a0809f19fdd8
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel a1f23eb9-9fb0-4660-9149-a0809f19fdd8
+[NotebookApp | INFO] Saving file at /viz/viz.ipynb
+[NotebookApp | WARNING] Notebook apresentacao/apresentacao.ipynb is not trusted
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 1176c685-f239-490f-9d4e-e23c15b8e7d0
+[NotebookApp | INFO] Kernel shutdown: 1176c685-f239-490f-9d4e-e23c15b8e7d0
+[NotebookApp | INFO] Kernel shutdown: 950fae2e-9a1a-4e89-91c1-6b5ee79dc581
+[NotebookApp | INFO] Kernel shutdown: 28399568-0b6f-4048-ac53-6dce35f5df36
+[NotebookApp | INFO] Kernel shutdown: a1f23eb9-9fb0-4660-9149-a0809f19fdd8
+[NotebookApp | WARNING] 404 DELETE /api/sessions/774c3906-d953-4af1-923d-f039c2c74c14 (127.0.0.1): Session not found: session_id='774c3906-d953-4af1-923d-f039c2c74c14'
+[NotebookApp | WARNING] Session not found: session_id='774c3906-d953-4af1-923d-f039c2c74c14'
+[NotebookApp | WARNING] 404 DELETE /api/sessions/774c3906-d953-4af1-923d-f039c2c74c14 (127.0.0.1) 2.50ms referer=http://localhost:8888/tree
+[NotebookApp | WARNING] 404 DELETE /api/sessions/e86dd918-171d-4658-9819-fef42124f4ad (127.0.0.1): Session not found: session_id='e86dd918-171d-4658-9819-fef42124f4ad'
+[NotebookApp | WARNING] Session not found: session_id='e86dd918-171d-4658-9819-fef42124f4ad'
+[NotebookApp | WARNING] 404 DELETE /api/sessions/e86dd918-171d-4658-9819-fef42124f4ad (127.0.0.1) 2.37ms referer=http://localhost:8888/tree
+[NotebookApp | WARNING] 404 DELETE /api/sessions/f0e46c9c-afa6-4947-8dd0-5a89a755aa83 (127.0.0.1): Session not found: session_id='f0e46c9c-afa6-4947-8dd0-5a89a755aa83'
+[NotebookApp | WARNING] Session not found: session_id='f0e46c9c-afa6-4947-8dd0-5a89a755aa83'
+[NotebookApp | WARNING] 404 DELETE /api/sessions/f0e46c9c-afa6-4947-8dd0-5a89a755aa83 (127.0.0.1) 2.83ms referer=http://localhost:8888/tree
+[NotebookApp | INFO] Saving file at /viz/viz.ipynb
+[NotebookApp | INFO] Saving file at /viz/viz.ipynb
+[NotebookApp | INFO] Saving file at /estatisticas/estatisticas.ipynb
+[NotebookApp | INFO] Saving file at /tabelas/tabelas.ipynb
+[NotebookApp | WARNING] Notebook tabelas/tabelas.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /apresentacao/apresentacao.ipynb
+[NotebookApp | WARNING] Notebook apresentacao/apresentacao.ipynb is not trusted
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down 0 kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/flaviovdf/workspace/icd-ufmg/icd-ufmg.github.io/_lessons
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=49ebd36df37041269607856a7240873c478c483b2ec30102
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-131485-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=49ebd36df37041269607856a7240873c478c483b2ec30102
+[NotebookApp | WARNING] Notebook probabilidade/probabilidade.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 0cc365e0-bdfc-47fe-8031-1dfb1b9cffda
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 0cc365e0-bdfc-47fe-8031-1dfb1b9cffda
+[NotebookApp | WARNING] Notebook apresentacao/apresentacao.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 2ecc0bca-2ca0-4e02-9d00-e6e08eac7a34
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 2ecc0bca-2ca0-4e02-9d00-e6e08eac7a34
+[NotebookApp | WARNING] Notebook estatisticas/estatisticas.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: afae4b40-becb-41e0-a34e-2cb4481ccc19
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel afae4b40-becb-41e0-a34e-2cb4481ccc19
+[NotebookApp | INFO] Saving file at /probabilidade/probabilidade.ipynb
+[NotebookApp | WARNING] Notebook probabilidade/probabilidade.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /estatisticas/estatisticas.ipynb
+[NotebookApp | WARNING] Notebook estatisticas/estatisticas.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /probabilidade/probabilidade.ipynb
+[NotebookApp | WARNING] Notebook probabilidade/probabilidade.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /probabilidade/probabilidade.ipynb
+[NotebookApp | WARNING] Notebook probabilidade/probabilidade.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /estatisticas/estatisticas.ipynb
+[NotebookApp | WARNING] Notebook estatisticas/estatisticas.ipynb is not trusted
+[NotebookApp | INFO] Starting buffering for afae4b40-becb-41e0-a34e-2cb4481ccc19:57fa802cb7974adfb388370a23d175f6
+[NotebookApp | INFO] Starting buffering for 2ecc0bca-2ca0-4e02-9d00-e6e08eac7a34:fb46df7d670043198044c3d9655c90b3
+[NotebookApp | INFO] Starting buffering for 0cc365e0-bdfc-47fe-8031-1dfb1b9cffda:3e201a4d77d84ddda1c077c025597703
+[NotebookApp | WARNING] Notebook probabilidade/probabilidade.ipynb is not trusted
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 0cc365e0-bdfc-47fe-8031-1dfb1b9cffda
+[NotebookApp | INFO] Saving file at /probabilidade/probabilidade.ipynb
+[NotebookApp | WARNING] Notebook probabilidade/probabilidade.ipynb is not trusted
+[NotebookApp | WARNING] 404 GET /api/contents/probabilidade?type=directory&_=1607957917016 (127.0.0.1): No such file or directory: probabilidade
+[NotebookApp | WARNING] No such file or directory: probabilidade
+[NotebookApp | WARNING] 404 GET /api/contents/probabilidade?type=directory&_=1607957917016 (127.0.0.1) 16.98ms referer=http://localhost:8888/tree/probabilidade
+[NotebookApp | INFO] Starting buffering for 0cc365e0-bdfc-47fe-8031-1dfb1b9cffda:b5f8bc74d20d4700b57dc08115dd0eaf
+[NotebookApp | WARNING] 404 GET /api/contents/probabilidade?type=directory&_=1607957917019 (127.0.0.1): No such file or directory: probabilidade
+[NotebookApp | WARNING] No such file or directory: probabilidade
+[NotebookApp | WARNING] 404 GET /api/contents/probabilidade?type=directory&_=1607957917019 (127.0.0.1) 1.83ms referer=http://localhost:8888/tree/probabilidade
+[NotebookApp | INFO] 302 GET / (::1) 0.43ms
+[NotebookApp | WARNING] Notebook 02-tabelas.ipynb is not trusted
+[NotebookApp | WARNING] Notebook 03-viz.ipynb is not trusted
+[NotebookApp | WARNING] Notebook 04-stat.ipynb is not trusted
+[NotebookApp | WARNING] Notebook 05-prob.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 461a57d7-79b3-4dbf-8d54-317e070e2c51
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 461a57d7-79b3-4dbf-8d54-317e070e2c51
+[NotebookApp | INFO] Kernel started: 03d22b59-896a-4223-9fdd-65c773a5a153
+[NotebookApp | WARNING] Notebook 27-revisao.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: c47d84e6-72a7-42f1-a5fe-804c2bce7543
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 03d22b59-896a-4223-9fdd-65c773a5a153
+[NotebookApp | INFO] Kernel started: 5990ba54-3836-4c2d-a6cc-769c5f5059b0
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel c47d84e6-72a7-42f1-a5fe-804c2bce7543
+[NotebookApp | INFO] Kernel started: e4d6b071-bda5-4ccf-ad09-d65f0885f8b6
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 5990ba54-3836-4c2d-a6cc-769c5f5059b0
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel e4d6b071-bda5-4ccf-ad09-d65f0885f8b6
+[NotebookApp | INFO] Saving file at /03-viz.ipynb
+[NotebookApp | WARNING] Notebook 03-viz.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /04-stat.ipynb
+[NotebookApp | WARNING] Notebook 04-stat.ipynb is not trusted
+[NotebookApp | INFO] Starting buffering for 461a57d7-79b3-4dbf-8d54-317e070e2c51:52a50d5afc8a4331816216167daba90c
+[NotebookApp | INFO] Starting buffering for 03d22b59-896a-4223-9fdd-65c773a5a153:f95b56b5bdd641a2937839558fd1c5c0
+[NotebookApp | INFO] Starting buffering for c47d84e6-72a7-42f1-a5fe-804c2bce7543:7923e7adc01f4ea99c7453d69f43683b
+[NotebookApp | INFO] Starting buffering for 5990ba54-3836-4c2d-a6cc-769c5f5059b0:4a71176132aa401b8fd8f163f8c43f05
+[NotebookApp | INFO] Starting buffering for e4d6b071-bda5-4ccf-ad09-d65f0885f8b6:279817a515ed4efb937995266dbf5ccb
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down 8 kernels
+[NotebookApp | INFO] Kernel shutdown: 0cc365e0-bdfc-47fe-8031-1dfb1b9cffda
+[NotebookApp | INFO] Kernel shutdown: 2ecc0bca-2ca0-4e02-9d00-e6e08eac7a34
+[NotebookApp | INFO] Kernel shutdown: afae4b40-becb-41e0-a34e-2cb4481ccc19
+[NotebookApp | INFO] Kernel shutdown: 461a57d7-79b3-4dbf-8d54-317e070e2c51
+[NotebookApp | INFO] Kernel shutdown: 03d22b59-896a-4223-9fdd-65c773a5a153
+[NotebookApp | INFO] Kernel shutdown: c47d84e6-72a7-42f1-a5fe-804c2bce7543
+[NotebookApp | INFO] Kernel shutdown: 5990ba54-3836-4c2d-a6cc-769c5f5059b0
+[NotebookApp | INFO] Kernel shutdown: e4d6b071-bda5-4ccf-ad09-d65f0885f8b6
