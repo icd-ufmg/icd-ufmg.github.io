@@ -42,7 +42,7 @@ antes de entregar seu projeto.
 | 1 | Primeira Entrevista                | 2 pto  | 27 Jan             |
 | 1 | Segunda Entrevista                 | 2 pto  | 28 Jan             |
 | 1 | Terceira Entrevista                | 2 pto  | 26 Mar             |
-| 1 | Entrega                            | 21 ptos| 26 Mar             |
+| 1 | Entrega                            | 23 ptos| 26 Mar             |
 
 Com base no cronograma abaixo, você vai ser avaliado nas seguintes tarefas:
 1. Definir o Grupo + Tema (1 pts)
@@ -67,7 +67,7 @@ Com base no cronograma abaixo, você vai ser avaliado nas seguintes tarefas:
        comparar modelos.
     1. Pelo menos uma regressão e/ou uma classificação (9pts)
 
-1. No seu relatório, você deve apresentar pelo menos os seguintes pontos:
+1. No seu relatório, você deve apresentar pelo menos os seguintes pontos (2pts):
     1. Introdução com Motivação e Pergunta de Pesquisa
     1. Metodologia
         1. Descreva sua base
@@ -76,6 +76,8 @@ Com base no cronograma abaixo, você vai ser avaliado nas seguintes tarefas:
         1. Testes de hipótese podem vir aqui.
     1. Previsão (uma ou duas subseções dependendo dos modelos utilizados)
     1. Conclusões
+    1. Aqui os pontos são pela organização do relatório! Faça o mesmo em
+       Jupyter ou em Latex
 
 1. Vídeo no Youtube 5 minutos. Pode ser um vídeo só dos slides!!
    Com as falas, claro. (3pts).
