@@ -46,8 +46,13 @@ As datas de entregas dos quizzes são as mesmas do término de cada módulo.
 
 ## Listas
 
-
+Cada módulo será acompanhado de três listas Python. As listas são na forma de
+*Notebooks Jupyter*. Cada lista serve para fixar conceitos e praticar a parte
+de código da matéria. Lives de código serão feitas para o entendimento dos
+notebooks de exemplo.
 
 ## Projeto
 
-Em breve!
+Uma boa parte da nota da disciplina é na forma de um projeto. Atente para as
+datas de entregas e quantos pontos vale cada etapa. No mais, leia a descrição
+no link ao lado.
