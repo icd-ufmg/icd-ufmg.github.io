@@ -33,6 +33,9 @@ Live
   : [Data100 Capt-6](https://www.textbook.ds100.org/ch/06/viz_intro.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLj07qACbfwrXJf2_-F0oAq)
 
+Live
+: [Live Cobrindo as Últimas Aulas](https://www.youtube.com/watch?v=8cZPbeugfe8)
+
 14 Dez
 : [Estatísticas Básicas]({{ site.baseurl }}{% link _lessons/04-stat.md %})
   : Sem Leitura Extra
