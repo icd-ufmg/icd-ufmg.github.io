@@ -47,4 +47,4 @@ Live
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLRQi3cQ9FWDriusBFYBaU7)
 
 19 Dez
-: Revisão Síncrona
+: [Revisão Síncrona](https://www.youtube.com/watch?v=e7Jq6AQ51SE)
