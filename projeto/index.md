@@ -40,7 +40,7 @@ antes de entregar seu projeto.
 |---|------------------------------------|--------|--------------------|
 | 1 | Tema e Equipe                      | 1 pto  | 31 Dez             |
 | 1 | Primeira Entrevista                | 2 pto  | 27 Jan             |
-| 1 | Segunda Entrevista                 | 2 pto  | 28 Jan             |
+| 1 | Segunda Entrevista                 | 2 pto  | 28 Fev             |
 | 1 | Terceira Entrevista                | 2 pto  | 26 Mar             |
 | 1 | Entrega                            | 23 ptos| 26 Mar             |
 
