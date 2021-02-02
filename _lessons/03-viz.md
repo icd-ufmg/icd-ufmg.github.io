@@ -1,4 +1,3 @@
----
 layout: page
 title: Exploração e Visualização
 nav_order: 3
@@ -667,259 +666,9 @@ df[cols]
       <td>7</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>1910</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>1910</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>1910</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>1911</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>1911</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>1911</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>1911</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>1911</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>1911</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>1912</td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>1912</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>1912</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>1912</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>1912</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>1912</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>1912</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>1912</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>1912</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>1912</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>1912</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>1912</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>1912</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>1913</td>
-      <td>21</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>1913</td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>1913</td>
-      <td>8</td>
-    </tr>
-    <tr>
       <th>...</th>
       <td>...</td>
       <td>...</td>
-    </tr>
-    <tr>
-      <th>5647396</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647397</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647398</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647399</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647400</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647401</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647402</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647403</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647404</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647405</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647406</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647407</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647408</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647409</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647410</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647411</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647412</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647413</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647414</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647415</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647416</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647417</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647418</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647419</th>
-      <td>2014</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647420</th>
-      <td>2014</td>
-      <td>5</td>
     </tr>
     <tr>
       <th>5647421</th>
@@ -1031,7 +780,16 @@ plt.ylabel('Num Births');
 ```
 
 
-![png](03-viz_files/03-viz_15_0.png)
+
+
+    Text(0, 0.5, 'Num Births')
+
+
+
+
+    
+![png](03-viz_files/03-viz_15_1.png)
+    
 
 
 Pequena gambiarra abaixo, vou colocar cada ano no formato 1-1-ANO. Assim o pandas sabe criar uma data.
@@ -1204,7 +962,16 @@ plt.xlabel('');
 ```
 
 
-![png](03-viz_files/03-viz_21_0.png)
+
+
+    Text(0.5, 0, '')
+
+
+
+
+    
+![png](03-viz_files/03-viz_21_1.png)
+    
 
 
 ## matplotlib
@@ -1247,7 +1014,9 @@ plt.show()
 ```
 
 
+    
 ![png](03-viz_files/03-viz_25_0.png)
+    
 
 
 Podemos mudar a aparência usando estilos.
@@ -1276,7 +1045,9 @@ plt.show()
 ```
 
 
+    
 ![png](03-viz_files/03-viz_28_0.png)
+    
 
 
 Em particular, eu acho bom usar os estilos colorblind. Ajudam a fazer artigos científicos e garantir que todos entendam eu plot.
@@ -1290,32 +1061,32 @@ plt.style.available
 
 
 
-    ['bmh',
-     'fivethirtyeight',
-     'seaborn-pastel',
-     'seaborn-white',
-     'seaborn-bright',
-     'tableau-colorblind10',
+    ['Solarize_Light2',
+     '_classic_test_patch',
+     'bmh',
      'classic',
-     'seaborn-whitegrid',
-     'grayscale',
-     'seaborn-ticks',
-     'seaborn-darkgrid',
      'dark_background',
-     'seaborn-talk',
-     'seaborn-paper',
-     'ggplot',
      'fast',
-     'seaborn-colorblind',
-     'seaborn-muted',
-     'seaborn-dark-palette',
-     'Solarize_Light2',
-     'seaborn-deep',
+     'fivethirtyeight',
+     'ggplot',
+     'grayscale',
      'seaborn',
-     '_classic_test',
-     'seaborn-poster',
+     'seaborn-bright',
+     'seaborn-colorblind',
+     'seaborn-dark',
+     'seaborn-dark-palette',
+     'seaborn-darkgrid',
+     'seaborn-deep',
+     'seaborn-muted',
      'seaborn-notebook',
-     'seaborn-dark']
+     'seaborn-paper',
+     'seaborn-pastel',
+     'seaborn-poster',
+     'seaborn-talk',
+     'seaborn-ticks',
+     'seaborn-white',
+     'seaborn-whitegrid',
+     'tableau-colorblind10']
 
 
 
@@ -1384,7 +1155,9 @@ plt.show()
 ```
 
 
+    
 ![png](03-viz_files/03-viz_34_0.png)
+    
 
 
 
@@ -1403,7 +1176,9 @@ plt.ylabel('Cosine')
 
 
 
+    
 ![png](03-viz_files/03-viz_35_1.png)
+    
 
 
 ## Movies Dataset
@@ -1518,7 +1293,16 @@ mean_g.sort_values()[::-1].plot.bar(edgecolor='k');
 ```
 
 
-![png](03-viz_files/03-viz_40_0.png)
+
+
+    <AxesSubplot:xlabel='Studio'>
+
+
+
+
+    
+![png](03-viz_files/03-viz_40_1.png)
+    
 
 
 
@@ -1535,7 +1319,9 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 ```
 
 
+    
 ![png](03-viz_files/03-viz_41_0.png)
+    
 
 
 
@@ -1555,7 +1341,9 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 ```
 
 
+    
 ![png](03-viz_files/03-viz_42_0.png)
+    
 
 
 ## Base de actors
@@ -2067,7 +1855,9 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 ```
 
 
+    
 ![png](03-viz_files/03-viz_45_0.png)
+    
 
 
 Obtendo a densidade de pontos em cada barra. Note que isto nem sempre vai traduzir para um valor entre `[0, 1]`. Depende do eixo-x. 
@@ -2086,7 +1876,9 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 ```
 
 
+    
 ![png](03-viz_files/03-viz_47_0.png)
+    
 
 
 
@@ -2104,7 +1896,9 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 ```
 
 
+    
 ![png](03-viz_files/03-viz_48_0.png)
+    
 
 
 
@@ -2122,7 +1916,9 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 ```
 
 
+    
 ![png](03-viz_files/03-viz_49_0.png)
+    
 
 
 # Problemas de escala
@@ -2151,7 +1947,9 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 ```
 
 
+    
 ![png](03-viz_files/03-viz_51_0.png)
+    
 
 
 
@@ -2174,7 +1972,9 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 ```
 
 
+    
 ![png](03-viz_files/03-viz_52_0.png)
+    
 
 
 # Dados 2d com e leitura de JSON
@@ -2214,125 +2014,125 @@ df.head()
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>ano_dois</th>
-      <th>ano_um</th>
-      <th>cargo_pleiteado_1</th>
-      <th>cargo_pleiteado_2</th>
-      <th>cod_unidade_eleitoral_1</th>
-      <th>cod_unidade_eleitoral_2</th>
-      <th>cpf</th>
       <th>estado</th>
-      <th>nome_urna</th>
       <th>patrimonio_eleicao_1</th>
       <th>patrimonio_eleicao_2</th>
+      <th>nome_urna</th>
+      <th>cpf</th>
+      <th>sigla_partido</th>
+      <th>cod_unidade_eleitoral_1</th>
+      <th>cod_unidade_eleitoral_2</th>
+      <th>unidade_eleitoral</th>
+      <th>cargo_pleiteado_1</th>
+      <th>cargo_pleiteado_2</th>
+      <th>ano_um</th>
+      <th>ano_dois</th>
       <th>sequencial_candidato_1</th>
       <th>sequencial_candidato_2</th>
-      <th>sigla_partido</th>
       <th>situacao_eleicao_1</th>
       <th>situacao_eleicao_2</th>
-      <th>unidade_eleitoral</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>2018</td>
-      <td>2014</td>
-      <td>DEPUTADO FEDERAL</td>
-      <td>DEPUTADO FEDERAL</td>
       <td>MG</td>
-      <td>MG</td>
-      <td>1608657</td>
-      <td>MG</td>
-      <td>Stefano Aguiar</td>
       <td>2326963.85</td>
       <td>2890296.74</td>
+      <td>Stefano Aguiar</td>
+      <td>1608657</td>
+      <td>PSD</td>
+      <td>MG</td>
+      <td>MG</td>
+      <td>Minas Gerais</td>
+      <td>DEPUTADO FEDERAL</td>
+      <td>DEPUTADO FEDERAL</td>
+      <td>2014</td>
+      <td>2018</td>
       <td>130000001189</td>
       <td>130000613225</td>
-      <td>PSD</td>
       <td>ELEITO</td>
       <td>ELEITO</td>
-      <td>Minas Gerais</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2018</td>
-      <td>2014</td>
-      <td>DEPUTADO FEDERAL</td>
-      <td>DEPUTADO FEDERAL</td>
       <td>RJ</td>
-      <td>RJ</td>
-      <td>7487738</td>
-      <td>RJ</td>
-      <td>Altineu Cortes</td>
       <td>4239563.82</td>
       <td>3943907.61</td>
+      <td>Altineu Cortes</td>
+      <td>7487738</td>
+      <td>PR</td>
+      <td>RJ</td>
+      <td>RJ</td>
+      <td>Rio De Janeiro</td>
+      <td>DEPUTADO FEDERAL</td>
+      <td>DEPUTADO FEDERAL</td>
+      <td>2014</td>
+      <td>2018</td>
       <td>190000001858</td>
       <td>190000604181</td>
-      <td>PR</td>
       <td>ELEITO</td>
       <td>ELEITO</td>
-      <td>Rio De Janeiro</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2018</td>
-      <td>2014</td>
-      <td>DEPUTADO FEDERAL</td>
-      <td>DEPUTADO FEDERAL</td>
       <td>BA</td>
-      <td>BA</td>
-      <td>31226540</td>
-      <td>BA</td>
-      <td>Mário Negromonte Jr</td>
       <td>1077668.74</td>
       <td>2281417.64</td>
+      <td>Mário Negromonte Jr</td>
+      <td>31226540</td>
+      <td>PP</td>
+      <td>BA</td>
+      <td>BA</td>
+      <td>Bahia</td>
+      <td>DEPUTADO FEDERAL</td>
+      <td>DEPUTADO FEDERAL</td>
+      <td>2014</td>
+      <td>2018</td>
       <td>50000000167</td>
       <td>50000605225</td>
-      <td>PP</td>
       <td>ELEITO</td>
       <td>ELEITO</td>
-      <td>Bahia</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2018</td>
-      <td>2014</td>
-      <td>VICE-GOVERNADOR</td>
-      <td>DEPUTADO FEDERAL</td>
       <td>CE</td>
-      <td>CE</td>
-      <td>113735391</td>
-      <td>CE</td>
-      <td>Roberto Pessoa</td>
       <td>14399524.97</td>
       <td>13160762.14</td>
+      <td>Roberto Pessoa</td>
+      <td>113735391</td>
+      <td>PSDB</td>
+      <td>CE</td>
+      <td>CE</td>
+      <td>Ceará</td>
+      <td>VICE-GOVERNADOR</td>
+      <td>DEPUTADO FEDERAL</td>
+      <td>2014</td>
+      <td>2018</td>
       <td>60000000604</td>
       <td>60000611570</td>
-      <td>PSDB</td>
       <td>NÃO ELEITO</td>
       <td>ELEITO</td>
-      <td>Ceará</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>2018</td>
-      <td>2014</td>
-      <td>DEPUTADO FEDERAL</td>
-      <td>DEPUTADO FEDERAL</td>
       <td>SP</td>
-      <td>SP</td>
-      <td>168780860</td>
-      <td>SP</td>
-      <td>Vitor Lippi</td>
       <td>713217.64</td>
       <td>972916.79</td>
+      <td>Vitor Lippi</td>
+      <td>168780860</td>
+      <td>PSDB</td>
+      <td>SP</td>
+      <td>SP</td>
+      <td>São Paulo</td>
+      <td>DEPUTADO FEDERAL</td>
+      <td>DEPUTADO FEDERAL</td>
+      <td>2014</td>
+      <td>2018</td>
       <td>250000001354</td>
       <td>250000605413</td>
-      <td>PSDB</td>
       <td>ELEITO</td>
       <td>ELEITO</td>
-      <td>São Paulo</td>
     </tr>
   </tbody>
 </table>
@@ -2358,5 +2158,7 @@ plt.show()
 ```
 
 
+    
 ![png](03-viz_files/03-viz_57_0.png)
+    
 

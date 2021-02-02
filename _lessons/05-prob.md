@@ -1,4 +1,3 @@
----
 layout: page
 title: Revisão Probabilidade
 nav_order: 5
@@ -92,7 +91,7 @@ np.random.rand()
 
 
 
-    0.338144486266044
+    0.05012622897102659
 
 
 
@@ -105,7 +104,7 @@ np.random.rand()
 
 
 
-    3.7135138408121042
+    1.0073174595659482
 
 
 
@@ -119,7 +118,7 @@ round(1 + np.random.rand() * 5)
 
 
 
-    2
+    4
 
 
 
@@ -152,7 +151,7 @@ np.random.randint(1, 7)
 
 
 
-    5
+    1
 
 
 
@@ -176,12 +175,12 @@ pd.Series(count)
 
 
 
-    0    1596.0
-    1    1696.0
-    2    1692.0
-    3    1680.0
-    4    1686.0
-    5    1650.0
+    0    1623.0
+    1    1715.0
+    2    1661.0
+    3    1692.0
+    4    1684.0
+    5    1625.0
     dtype: float64
 
 
@@ -203,7 +202,9 @@ plt.xlabel('Valor do dado - x')
 
 
 
+    
 ![png](05-prob_files/05-prob_13_1.png)
+    
 
 
 Podemos converter para probabilidades
@@ -218,7 +219,7 @@ prob
 
 
 
-    array([0.1596, 0.1696, 0.1692, 0.168 , 0.1686, 0.165 ])
+    array([0.1623, 0.1715, 0.1661, 0.1692, 0.1684, 0.1625])
 
 
 
@@ -239,7 +240,9 @@ plt.xlabel('Valor do dado - x')
 
 
 
+    
 ![png](05-prob_files/05-prob_16_1.png)
+    
 
 
 
@@ -259,7 +262,9 @@ plt.xlabel('Valor do dado - x')
 
 
 
+    
 ![png](05-prob_files/05-prob_17_1.png)
+    
 
 
 ## Leis dos Grandes Números
@@ -286,12 +291,14 @@ plt.plot(p6)
 
 
 
-    [<matplotlib.lines.Line2D at 0x7f57f870c128>]
+    [<matplotlib.lines.Line2D at 0x7fdf8ac6b160>]
 
 
 
 
+    
 ![png](05-prob_files/05-prob_19_1.png)
+    
 
 
 ## Probabilidade Condicional
@@ -369,8 +376,8 @@ print ("P(both | either): ", both_girls / either_girl)
 
 ```
 
-    P(both | older): 0.49766022380467956
-    P(both | either):  0.32858678130037616
+    P(both | older): 0.5045834994021523
+    P(both | either):  0.33549754869484566
 
 
 Podemos resolver de forma mais simples com numpy + pandas
@@ -387,11 +394,11 @@ X
 
     array([['boy', 'boy'],
            ['girl', 'girl'],
-           ['boy', 'girl'],
+           ['girl', 'boy'],
            ...,
+           ['boy', 'boy'],
            ['girl', 'boy'],
-           ['girl', 'boy'],
-           ['girl', 'boy']], dtype='<U4')
+           ['boy', 'girl']], dtype='<U4')
 
 
 
@@ -440,8 +447,8 @@ df
     </tr>
     <tr>
       <th>2</th>
-      <td>boy</td>
       <td>girl</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>3</th>
@@ -450,131 +457,6 @@ df
     </tr>
     <tr>
       <th>4</th>
-      <td>boy</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>girl</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>girl</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>girl</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>boy</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>girl</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>girl</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>girl</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>boy</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>girl</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>boy</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>girl</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>boy</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>girl</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>boy</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>girl</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>girl</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>29</th>
       <td>girl</td>
       <td>boy</td>
     </tr>
@@ -584,134 +466,9 @@ df
       <td>...</td>
     </tr>
     <tr>
-      <th>4970</th>
-      <td>girl</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>4971</th>
-      <td>girl</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>4972</th>
-      <td>girl</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>4973</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>4974</th>
-      <td>boy</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>4975</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>4976</th>
-      <td>girl</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>4977</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>4978</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>4979</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>4980</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>4981</th>
-      <td>boy</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>4982</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>4983</th>
-      <td>girl</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>4984</th>
-      <td>boy</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>4985</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>4986</th>
-      <td>boy</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>4987</th>
-      <td>girl</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>4988</th>
-      <td>boy</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>4989</th>
-      <td>girl</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>4990</th>
-      <td>girl</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>4991</th>
-      <td>girl</td>
-      <td>boy</td>
-    </tr>
-    <tr>
-      <th>4992</th>
-      <td>girl</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>4993</th>
-      <td>girl</td>
-      <td>girl</td>
-    </tr>
-    <tr>
-      <th>4994</th>
-      <td>boy</td>
-      <td>girl</td>
-    </tr>
-    <tr>
       <th>4995</th>
-      <td>boy</td>
-      <td>boy</td>
+      <td>girl</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>4996</th>
@@ -720,7 +477,7 @@ df
     </tr>
     <tr>
       <th>4997</th>
-      <td>girl</td>
+      <td>boy</td>
       <td>boy</td>
     </tr>
     <tr>
@@ -730,8 +487,8 @@ df
     </tr>
     <tr>
       <th>4999</th>
-      <td>girl</td>
       <td>boy</td>
+      <td>girl</td>
     </tr>
   </tbody>
 </table>
@@ -750,7 +507,7 @@ len(filtro)
 
 
 
-    2543
+    2485
 
 
 
@@ -763,7 +520,7 @@ len(filtro)
 
 
 
-    0.5066991473812423
+    0.4985789687373122
 
 
 
@@ -777,8 +534,8 @@ df[df['second'] == 'girl'].groupby('first').size()
 
 
     first
-    boy     1295
-    girl    1248
+    boy     1257
+    girl    1228
     dtype: int64
 
 
@@ -886,7 +643,9 @@ plt.ylabel('P(X = x)')
 
 
 
+    
 ![png](05-prob_files/05-prob_33_1.png)
+    
 
 
 A probabilidade de que uma variável aleatória que siga essa distribuição esteja entre $0.2$ e $0.3$ é de $1/10$, como você esperaria. O `random.random()` do Python é uma variável (pseudo) aleatória com uma densidade uniforme.
@@ -919,7 +678,9 @@ plt.show()
 ```
 
 
+    
 ![png](05-prob_files/05-prob_36_0.png)
+    
 
 
 ## A distribuição normal
@@ -954,7 +715,9 @@ plt.show()
 ```
 
 
+    
 ![png](05-prob_files/05-prob_40_0.png)
+    
 
 
 Quando $\mu = 0$ e $\sigma = 1$, a distribuição é chamada de distribuição normal padrão. Se $Z$ é uma variável aleatória normal padrão, então acontece que:
@@ -1005,7 +768,9 @@ plt.show()
 ```
 
 
+    
 ![png](05-prob_files/05-prob_44_0.png)
+    
 
 
 Às vezes, precisamos inverter a `normal_cdf` para encontrar o valor correspondente a uma probabilidade especificada. O inverso da CDF da distribuição normal é:
@@ -1071,7 +836,7 @@ Funções inversas são úteis para simular dados. Isto é, vamos usar a funçã
 #In: 
 x = np.random.rand(1000)
 y = inverse_normal_cdf(x)
-plt.hist(y, bins=20, normed=True, label='Simulado', edgecolor='k')
+plt.hist(y, bins=20, density=True, label='Simulado', edgecolor='k')
 x_lin = np.linspace(y.min(), y.max())
 plt.plot(x_lin, normal_pdf(x_lin), label='Real')
 plt.xlabel('x')
@@ -1079,20 +844,17 @@ plt.ylabel('p(x)')
 plt.legend()
 ```
 
-    /home/flaviovdf/miniconda3/envs/teaching/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6521: MatplotlibDeprecationWarning: 
-    The 'normed' kwarg was deprecated in Matplotlib 2.1 and will be removed in 3.1. Use 'density' instead.
-      alternative="'density'", removal="3.1")
+
+
+
+    <matplotlib.legend.Legend at 0x7fdf883da2b0>
 
 
 
 
-
-    <matplotlib.legend.Legend at 0x7f57f8529940>
-
-
-
-
-![png](05-prob_files/05-prob_51_2.png)
+    
+![png](05-prob_files/05-prob_51_1.png)
+    
 
 
 # Brincando com dados reais
@@ -1148,7 +910,9 @@ plt.ylabel('P(X = x)')
 
 
 
+    
 ![png](05-prob_files/05-prob_54_1.png)
+    
 
 
 Por fim, vamos condicionar nas músicas que não são em 4 por 4. Isso mostra uma forma de aplicar o teorema de Bayes em dados como estes. Aqui, $P(F)$ vai ser as músicas em um tempo diferente do 4/4. $P(F|E)$ vem do histograma.
@@ -1178,7 +942,9 @@ plt.ylabel('P(X = x)')
 
 
 
+    
 ![png](05-prob_files/05-prob_56_1.png)
+    
 
 
 
@@ -1195,12 +961,14 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x7f57f5d01908>
+    <matplotlib.legend.Legend at 0x7fdf83f37e20>
 
 
 
 
+    
 ![png](05-prob_files/05-prob_57_1.png)
+    
 
 
 ## Bikes
@@ -1353,57 +1121,7 @@ df.groupby('Start Station').size().sort_values()[::-1]
     Harry Bridges Plaza (Ferry Building)             17255
     Temporary Transbay Terminal (Howard at Beale)    14436
     Embarcadero at Sansome                           14158
-    2nd at Townsend                                  14026
-    Townsend at 7th                                  13752
-    Steuart at Market                                13687
-    Market at 10th                                   11885
-    Market at Sansome                                11431
-    Market at 4th                                     9894
-    Powell Street BART                                9695
-    2nd at South Park                                 9469
-    Beale at Market                                   8359
-    Grant Avenue at Columbus Avenue                   8337
-    2nd at Folsom                                     7999
-    Civic Center BART (7th at Market)                 7760
-    5th at Howard                                     7708
-    Broadway St at Battery St                         7676
-    Embarcadero at Folsom                             7596
-    Embarcadero at Bryant                             7483
-    Howard at 2nd                                     6660
-    Powell at Post (Union Square)                     6425
-    Mechanics Plaza (Market at Battery)               6131
-    Commercial at Montgomery                          6014
-    South Van Ness at Market                          5876
-    Spear at Folsom                                   5574
-    Yerba Buena Center of the Arts (3rd @ Howard)     5523
-    Davis at Jackson                                  5094
-    Clay at Battery                                   5040
                                                      ...  
-    Castro Street and El Camino Real                  1230
-    Ryland Park                                       1120
-    Palo Alto Caltrain Station                        1116
-    MLK Library                                       1099
-    San Antonio Shopping Center                       1069
-    San Antonio Caltrain Station                      1058
-    Evelyn Park and Ride                               978
-    Redwood City Caltrain Station                      895
-    Japantown                                          885
-    Paseo de San Antonio                               856
-    St James Park                                      839
-    San Jose City Hall                                 832
-    San Jose Civic Center                              774
-    Arena Green / SAP Center                           647
-    University and Emerson                             605
-    Cowper at University                               576
-    Adobe on Almaden                                   562
-    Santa Clara County Civic Center                    534
-    Rengstorff Avenue / California Street              501
-    San Salvador at 1st                                495
-    SJSU - San Salvador at 9th                         494
-    SJSU 4th at San Carlos                             475
-    Stanford in Redwood City                           436
-    California Ave Caltrain Station                    400
-    Park at Olive                                      376
     Mezes Park                                         212
     Redwood City Medical Center                        150
     San Mateo County Center                            127
@@ -1422,12 +1140,14 @@ df.groupby('Start Station').size().sort_values()[::-1][:20].plot.bar()
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f57f4031080>
+    <AxesSubplot:xlabel='Start Station'>
 
 
 
 
+    
 ![png](05-prob_files/05-prob_62_1.png)
+    
 
 
 Qual a probabilidade de uma corridia iniciar na primeira estação mais popular e terminar na segunda?
@@ -1517,10 +1237,12 @@ df.groupby('End Station').size().sort_values()[::-1].plot.bar()
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f57f5ff55c0>
+    <AxesSubplot:xlabel='End Station'>
 
 
 
 
+    
 ![png](05-prob_files/05-prob_73_1.png)
+    
 

@@ -1,4 +1,3 @@
----
 layout: page
 title: Revisão Python
 nav_order: 20
@@ -124,8 +123,12 @@ help(l)
     Help on list object:
     
     class list(object)
-     |  list() -> new empty list
-     |  list(iterable) -> new list initialized from iterable's items
+     |  list(iterable=(), /)
+     |  
+     |  Built-in mutable sequence.
+     |  
+     |  If no argument is given, the constructor creates a new empty list.
+     |  The argument must be an iterable if specified.
      |  
      |  Methods defined here:
      |  
@@ -180,14 +183,11 @@ help(l)
      |  __ne__(self, value, /)
      |      Return self!=value.
      |  
-     |  __new__(*args, **kwargs) from builtins.type
-     |      Create and return a new object.  See help(type) for accurate signature.
-     |  
      |  __repr__(self, /)
      |      Return repr(self).
      |  
-     |  __reversed__(...)
-     |      L.__reversed__() -- return a reverse iterator over the list
+     |  __reversed__(self, /)
+     |      Return a reverse iterator over the list.
      |  
      |  __rmul__(self, value, /)
      |      Return value*self.
@@ -195,44 +195,61 @@ help(l)
      |  __setitem__(self, key, value, /)
      |      Set self[key] to value.
      |  
-     |  __sizeof__(...)
-     |      L.__sizeof__() -- size of L in memory, in bytes
+     |  __sizeof__(self, /)
+     |      Return the size of the list in memory, in bytes.
      |  
-     |  append(...)
-     |      L.append(object) -> None -- append object to end
+     |  append(self, object, /)
+     |      Append object to the end of the list.
      |  
-     |  clear(...)
-     |      L.clear() -> None -- remove all items from L
+     |  clear(self, /)
+     |      Remove all items from list.
      |  
-     |  copy(...)
-     |      L.copy() -> list -- a shallow copy of L
+     |  copy(self, /)
+     |      Return a shallow copy of the list.
      |  
-     |  count(...)
-     |      L.count(value) -> integer -- return number of occurrences of value
+     |  count(self, value, /)
+     |      Return number of occurrences of value.
      |  
-     |  extend(...)
-     |      L.extend(iterable) -> None -- extend list by appending elements from the iterable
+     |  extend(self, iterable, /)
+     |      Extend list by appending elements from the iterable.
      |  
-     |  index(...)
-     |      L.index(value, [start, [stop]]) -> integer -- return first index of value.
+     |  index(self, value, start=0, stop=9223372036854775807, /)
+     |      Return first index of value.
+     |      
      |      Raises ValueError if the value is not present.
      |  
-     |  insert(...)
-     |      L.insert(index, object) -- insert object before index
+     |  insert(self, index, object, /)
+     |      Insert object before index.
      |  
-     |  pop(...)
-     |      L.pop([index]) -> item -- remove and return item at index (default last).
+     |  pop(self, index=-1, /)
+     |      Remove and return item at index (default last).
+     |      
      |      Raises IndexError if list is empty or index is out of range.
      |  
-     |  remove(...)
-     |      L.remove(value) -> None -- remove first occurrence of value.
+     |  remove(self, value, /)
+     |      Remove first occurrence of value.
+     |      
      |      Raises ValueError if the value is not present.
      |  
-     |  reverse(...)
-     |      L.reverse() -- reverse *IN PLACE*
+     |  reverse(self, /)
+     |      Reverse *IN PLACE*.
      |  
-     |  sort(...)
-     |      L.sort(key=None, reverse=False) -> None -- stable sort *IN PLACE*
+     |  sort(self, /, *, key=None, reverse=False)
+     |      Sort the list in ascending order and return None.
+     |      
+     |      The sort is in-place (i.e. the list itself is modified) and stable (i.e. the
+     |      order of two equal elements is maintained).
+     |      
+     |      If a key function is given, apply it once to each list item and sort them,
+     |      ascending or descending, according to their function values.
+     |      
+     |      The reverse flag can be set to sort in descending order.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
      |  
      |  ----------------------------------------------------------------------
      |  Data and other attributes defined here:
@@ -1075,7 +1092,9 @@ plt.show();
 ```
 
 
+    
 ![png](27-revisao_files/27-revisao_32_0.png)
+    
 
 
 
@@ -1101,5 +1120,7 @@ plt.show()
 ```
 
 
+    
 ![png](27-revisao_files/27-revisao_34_0.png)
+    
 

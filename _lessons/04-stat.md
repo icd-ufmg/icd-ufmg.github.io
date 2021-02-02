@@ -1,4 +1,3 @@
----
 layout: page
 title: Estatística Básica
 nav_order: 4
@@ -232,7 +231,9 @@ plt.show()
 ```
 
 
+    
 ![png](04-stat_files/04-stat_14_0.png)
+    
 
 
 #### CDFs
@@ -241,7 +242,7 @@ Vamos fazer um código simples para montar uma CDF. A função de nome CDF (em i
 
 1. Ordene os dados `x = np.sort(data)`
 1. Conte quantos pontos menor do que `x[i]` existem para cada `i`
-    1. Para isto, vamos montar um vetor `y = np.cumsum([0, 1, 2, ....]) = [0, 1, 3, 6, 10]`. y é um contagem cumulativa.
+    1. Para isto, vamos montar um vetor `y = np.arange(len(data))`. y é um contagem cumulativa.
     1. Note que y conta quantos pontos existe até um ponto i, i.e., `y[i] = #pts < x[i]`.
 1. Normalize `y`
 
@@ -268,7 +269,9 @@ plt.show()
 ```
 
 
+    
 ![png](04-stat_files/04-stat_18_0.png)
+    
 
 
 A biblioteca **statsmodels** tem a mesma função. É o maior import que faço na minha vida.
@@ -288,7 +291,9 @@ plt.show()
 ```
 
 
+    
 ![png](04-stat_files/04-stat_20_0.png)
+    
 
 
 ## Tendências Centrais
@@ -525,7 +530,9 @@ plt.show()
 ```
 
 
+    
 ![png](04-stat_files/04-stat_48_0.png)
+    
 
 
 ### Mediana
@@ -613,7 +620,9 @@ plt.show()
 ```
 
 
+    
 ![png](04-stat_files/04-stat_55_0.png)
+    
 
 
 ### Boxplot
@@ -634,8 +643,14 @@ ax.set_yticklabels(['Duração'])
 plt.show()
 ```
 
+    <ipython-input-1-61fb73fbad47>:4: UserWarning: FixedFormatter should only be used together with FixedLocator
+      ax.set_yticklabels(['Duração'])
 
-![png](04-stat_files/04-stat_57_0.png)
+
+
+    
+![png](04-stat_files/04-stat_57_1.png)
+    
 
 
 Claramente, a média é mais simples de calcular e varia suavemente conforme nossos dados são alterados. Se tivermos `n` pontos de dados e um deles aumentar em alguma quantidade pequena `e`, então necessariamente a média aumentará em `e/n`. (Isso torna a média passível de todo tipo de truque de cálculo.) No entanto, para encontrar a mediana, temos que ordenar nossos dados. E alterar um dos nossos pontos de dados em uma pequena quantidade `e` pode aumentar a mediana por `e`, por algum número menor que `e` ou não a modificar de qualquer forma (dependendo do resto dos dados).
@@ -754,26 +769,26 @@ palavras.head(20)
 
 
 
-    bottle        215
-    get          3577
-    be           4442
-    peace         176
-    jealous        83
-    truth         393
-    liquor         97
-    still        1532
-    carlo           6
-    think        1851
-    of           4909
-    winnin         37
-    me           5901
-    new          1063
-    pissed         36
-    bartender      24
-    been         2064
-    it           5674
-    lennon          7
-    cant         2833
+    minutes       65
+    hoes         364
+    and         6359
+    now         3558
+    sorrow        32
+    next         584
+    broke        369
+    losin         49
+    ceilin        20
+    fit          160
+    down        3086
+    real        1081
+    another      833
+    feel        1993
+    love        3280
+    minute       284
+    demons        49
+    know        4582
+    who         1476
+    feelings     174
     dtype: int64
 
 
@@ -791,7 +806,9 @@ plt.show()
 ```
 
 
+    
 ![png](04-stat_files/04-stat_72_0.png)
+    
 
 
 
@@ -809,7 +826,9 @@ plt.show()
 ```
 
 
+    
 ![png](04-stat_files/04-stat_73_0.png)
+    
 
 
 Observe que a grande maioria dos valores é menor que $10$, mas existe uma quantidade significativa de valores na casa das centenas e até dos milhares. 
@@ -948,8 +967,8 @@ print("IQR:", interquartile_range(palavras))
 
     Dispersão para as palavras:
     Intervalo: 6527
-    Variância: 35806.28050708674
-    Desvio padrão: 189.22547531209094
+    Variância: 35806.28050708675
+    Desvio padrão: 189.22547531209096
     IQR: 3
 
 
@@ -1001,5 +1020,14 @@ plt.ylabel('Duração');
 ```
 
 
-![png](04-stat_files/04-stat_95_0.png)
+
+
+    Text(0, 0.5, 'Duração')
+
+
+
+
+    
+![png](04-stat_files/04-stat_95_1.png)
+    
 

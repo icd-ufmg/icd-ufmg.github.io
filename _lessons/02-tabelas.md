@@ -1,4 +1,3 @@
----
 layout: page
 title: Tabelas e Tipos de Dados
 nav_order: 2
@@ -564,12 +563,15 @@ Tudo que executamos com `!` é um comando do terminal do unix. Então, este note
 !ls .
 ```
 
-    01-causalidade.md  03-viz.ipynb   05-prob	    27-revisao.ipynb
-    02-tabelas	   03-viz.md	  05-prob_files     27-revisao.md
-    02-tabelas.ipynb   04-stat	  05-prob.ipynb     capital.json
-    02-tabelas.md	   04-stat_files  05-prob.md	    compile_all.sh
-    03-viz		   04-stat.ipynb  27-revisao	    compile_notebook.sh
-    03-viz_files	   04-stat.md	  27-revisao_files  dom-casmurro.txt
+    01-causalidade.md  04-stat.ipynb   08-amostragem	12-poder.ipynb
+    02-tabelas	   04-stat.md	   08-amostragem.ipynb	27-revisao
+    02-tabelas.ipynb   05-prob	   09-ics		27-revisao_files
+    02-tabelas.md	   05-prob.ipynb   09-ics.ipynb		27-revisao.ipynb
+    03-viz		   05-prob.md	   10-ab		27-revisao.md
+    03-viz_files	   06-risco	   10-ab.ipynb		capital.json
+    03-viz.ipynb	   06-risco.ipynb  11-hipoteses		compile_all.sh
+    03-viz.md	   07-tcl	   11-hipoteses.ipynb	compile_notebook.sh
+    04-stat		   07-tcl.ipynb    12-poder		dom-casmurro.txt
 
 
 Com a opção -lha, mostramos meta-dados dos arquivos como o owner, tamanho e permissões. Note que todos os arquivos são .csv, isto é comma separated.
@@ -580,35 +582,47 @@ Com a opção -lha, mostramos meta-dados dos arquivos como o owner, tamanho e pe
 !ls -lha .
 ```
 
-    total 3.2M
-    drwxr-xr-x 12 flaviovdf flaviovdf 4.0K Dec 14 13:13 .
-    drwxr-xr-x  9 flaviovdf flaviovdf 4.0K Dec 14 12:59 ..
+    total 5.2M
+    drwxr-xr-x 17 flaviovdf flaviovdf 4.0K Feb  2 08:38 .
+    drwxr-xr-x  9 flaviovdf flaviovdf 4.0K Dec 14 19:56 ..
     -rw-r--r--  1 flaviovdf flaviovdf  593 Dec 14 12:38 01-causalidade.md
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 13:13 02-tabelas
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:38 02-tabelas
     -rw-r--r--  1 flaviovdf flaviovdf 124K Dec 14 13:13 02-tabelas.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  60K Dec 14 12:52 02-tabelas.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Dec 14 12:54 03-viz
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 12:54 03-viz_files
+    -rw-r--r--  1 flaviovdf flaviovdf  42K Feb  2 08:25 02-tabelas.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  2 08:25 03-viz
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:25 03-viz_files
     -rw-r--r--  1 flaviovdf flaviovdf 863K Dec 14 13:12 03-viz.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  85K Dec 14 12:54 03-viz.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Dec 14 12:54 04-stat
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 12:54 04-stat_files
-    -rw-r--r--  1 flaviovdf flaviovdf 286K Dec 14 13:13 04-stat.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  26K Dec 14 12:54 04-stat.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Dec 14 12:55 05-prob
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 12:55 05-prob_files
-    -rw-r--r--  1 flaviovdf flaviovdf 929K Dec 14 12:40 05-prob.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  42K Dec 14 12:55 05-prob.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Dec 14 12:55 27-revisao
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 12:55 27-revisao_files
+    -rw-r--r--  1 flaviovdf flaviovdf  39K Feb  2 08:25 03-viz.md
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:25 04-stat
+    -rw-r--r--  1 flaviovdf flaviovdf  33K Feb  2 08:38 04-stat.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  26K Dec 14 13:16 04-stat.md
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 19 15:46 05-prob
+    -rw-r--r--  1 flaviovdf flaviovdf 897K Dec 19 15:46 05-prob.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  42K Dec 14 13:17 05-prob.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  2 08:36 06-risco
+    -rw-r--r--  1 flaviovdf flaviovdf 245K Feb  2 08:10 06-risco.ipynb
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  2 08:35 07-tcl
+    -rw-r--r--  1 flaviovdf flaviovdf 321K Feb  2 08:12 07-tcl.ipynb
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  2 08:35 08-amostragem
+    -rw-r--r--  1 flaviovdf flaviovdf 194K Feb  2 08:10 08-amostragem.ipynb
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:37 09-ics
+    -rw-r--r--  1 flaviovdf flaviovdf 446K Feb  2 08:23 09-ics.ipynb
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:35 10-ab
+    -rw-r--r--  1 flaviovdf flaviovdf 166K Feb  2 08:10 10-ab.ipynb
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  2 08:36 11-hipoteses
+    -rw-r--r--  1 flaviovdf flaviovdf 276K Feb  2 08:10 11-hipoteses.ipynb
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:36 12-poder
+    -rw-r--r--  1 flaviovdf flaviovdf 722K Feb  2 08:10 12-poder.ipynb
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  2 08:09 27-revisao
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:09 27-revisao_files
     -rw-r--r--  1 flaviovdf flaviovdf  63K Dec 14 12:37 27-revisao.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  16K Dec 14 12:55 27-revisao.md
+    -rw-r--r--  1 flaviovdf flaviovdf  17K Feb  2 08:09 27-revisao.md
     -rw-r--r--  1 flaviovdf flaviovdf 172K Nov 30 09:22 capital.json
     -rw-r--r--  1 flaviovdf flaviovdf   85 Dec 14 12:42 compile_all.sh
     -rw-r--r--  1 flaviovdf flaviovdf 1016 Dec 14 12:42 compile_notebook.sh
     -rw-r--r--  1 flaviovdf flaviovdf 401K Nov 30 09:22 dom-casmurro.txt
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 14 13:04 .ipynb_checkpoints
-    -rw-r--r--  1 flaviovdf flaviovdf  26K Dec 14 13:13 .nbgrader.log
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:38 .ipynb_checkpoints
+    -rw-r--r--  1 flaviovdf flaviovdf  29K Dec 19 15:46 .nbgrader.log
 
 
 Vamos identificar qual a cara de um csv. O programa `head` imprime as primeiras `n` linhas de um arquivo.
@@ -704,412 +718,12 @@ df
       <td>7</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>Elsie</td>
-      <td>1910</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Lucy</td>
-      <td>1910</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Dorothy</td>
-      <td>1910</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Mary</td>
-      <td>1911</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Margaret</td>
-      <td>1911</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Ruth</td>
-      <td>1911</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Annie</td>
-      <td>1911</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Elizabeth</td>
-      <td>1911</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Helen</td>
-      <td>1911</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>Mary</td>
-      <td>1912</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Elsie</td>
-      <td>1912</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Agnes</td>
-      <td>1912</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Anna</td>
-      <td>1912</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Helen</td>
-      <td>1912</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Louise</td>
-      <td>1912</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>Jean</td>
-      <td>1912</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>Ruth</td>
-      <td>1912</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Alice</td>
-      <td>1912</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>Esther</td>
-      <td>1912</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>Ethel</td>
-      <td>1912</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>Margaret</td>
-      <td>1912</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>Marie</td>
-      <td>1912</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>Mary</td>
-      <td>1913</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>21</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>Elizabeth</td>
-      <td>1913</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>Margaret</td>
-      <td>1913</td>
-      <td>F</td>
-      <td>AK</td>
-      <td>8</td>
-    </tr>
-    <tr>
       <th>...</th>
       <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
-    </tr>
-    <tr>
-      <th>5647396</th>
-      <td>Brooks</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647397</th>
-      <td>Calvin</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647398</th>
-      <td>Cameron</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647399</th>
-      <td>Dalton</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647400</th>
-      <td>Dawson</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647401</th>
-      <td>Edward</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647402</th>
-      <td>Elias</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647403</th>
-      <td>Gage</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647404</th>
-      <td>Hayden</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647405</th>
-      <td>Jasper</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647406</th>
-      <td>Jose</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647407</th>
-      <td>Kaiden</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647408</th>
-      <td>Kaleb</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647409</th>
-      <td>Kasen</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647410</th>
-      <td>Kyson</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647411</th>
-      <td>Lukas</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647412</th>
-      <td>Myles</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647413</th>
-      <td>Nathaniel</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647414</th>
-      <td>Nolan</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647415</th>
-      <td>Oakley</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647416</th>
-      <td>Odin</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647417</th>
-      <td>Paxton</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647418</th>
-      <td>Raymond</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647419</th>
-      <td>Richard</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5647420</th>
-      <td>Rowan</td>
-      <td>2014</td>
-      <td>M</td>
-      <td>WY</td>
-      <td>5</td>
     </tr>
     <tr>
       <th>5647421</th>
@@ -1677,259 +1291,9 @@ gb.mean()
       <td>6.000000</td>
     </tr>
     <tr>
-      <th>Aadhya</th>
-      <td>2012.875000</td>
-      <td>11.325000</td>
-    </tr>
-    <tr>
-      <th>Aadi</th>
-      <td>2008.794872</td>
-      <td>8.025641</td>
-    </tr>
-    <tr>
-      <th>Aadil</th>
-      <td>2003.000000</td>
-      <td>5.000000</td>
-    </tr>
-    <tr>
-      <th>Aadin</th>
-      <td>2008.000000</td>
-      <td>5.000000</td>
-    </tr>
-    <tr>
-      <th>Aadit</th>
-      <td>2009.666667</td>
-      <td>6.000000</td>
-    </tr>
-    <tr>
-      <th>Aaditya</th>
-      <td>2008.285714</td>
-      <td>6.928571</td>
-    </tr>
-    <tr>
-      <th>Aadya</th>
-      <td>2012.638889</td>
-      <td>8.333333</td>
-    </tr>
-    <tr>
-      <th>Aadyn</th>
-      <td>2010.363636</td>
-      <td>6.272727</td>
-    </tr>
-    <tr>
-      <th>Aahan</th>
-      <td>2008.000000</td>
-      <td>7.000000</td>
-    </tr>
-    <tr>
-      <th>Aahana</th>
-      <td>2011.000000</td>
-      <td>8.266667</td>
-    </tr>
-    <tr>
-      <th>Aahil</th>
-      <td>2009.750000</td>
-      <td>7.812500</td>
-    </tr>
-    <tr>
-      <th>Aahna</th>
-      <td>2014.000000</td>
-      <td>7.000000</td>
-    </tr>
-    <tr>
-      <th>Aaiden</th>
-      <td>2011.250000</td>
-      <td>8.500000</td>
-    </tr>
-    <tr>
-      <th>Aaima</th>
-      <td>2013.000000</td>
-      <td>5.000000</td>
-    </tr>
-    <tr>
-      <th>Aakash</th>
-      <td>2002.250000</td>
-      <td>6.568182</td>
-    </tr>
-    <tr>
-      <th>Aalaya</th>
-      <td>2014.000000</td>
-      <td>5.000000</td>
-    </tr>
-    <tr>
-      <th>Aalayah</th>
-      <td>2011.411765</td>
-      <td>5.823529</td>
-    </tr>
-    <tr>
-      <th>Aaleah</th>
-      <td>2012.000000</td>
-      <td>5.000000</td>
-    </tr>
-    <tr>
-      <th>Aaleyah</th>
-      <td>2010.937500</td>
-      <td>8.343750</td>
-    </tr>
-    <tr>
-      <th>Aalia</th>
-      <td>2012.000000</td>
-      <td>5.666667</td>
-    </tr>
-    <tr>
-      <th>Aaliah</th>
-      <td>2008.080000</td>
-      <td>9.480000</td>
-    </tr>
-    <tr>
-      <th>Aalijah</th>
-      <td>2010.000000</td>
-      <td>5.000000</td>
-    </tr>
-    <tr>
-      <th>Aaliya</th>
-      <td>2008.200000</td>
-      <td>6.620000</td>
-    </tr>
-    <tr>
-      <th>Aaliyah</th>
-      <td>2004.319876</td>
-      <td>71.697723</td>
-    </tr>
-    <tr>
-      <th>Aaliyha</th>
-      <td>2006.800000</td>
-      <td>5.400000</td>
-    </tr>
-    <tr>
       <th>...</th>
       <td>...</td>
       <td>...</td>
-    </tr>
-    <tr>
-      <th>Zyire</th>
-      <td>2007.000000</td>
-      <td>5.000000</td>
-    </tr>
-    <tr>
-      <th>Zykeria</th>
-      <td>2005.059701</td>
-      <td>10.044776</td>
-    </tr>
-    <tr>
-      <th>Zykeriah</th>
-      <td>2008.000000</td>
-      <td>5.000000</td>
-    </tr>
-    <tr>
-      <th>Zykerria</th>
-      <td>2003.900000</td>
-      <td>7.100000</td>
-    </tr>
-    <tr>
-      <th>Zykia</th>
-      <td>2002.538462</td>
-      <td>6.923077</td>
-    </tr>
-    <tr>
-      <th>Zykierra</th>
-      <td>2007.000000</td>
-      <td>5.000000</td>
-    </tr>
-    <tr>
-      <th>Zykira</th>
-      <td>2006.333333</td>
-      <td>6.333333</td>
-    </tr>
-    <tr>
-      <th>Zykiria</th>
-      <td>2006.000000</td>
-      <td>5.500000</td>
-    </tr>
-    <tr>
-      <th>Zyla</th>
-      <td>2011.705882</td>
-      <td>6.235294</td>
-    </tr>
-    <tr>
-      <th>Zylah</th>
-      <td>2011.800000</td>
-      <td>6.200000</td>
-    </tr>
-    <tr>
-      <th>Zylan</th>
-      <td>2011.000000</td>
-      <td>5.500000</td>
-    </tr>
-    <tr>
-      <th>Zylen</th>
-      <td>2013.500000</td>
-      <td>6.000000</td>
-    </tr>
-    <tr>
-      <th>Zyler</th>
-      <td>2011.071429</td>
-      <td>6.285714</td>
-    </tr>
-    <tr>
-      <th>Zymari</th>
-      <td>2009.000000</td>
-      <td>5.000000</td>
-    </tr>
-    <tr>
-      <th>Zymarion</th>
-      <td>2009.666667</td>
-      <td>5.000000</td>
-    </tr>
-    <tr>
-      <th>Zymere</th>
-      <td>2009.785714</td>
-      <td>7.500000</td>
-    </tr>
-    <tr>
-      <th>Zymier</th>
-      <td>2010.333333</td>
-      <td>5.333333</td>
-    </tr>
-    <tr>
-      <th>Zymiere</th>
-      <td>2010.666667</td>
-      <td>5.000000</td>
-    </tr>
-    <tr>
-      <th>Zymir</th>
-      <td>2009.139535</td>
-      <td>8.023256</td>
-    </tr>
-    <tr>
-      <th>Zymire</th>
-      <td>2012.000000</td>
-      <td>5.000000</td>
-    </tr>
-    <tr>
-      <th>Zyon</th>
-      <td>2007.656805</td>
-      <td>8.230769</td>
-    </tr>
-    <tr>
-      <th>Zyonna</th>
-      <td>2009.818182</td>
-      <td>5.545455</td>
-    </tr>
-    <tr>
-      <th>Zyquan</th>
-      <td>2005.777778</td>
-      <td>5.777778</td>
-    </tr>
-    <tr>
-      <th>Zyquavious</th>
-      <td>2010.000000</td>
-      <td>6.000000</td>
-    </tr>
-    <tr>
-      <th>Zyra</th>
-      <td>2012.142857</td>
-      <td>6.000000</td>
     </tr>
     <tr>
       <th>Zyrah</th>
@@ -1975,67 +1339,17 @@ gb.sum()['Count'].sort_values()
 
 
     Name
-    Zyshonne             5
-    Makenlee             5
-    Makenlie             5
-    Makinlee             5
-    Makua                5
-    Cathaleya            5
-    Makyia               5
-    Makynzee             5
-    Malacai              5
-    Catello              5
-    Malai                5
-    Catcher              5
-    Malajah              5
-    Maleeha              5
-    Maleigh              5
-    Castin               5
-    Maleko               5
-    Malini               5
-    Malissia             5
-    Malissie             5
-    Makaylie             5
-    Makay                5
-    Makalynn             5
-    Makailyn             5
-    Mahesh               5
-    Caylynn              5
-    Caylyn               5
-    Mahin                5
-    Mahjabeen            5
-    Mahreen              5
-                    ...   
-    Brian          1159034
-    Joshua         1174451
-    Edward         1212969
-    Andrew         1239305
-    Kenneth        1261928
-    Steven         1272459
-    George         1324735
-    Mark           1341573
-    Paul           1357785
-    Anthony        1397105
-    Donald         1403439
-    Barbara        1424544
-    Linda          1448063
-    Jennifer       1464686
-    Elizabeth      1502094
-    Matthew        1551706
-    Patricia       1569944
-    Daniel         1857096
-    Christopher    1997925
-    Thomas         2219967
-    Charles        2252146
-    Joseph         2485220
-    Richard        2534949
-    David          3562278
-    Mary           3740495
-    William        3839236
-    Michael        4312975
-    Robert         4725713
-    John           4845414
-    James          4957166
+    Zyshonne          5
+    Makenlee          5
+    Makenlie          5
+    Makinlee          5
+    Makua             5
+                 ...   
+    William     3839236
+    Michael     4312975
+    Robert      4725713
+    John        4845414
+    James       4957166
     Name: Count, Length: 30274, dtype: int64
 
 
@@ -2052,67 +1366,17 @@ gb.sum()['Count'].sort_values()
 
 
     Name
-    Zyshonne             5
-    Makenlee             5
-    Makenlie             5
-    Makinlee             5
-    Makua                5
-    Cathaleya            5
-    Makyia               5
-    Makynzee             5
-    Malacai              5
-    Catello              5
-    Malai                5
-    Catcher              5
-    Malajah              5
-    Maleeha              5
-    Maleigh              5
-    Castin               5
-    Maleko               5
-    Malini               5
-    Malissia             5
-    Malissie             5
-    Makaylie             5
-    Makay                5
-    Makalynn             5
-    Makailyn             5
-    Mahesh               5
-    Caylynn              5
-    Caylyn               5
-    Mahin                5
-    Mahjabeen            5
-    Mahreen              5
-                    ...   
-    Brian          1159034
-    Joshua         1174451
-    Edward         1212969
-    Andrew         1239305
-    Kenneth        1261928
-    Steven         1272459
-    George         1324735
-    Mark           1341573
-    Paul           1357785
-    Anthony        1397105
-    Donald         1403439
-    Barbara        1424544
-    Linda          1448063
-    Jennifer       1464686
-    Elizabeth      1502094
-    Matthew        1551706
-    Patricia       1569944
-    Daniel         1857096
-    Christopher    1997925
-    Thomas         2219967
-    Charles        2252146
-    Joseph         2485220
-    Richard        2534949
-    David          3562278
-    Mary           3740495
-    William        3839236
-    Michael        4312975
-    Robert         4725713
-    John           4845414
-    James          4957166
+    Zyshonne          5
+    Makenlee          5
+    Makenlie          5
+    Makinlee          5
+    Makua             5
+                 ...   
+    William     3839236
+    Michael     4312975
+    Robert      4725713
+    John        4845414
+    James       4957166
     Name: Count, Length: 30274, dtype: int64
 
 
@@ -2136,67 +1400,17 @@ df.groupby('Name').sum().sort_values(by='Count')['Count']
 
 
     Name
-    Zyshonne             5
-    Makenlee             5
-    Makenlie             5
-    Makinlee             5
-    Makua                5
-    Cathaleya            5
-    Makyia               5
-    Makynzee             5
-    Malacai              5
-    Catello              5
-    Malai                5
-    Catcher              5
-    Malajah              5
-    Maleeha              5
-    Maleigh              5
-    Castin               5
-    Maleko               5
-    Malini               5
-    Malissia             5
-    Malissie             5
-    Makaylie             5
-    Makay                5
-    Makalynn             5
-    Makailyn             5
-    Mahesh               5
-    Caylynn              5
-    Caylyn               5
-    Mahin                5
-    Mahjabeen            5
-    Mahreen              5
-                    ...   
-    Brian          1159034
-    Joshua         1174451
-    Edward         1212969
-    Andrew         1239305
-    Kenneth        1261928
-    Steven         1272459
-    George         1324735
-    Mark           1341573
-    Paul           1357785
-    Anthony        1397105
-    Donald         1403439
-    Barbara        1424544
-    Linda          1448063
-    Jennifer       1464686
-    Elizabeth      1502094
-    Matthew        1551706
-    Patricia       1569944
-    Daniel         1857096
-    Christopher    1997925
-    Thomas         2219967
-    Charles        2252146
-    Joseph         2485220
-    Richard        2534949
-    David          3562278
-    Mary           3740495
-    William        3839236
-    Michael        4312975
-    Robert         4725713
-    John           4845414
-    James          4957166
+    Zyshonne          5
+    Makenlee          5
+    Makenlie          5
+    Makinlee          5
+    Makua             5
+                 ...   
+    William     3839236
+    Michael     4312975
+    Robert      4725713
+    John        4845414
+    James       4957166
     Name: Count, Length: 30274, dtype: int64
 
 
@@ -2263,223 +1477,12 @@ df.groupby(['Name', 'Year']).sum()
       <td>5</td>
     </tr>
     <tr>
-      <th>Aadarsh</th>
-      <th>2009</th>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th rowspan="9" valign="top">Aaden</th>
-      <th>2005</th>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>2007</th>
-      <td>98</td>
-    </tr>
-    <tr>
-      <th>2008</th>
-      <td>939</td>
-    </tr>
-    <tr>
-      <th>2009</th>
-      <td>1242</td>
-    </tr>
-    <tr>
-      <th>2010</th>
-      <td>414</td>
-    </tr>
-    <tr>
-      <th>2011</th>
-      <td>228</td>
-    </tr>
-    <tr>
-      <th>2012</th>
-      <td>167</td>
-    </tr>
-    <tr>
-      <th>2013</th>
-      <td>153</td>
-    </tr>
-    <tr>
-      <th>2014</th>
-      <td>180</td>
-    </tr>
-    <tr>
-      <th>Aadhav</th>
-      <th>2014</th>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th rowspan="6" valign="top">Aadhya</th>
-      <th>2007</th>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>2009</th>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>2011</th>
-      <td>20</td>
-    </tr>
-    <tr>
-      <th>2012</th>
-      <td>66</td>
-    </tr>
-    <tr>
-      <th>2013</th>
-      <td>135</td>
-    </tr>
-    <tr>
-      <th>2014</th>
-      <td>221</td>
-    </tr>
-    <tr>
-      <th rowspan="8" valign="top">Aadi</th>
-      <th>2003</th>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>2004</th>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>2005</th>
-      <td>25</td>
-    </tr>
-    <tr>
-      <th>2006</th>
-      <td>43</td>
-    </tr>
-    <tr>
-      <th>2007</th>
-      <td>33</td>
-    </tr>
-    <tr>
-      <th>2008</th>
-      <td>45</td>
-    </tr>
-    <tr>
-      <th>2009</th>
-      <td>45</td>
-    </tr>
-    <tr>
-      <th>2010</th>
-      <td>27</td>
-    </tr>
-    <tr>
       <th>...</th>
       <th>...</th>
       <td>...</td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">Zyquan</th>
-      <th>2008</th>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>2010</th>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>Zyquavious</th>
-      <th>2010</th>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th rowspan="5" valign="top">Zyra</th>
-      <th>2008</th>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>2011</th>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>2012</th>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>2013</th>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>2014</th>
-      <td>13</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">Zyrah</th>
-      <th>2011</th>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>2013</th>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>Zyren</th>
-      <th>2013</th>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th rowspan="10" valign="top">Zyria</th>
-      <th>1998</th>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>2001</th>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>2003</th>
-      <td>11</td>
-    </tr>
-    <tr>
-      <th>2005</th>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>2007</th>
-      <td>11</td>
-    </tr>
-    <tr>
-      <th>2008</th>
-      <td>20</td>
-    </tr>
-    <tr>
-      <th>2009</th>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>2011</th>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>2012</th>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>2014</th>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th rowspan="8" valign="top">Zyriah</th>
-      <th>2006</th>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>2007</th>
-      <td>13</td>
-    </tr>
-    <tr>
-      <th>2008</th>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>2009</th>
-      <td>5</td>
-    </tr>
-    <tr>
+      <th rowspan="4" valign="top">Zyriah</th>
       <th>2011</th>
       <td>6</td>
     </tr>
@@ -2603,57 +1606,7 @@ df['TEAM'] == 'Houston Rockets'
     2      False
     3      False
     4      False
-    5      False
-    6      False
-    7      False
-    8      False
-    9      False
-    10     False
-    11     False
-    12     False
-    13     False
-    14     False
-    15     False
-    16     False
-    17     False
-    18     False
-    19     False
-    20     False
-    21     False
-    22     False
-    23     False
-    24     False
-    25     False
-    26     False
-    27     False
-    28     False
-    29     False
            ...  
-    387    False
-    388    False
-    389    False
-    390    False
-    391    False
-    392    False
-    393    False
-    394    False
-    395    False
-    396    False
-    397    False
-    398    False
-    399    False
-    400    False
-    401    False
-    402    False
-    403    False
-    404    False
-    405    False
-    406    False
-    407    False
-    408    False
-    409    False
-    410    False
-    411    False
     412    False
     413    False
     414    False
