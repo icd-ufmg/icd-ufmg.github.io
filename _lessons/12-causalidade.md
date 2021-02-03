@@ -1,3 +1,33 @@
+---
+layout: page
+title: Método Científico (Incompleto)
+nav_order: 12
+---
+
+[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/icd-ufmg/icd-ufmg.github.io/blob/master/_lessons/12-causalidade.ipynb)
+
+
+# Método Científico (Incompleto)
+{: .no_toc .mb-2 }
+
+Juntando o método científico com o conceito de causalidade
+{: .fs-6 .fw-300 }
+
+{: .no_toc .text-delta }
+Resultados Esperados
+
+1. Entender como testes de hipótese ligam com causalidade
+1. Entender o método científico
+
+---
+**Sumário**
+1. TOC
+{:toc}
+---
+
+
+```python
+#In: 
 # -*- coding: utf8
 
 from scipy import stats as ss
@@ -5,9 +35,14 @@ from scipy import stats as ss
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+```
 
-# Para evitar a confusão da aula passada, colocando alguns defaults!
-plt.rcParams['figure.figsize']  = (18, 10)
+
+```python
+#In: 
+plt.style.use('seaborn-colorblind')
+
+plt.rcParams['figure.figsize']  = (16, 10)
 plt.rcParams['axes.labelsize']  = 20
 plt.rcParams['axes.titlesize']  = 20
 plt.rcParams['legend.fontsize'] = 20
@@ -20,8 +55,6 @@ plt.rcParams['lines.linewidth'] = 4
 ```python
 #In: 
 plt.ion()
-plt.style.use('seaborn-colorblind')
-plt.rcParams['figure.figsize']  = (12, 8)
 ```
 
 
@@ -38,8 +71,6 @@ def despine(ax=None):
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
 ```
-
-# Aula 13 - Causalidade
 
 ## Introdução
 
@@ -417,7 +448,7 @@ p1.head()
     </tr>
     <tr>
       <th>4</th>
-      <td>Treatment</td>
+      <td>Control</td>
       <td>0.0</td>
     </tr>
   </tbody>
@@ -435,7 +466,7 @@ p1.query('Group == "Control"').mean()
 
 
 
-    Result    0.5
+    Result    0.4375
     dtype: float64
 
 
@@ -449,7 +480,7 @@ p1.query('Group == "Treatment"').mean()
 
 
 
-    Result    0.2
+    Result    0.266667
     dtype: float64
 
 
@@ -545,8 +576,8 @@ valores
 
 
 
-    array([0.04166667, 0.3       , 0.0875    , ..., 0.21666667, 0.04166667,
-           0.04166667])
+    array([0.34583333, 0.0875    , 0.04166667, ..., 0.04166667, 0.3       ,
+           0.21666667])
 
 
 
@@ -567,7 +598,7 @@ despine()
 
 
     
-![png](12-causalidade_files/12-causalidade_28_1.png)
+![png](12-causalidade_files/12-causalidade_30_1.png)
     
 
 
@@ -581,16 +612,10 @@ valor_p
 
 
 
-    0.0023
+    0.0011
 
 
 
 ## Diferença de outros exemplos
 
 Neste exemplo foi feito uma intervenção. Isto é, medicamos parte dos dados. Não estamos observando dados apenas. Por isto um exemplo como este é causal, vemos um efeito real em um experimento controlado! Mais importante do que isto, em 2011 foi averiguado que este pequeno estudo é um dos mais corretos quando se trata de dor crônica lombar! O ferramental aqui foram testes simples + uma boa amostra! 
-
-
-```python
-#In: 
-
-```

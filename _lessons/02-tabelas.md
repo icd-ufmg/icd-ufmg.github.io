@@ -1,26 +1,28 @@
+---
 layout: page
 title: Tabelas e Tipos de Dados
 nav_order: 2
 ---
 
+[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/icd-ufmg/icd-ufmg.github.io/blob/master/_lessons/02-tabelas.ipynb)
+
+
 # Tabelas e Tipos de Dados
+
 {: .no_toc .mb-2 }
 
 Um breve resumo de alguns comandos python.
 {: .fs-6 .fw-300 }
 
 {: .no_toc .text-delta }
-Objetivo
+Resultados Esperados
 
-* Aprender Pandas
-* Entender diferentes tipos de dados
-* Básico de filtros e seleções
+1. Aprender o básico de Pandas
+1. Entender diferentes tipos de dados
+1. Básico de filtros e seleções
+1. Aplicação de filtros básicos para gerar insights nos dados de dados tabulares
 
 
-{: .no_toc .text-delta }
-Resultado Esperado
-
-* Aplicação de filtros básicos para gerar insights nos dados de dados tabulares
 
 ---
 **Sumário**
@@ -563,15 +565,33 @@ Tudo que executamos com `!` é um comando do terminal do unix. Então, este note
 !ls .
 ```
 
-    01-causalidade.md  04-stat.ipynb   08-amostragem	12-poder.ipynb
-    02-tabelas	   04-stat.md	   08-amostragem.ipynb	27-revisao
-    02-tabelas.ipynb   05-prob	   09-ics		27-revisao_files
-    02-tabelas.md	   05-prob.ipynb   09-ics.ipynb		27-revisao.ipynb
-    03-viz		   05-prob.md	   10-ab		27-revisao.md
-    03-viz_files	   06-risco	   10-ab.ipynb		capital.json
-    03-viz.ipynb	   06-risco.ipynb  11-hipoteses		compile_all.sh
-    03-viz.md	   07-tcl	   11-hipoteses.ipynb	compile_notebook.sh
-    04-stat		   07-tcl.ipynb    12-poder		dom-casmurro.txt
+    01-causalidade.md    08-amostragem.md	   15-linear.ipynb
+    02-tabelas	     09-ics		   15-linear.md
+    02-tabelas.ipynb     09-ics_files	   16-vero
+    02-tabelas.md	     09-ics.ipynb	   16-vero_files
+    03-viz		     09-ics.md		   16-vero.ipynb
+    03-viz_files	     10-ab		   16-vero.md
+    03-viz.ipynb	     10-ab_files	   17-gradiente
+    03-viz.md	     10-ab.ipynb	   17-gradiente_files
+    04-stat		     10-ab.md		   17-gradiente.ipynb
+    04-stat_files	     11-hipoteses	   17-gradiente.md
+    04-stat.ipynb	     11-hipoteses_files    18-multipla
+    04-stat.md	     11-hipoteses.ipynb    18-multipla_files
+    05-prob		     11-hipoteses.md	   18-multipla.ipynb
+    05-prob_files	     12-causalidade	   18-multipla.md
+    05-prob.ipynb	     12-causalidade_files  27-revisao
+    05-prob.md	     12-causalidade.ipynb  27-revisao_files
+    06-risco	     12-causalidade.md	   27-revisao.ipynb
+    06-risco_files	     13-poder		   27-revisao.md
+    06-risco.ipynb	     13-poder_files	   capital.json
+    06-risco.md	     13-poder.ipynb	   colab_favicon.ico
+    07-tcl		     13-poder.md	   colab_favicon.png
+    07-tcl_files	     14-correlacao	   colab_favicon_small.png
+    07-tcl.ipynb	     14-correlacao_files   compile_all.sh
+    07-tcl.md	     14-correlacao.ipynb   compile_notebook.sh
+    08-amostragem	     14-correlacao.md	   dom-casmurro.txt
+    08-amostragem_files  15-linear
+    08-amostragem.ipynb  15-linear_files
 
 
 Com a opção -lha, mostramos meta-dados dos arquivos como o owner, tamanho e permissões. Note que todos os arquivos são .csv, isto é comma separated.
@@ -582,46 +602,89 @@ Com a opção -lha, mostramos meta-dados dos arquivos como o owner, tamanho e pe
 !ls -lha .
 ```
 
-    total 5.2M
-    drwxr-xr-x 17 flaviovdf flaviovdf 4.0K Feb  2 08:38 .
-    drwxr-xr-x  9 flaviovdf flaviovdf 4.0K Dec 14 19:56 ..
-    -rw-r--r--  1 flaviovdf flaviovdf  593 Dec 14 12:38 01-causalidade.md
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:38 02-tabelas
-    -rw-r--r--  1 flaviovdf flaviovdf 124K Dec 14 13:13 02-tabelas.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  42K Feb  2 08:25 02-tabelas.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  2 08:25 03-viz
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:25 03-viz_files
-    -rw-r--r--  1 flaviovdf flaviovdf 863K Dec 14 13:12 03-viz.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  39K Feb  2 08:25 03-viz.md
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:25 04-stat
-    -rw-r--r--  1 flaviovdf flaviovdf  33K Feb  2 08:38 04-stat.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  26K Dec 14 13:16 04-stat.md
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Dec 19 15:46 05-prob
-    -rw-r--r--  1 flaviovdf flaviovdf 897K Dec 19 15:46 05-prob.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  42K Dec 14 13:17 05-prob.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  2 08:36 06-risco
-    -rw-r--r--  1 flaviovdf flaviovdf 245K Feb  2 08:10 06-risco.ipynb
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  2 08:35 07-tcl
-    -rw-r--r--  1 flaviovdf flaviovdf 321K Feb  2 08:12 07-tcl.ipynb
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  2 08:35 08-amostragem
-    -rw-r--r--  1 flaviovdf flaviovdf 194K Feb  2 08:10 08-amostragem.ipynb
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:37 09-ics
-    -rw-r--r--  1 flaviovdf flaviovdf 446K Feb  2 08:23 09-ics.ipynb
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:35 10-ab
-    -rw-r--r--  1 flaviovdf flaviovdf 166K Feb  2 08:10 10-ab.ipynb
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  2 08:36 11-hipoteses
-    -rw-r--r--  1 flaviovdf flaviovdf 276K Feb  2 08:10 11-hipoteses.ipynb
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:36 12-poder
-    -rw-r--r--  1 flaviovdf flaviovdf 722K Feb  2 08:10 12-poder.ipynb
+    total 12M
+    drwxr-xr-x 38 flaviovdf flaviovdf 4.0K Feb  3 17:45 .
+    drwxr-xr-x  9 flaviovdf flaviovdf 4.0K Feb  3 15:22 ..
+    -rw-r--r--  1 flaviovdf flaviovdf  618 Feb  3 16:56 01-causalidade.md
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 17:45 02-tabelas
+    -rw-r--r--  1 flaviovdf flaviovdf 106K Feb  3 17:46 02-tabelas.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  46K Feb  3 17:36 02-tabelas.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 15:56 03-viz
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 15:56 03-viz_files
+    -rw-r--r--  1 flaviovdf flaviovdf 759K Feb  3 17:39 03-viz.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  39K Feb  3 15:56 03-viz.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 15:56 04-stat
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 15:56 04-stat_files
+    -rw-r--r--  1 flaviovdf flaviovdf 290K Feb  3 17:45 04-stat.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  26K Feb  3 15:56 04-stat.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 15:57 05-prob
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 15:57 05-prob_files
+    -rw-r--r--  1 flaviovdf flaviovdf 885K Feb  3 17:42 05-prob.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  35K Feb  3 15:57 05-prob.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 15:58 06-risco
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 15:58 06-risco_files
+    -rw-r--r--  1 flaviovdf flaviovdf 291K Feb  3 17:42 06-risco.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  15K Feb  3 15:58 06-risco.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 15:58 07-tcl
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 15:58 07-tcl_files
+    -rw-r--r--  1 flaviovdf flaviovdf 447K Feb  3 17:42 07-tcl.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  14K Feb  3 15:58 07-tcl.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 15:59 08-amostragem
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 15:59 08-amostragem_files
+    -rw-r--r--  1 flaviovdf flaviovdf 227K Feb  3 17:42 08-amostragem.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf 118K Feb  3 15:59 08-amostragem.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 16:00 09-ics
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 16:00 09-ics_files
+    -rw-r--r--  1 flaviovdf flaviovdf 703K Feb  3 17:42 09-ics.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  88K Feb  3 16:00 09-ics.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 16:04 10-ab
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 16:04 10-ab_files
+    -rw-r--r--  1 flaviovdf flaviovdf 172K Feb  3 17:42 10-ab.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  17K Feb  3 16:04 10-ab.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 16:04 11-hipoteses
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 16:04 11-hipoteses_files
+    -rw-r--r--  1 flaviovdf flaviovdf 297K Feb  3 17:42 11-hipoteses.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf 105K Feb  3 16:04 11-hipoteses.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 16:52 12-causalidade
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 16:52 12-causalidade_files
+    -rw-r--r--  1 flaviovdf flaviovdf  52K Feb  3 17:43 12-causalidade.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf 9.4K Feb  3 16:52 12-causalidade.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 17:03 13-poder
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 17:03 13-poder_files
+    -rw-r--r--  1 flaviovdf flaviovdf 837K Feb  3 17:44 13-poder.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  25K Feb  3 17:03 13-poder.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 16:49 14-correlacao
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 16:49 14-correlacao_files
+    -rw-r--r--  1 flaviovdf flaviovdf 1.8M Feb  3 17:43 14-correlacao.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  39K Feb  3 16:49 14-correlacao.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 16:50 15-linear
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 16:50 15-linear_files
+    -rw-r--r--  1 flaviovdf flaviovdf 905K Feb  3 17:43 15-linear.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  25K Feb  3 16:50 15-linear.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 16:52 16-vero
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 16:52 16-vero_files
+    -rw-r--r--  1 flaviovdf flaviovdf 1.0M Feb  3 17:43 16-vero.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  29K Feb  3 16:52 16-vero.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 17:38 17-gradiente
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 17:38 17-gradiente_files
+    -rw-r--r--  1 flaviovdf flaviovdf 726K Feb  3 17:44 17-gradiente.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  61K Feb  3 17:38 17-gradiente.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  3 17:00 18-multipla
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 17:00 18-multipla_files
+    -rw-r--r--  1 flaviovdf flaviovdf 670K Feb  3 17:44 18-multipla.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf 134K Feb  3 17:00 18-multipla.md
     drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Feb  2 08:09 27-revisao
     drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:09 27-revisao_files
-    -rw-r--r--  1 flaviovdf flaviovdf  63K Dec 14 12:37 27-revisao.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  63K Feb  3 17:44 27-revisao.ipynb
     -rw-r--r--  1 flaviovdf flaviovdf  17K Feb  2 08:09 27-revisao.md
     -rw-r--r--  1 flaviovdf flaviovdf 172K Nov 30 09:22 capital.json
+    -rw-r--r--  1 flaviovdf flaviovdf  72K Feb  3 17:08 colab_favicon.ico
+    -rw-r--r--  1 flaviovdf flaviovdf 7.8K Feb  3 17:12 colab_favicon.png
+    -rw-r--r--  1 flaviovdf flaviovdf 2.2K Feb  3 17:31 colab_favicon_small.png
     -rw-r--r--  1 flaviovdf flaviovdf   85 Dec 14 12:42 compile_all.sh
-    -rw-r--r--  1 flaviovdf flaviovdf 1016 Dec 14 12:42 compile_notebook.sh
+    -rw-r--r--  1 flaviovdf flaviovdf 1.1K Feb  3 17:37 compile_notebook.sh
     -rw-r--r--  1 flaviovdf flaviovdf 401K Nov 30 09:22 dom-casmurro.txt
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  2 08:38 .ipynb_checkpoints
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Feb  3 16:54 .ipynb_checkpoints
     -rw-r--r--  1 flaviovdf flaviovdf  29K Dec 19 15:46 .nbgrader.log
 
 

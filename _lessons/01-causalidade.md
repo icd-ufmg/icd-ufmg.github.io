@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Causalidade
+title: Causalidade (Incompleto)
 nav_order: 1
 ---
 
@@ -11,7 +11,7 @@ Uma breve introdução ao santo graal da ciência de dados
 {: .fs-6 .fw-300 }
 
 {: .no_toc .text-delta }
-Objetivo
+Resultados Esperados
 
 * Entender qual o problema de causalidade
 * Entender a diferença entre estudos randomizados e observacionais

@@ -1,7 +1,10 @@
+---
 layout: page
 title: Exploração e Visualização
 nav_order: 3
 ---
+
+[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/icd-ufmg/icd-ufmg.github.io/blob/master/_lessons/03-viz.ipynb)
 
 # Exploração e Visualização
 {: .no_toc .mb-2 }
@@ -10,18 +13,12 @@ Um pouco de matplotlib.
 {: .fs-6 .fw-300 }
 
 {: .no_toc .text-delta }
-Objetivo
-
-1. Aprender Matplotlib
-2. Aprender conceitos básicos de visualizar dados
-3. Um pouco mais de filtro e seleção de dados
-
-{: .no_toc .text-delta }
-Resultado Esperado
+Resultados Esperados
 
 1. Junto com a aula passada, ferramentas simples para exploração de dados
-1. Muito pode ser feito sem modelos (lembre do John-Snow Experiment)
-1. Plots + Filtros!
+1. Aprender a base de Matplotlib para realizar um plot simples
+1. Aprender conceitos básicos de visualização dados
+1. Um pouco mais de filtro e seleção de dados
 
 ---
 **Sumário**
@@ -37,9 +34,15 @@ Resultado Esperado
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+```
 
+
+```python
+#In: 
 # Colocando alguns defaults para embelezar os plots!
-plt.rcParams['figure.figsize']  = (18, 10)
+plt.style.use('seaborn-colorblind')
+
+plt.rcParams['figure.figsize']  = (16, 10)
 plt.rcParams['axes.labelsize']  = 20
 plt.rcParams['axes.titlesize']  = 20
 plt.rcParams['legend.fontsize'] = 20
@@ -51,10 +54,7 @@ plt.rcParams['lines.linewidth'] = 4
 
 ```python
 #In: 
-plt.ion()
-
-plt.style.use('seaborn-colorblind')
-plt.rcParams['figure.figsize']  = (12, 8) # não sei o motivo, mas o use acima reseta o size.
+plt.ion() # Liga plots no notebook
 ```
 
 ## Introdução
@@ -788,7 +788,7 @@ plt.ylabel('Num Births');
 
 
     
-![png](03-viz_files/03-viz_15_1.png)
+![png](03-viz_files/03-viz_16_1.png)
     
 
 
@@ -970,7 +970,7 @@ plt.xlabel('');
 
 
     
-![png](03-viz_files/03-viz_21_1.png)
+![png](03-viz_files/03-viz_22_1.png)
     
 
 
@@ -1015,7 +1015,7 @@ plt.show()
 
 
     
-![png](03-viz_files/03-viz_25_0.png)
+![png](03-viz_files/03-viz_26_0.png)
     
 
 
@@ -1046,7 +1046,7 @@ plt.show()
 
 
     
-![png](03-viz_files/03-viz_28_0.png)
+![png](03-viz_files/03-viz_29_0.png)
     
 
 
@@ -1156,7 +1156,7 @@ plt.show()
 
 
     
-![png](03-viz_files/03-viz_34_0.png)
+![png](03-viz_files/03-viz_35_0.png)
     
 
 
@@ -1177,7 +1177,7 @@ plt.ylabel('Cosine')
 
 
     
-![png](03-viz_files/03-viz_35_1.png)
+![png](03-viz_files/03-viz_36_1.png)
     
 
 
@@ -1301,7 +1301,7 @@ mean_g.sort_values()[::-1].plot.bar(edgecolor='k');
 
 
     
-![png](03-viz_files/03-viz_40_1.png)
+![png](03-viz_files/03-viz_41_1.png)
     
 
 
@@ -1320,7 +1320,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_41_0.png)
+![png](03-viz_files/03-viz_42_0.png)
     
 
 
@@ -1342,7 +1342,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_42_0.png)
+![png](03-viz_files/03-viz_43_0.png)
     
 
 
@@ -1856,7 +1856,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_45_0.png)
+![png](03-viz_files/03-viz_46_0.png)
     
 
 
@@ -1877,7 +1877,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_47_0.png)
+![png](03-viz_files/03-viz_48_0.png)
     
 
 
@@ -1897,7 +1897,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_48_0.png)
+![png](03-viz_files/03-viz_49_0.png)
     
 
 
@@ -1917,7 +1917,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_49_0.png)
+![png](03-viz_files/03-viz_50_0.png)
     
 
 
@@ -1948,7 +1948,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_51_0.png)
+![png](03-viz_files/03-viz_52_0.png)
     
 
 
@@ -1973,7 +1973,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_52_0.png)
+![png](03-viz_files/03-viz_53_0.png)
     
 
 
@@ -2159,6 +2159,6 @@ plt.show()
 
 
     
-![png](03-viz_files/03-viz_57_0.png)
+![png](03-viz_files/03-viz_58_0.png)
     
 

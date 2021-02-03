@@ -1,10 +1,46 @@
+---
+layout: page
+title: Risco
+nav_order: 6
+---
+
+[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/icd-ufmg/icd-ufmg.github.io/blob/master/_lessons/06-risco.ipynb)
+
+# Risco
+{: .no_toc .mb-2 }
+
+Entendendo a importância da média
+{: .fs-6 .fw-300 }
+
+{: .no_toc .text-delta }
+Resultados Esperados
+
+1. Revisar conceitos de Probabilidade ligados a média
+1. Entendimento da lei dos grandes números
+1. Entendimento de um erro quadrado
+1. Entendimento inicial do teorema central do limite
+
+---
+**Sumário**
+1. TOC
+{:toc}
+---
+
+
+```python
+#In: 
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import scipy.stats as ss
+```
 
-# Para evitar a confusão da aula passada, colocando alguns defaults!
-plt.rcParams['figure.figsize']  = (18, 10)
+
+```python
+#In: 
+plt.style.use('seaborn-colorblind')
+
+plt.rcParams['figure.figsize']  = (16, 10)
 plt.rcParams['axes.labelsize']  = 20
 plt.rcParams['axes.titlesize']  = 20
 plt.rcParams['legend.fontsize'] = 20
@@ -17,9 +53,6 @@ plt.rcParams['lines.linewidth'] = 4
 ```python
 #In: 
 plt.ion()
-
-plt.style.use('seaborn-colorblind')
-plt.rcParams['figure.figsize']  = (12, 8)
 ```
 
 
@@ -43,7 +76,7 @@ def despine(ax=None):
 np.random.seed(98)
 ```
 
-# Aula 07 - Risco
+## Introdução
 
 Vamos iniciar esta aula com um conjunto de dados sintéticos. Os mesmos vão ser compostos de uma amostra de uma distribuição Normal. Para fazer tal amostra, use a biblioteca `numpy.random`. Abaixo, nossos dados são gerados a partir de uma distribuição Beta.
 
@@ -97,7 +130,7 @@ plt.tight_layout(pad=0)
 
 
     
-![png](06-risco_files/06-risco_7_0.png)
+![png](06-risco_files/06-risco_9_0.png)
     
 
 
@@ -135,7 +168,7 @@ despine()
 
 
     
-![png](06-risco_files/06-risco_9_0.png)
+![png](06-risco_files/06-risco_11_0.png)
     
 
 
@@ -152,7 +185,7 @@ despine()
 
 
     
-![png](06-risco_files/06-risco_11_0.png)
+![png](06-risco_files/06-risco_13_0.png)
     
 
 
@@ -196,7 +229,7 @@ despine()
 
 
     
-![png](06-risco_files/06-risco_15_0.png)
+![png](06-risco_files/06-risco_17_0.png)
     
 
 
@@ -223,7 +256,7 @@ despine()
 
 
     
-![png](06-risco_files/06-risco_18_0.png)
+![png](06-risco_files/06-risco_20_0.png)
     
 
 
@@ -260,7 +293,7 @@ despine()
 
 
     
-![png](06-risco_files/06-risco_23_0.png)
+![png](06-risco_files/06-risco_25_0.png)
     
 
 
@@ -326,7 +359,7 @@ plt.xlabel(r'$\hat{\theta}$')
 
 
     
-![png](06-risco_files/06-risco_30_1.png)
+![png](06-risco_files/06-risco_32_1.png)
     
 
 
@@ -381,7 +414,7 @@ plt.xlabel(r'$\hat{\theta}$')
 
 
     
-![png](06-risco_files/06-risco_33_1.png)
+![png](06-risco_files/06-risco_35_1.png)
     
 
 
@@ -429,9 +462,3 @@ Naturalmente, gostaríamos de escolher o valor de $\hat{\theta}$ que torna o ris
 
 
 Seção sendo escrita. Leia: https://www.textbook.ds100.org/ch/12/prob_risk.html. Use o translate caso necessite!
-
-
-```python
-#In: 
-
-```

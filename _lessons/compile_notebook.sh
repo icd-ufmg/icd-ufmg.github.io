@@ -21,8 +21,8 @@ if [[ -d $fname_noext/$support_files ]]; then
   rm -rf $fname_noext/$support_files
 fi
 
-# jupyter nbconvert --execute --ExecutePreprocessor.enabled=True \
-#         --ExecutePreprocessor.timeout=600 --to notebook --inplace $1
+jupyter nbconvert --execute --ExecutePreprocessor.enabled=True \
+        --ExecutePreprocessor.timeout=600 --to notebook --inplace $1
 jupyter nbconvert --execute --ExecutePreprocessor.enabled=True \
         --ExecutePreprocessor.timeout=600 --to markdown $1
 
@@ -35,7 +35,8 @@ if [[ -d $support_files ]]; then
 fi
 
 output=$folder/${fname_noext}.md
-tail -n +2 $output > $folder/${fname_noext}.md.tmp
+tail -n +1 $output > $folder/${fname_noext}.md.tmp
 mv $folder/${fname_noext}.md.tmp $folder/${fname_noext}.md
 
 sed -i 's/```python/```python\n#In: /g' $folder/${fname_noext}.md
+cp ./colab_favicon_small.png $fname_noext/

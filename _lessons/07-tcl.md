@@ -1,11 +1,48 @@
+---
+layout: page
+title: Teorema Central do Limite
+nav_order: 7
+---
+
+[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/icd-ufmg/icd-ufmg.github.io/blob/master/_lessons/07-tcl.ipynb)
+
+# Teorema Central do Limite
+{: .no_toc .mb-2 }
+
+O teorema base para os nossos testes de hipóteses
+{: .fs-6 .fw-300 }
+
+{: .no_toc .text-delta }
+Resultados Esperados
+
+1. Revisar conceitos de Probabilidade ligados a distribuição normal
+1. Revisar o teorema central do limite
+1. Entendimento do teorema central do limite
+1. Simular médias de qualquer distribuição
+1. Mostrar como a distribuição de média segue uma normal
+
+---
+**Sumário**
+1. TOC
+{:toc}
+---
+
+
+```python
+#In: 
 # -*- coding: utf8
 
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+```
 
-# Para evitar a confusão da aula passada, colocando alguns defaults!
-plt.rcParams['figure.figsize']  = (18, 10)
+
+```python
+#In: 
+plt.style.use('seaborn-colorblind')
+
+plt.rcParams['figure.figsize']  = (16, 10)
 plt.rcParams['axes.labelsize']  = 20
 plt.rcParams['axes.titlesize']  = 20
 plt.rcParams['legend.fontsize'] = 20
@@ -18,9 +55,6 @@ plt.rcParams['lines.linewidth'] = 4
 ```python
 #In: 
 plt.ion()
-
-plt.style.use('seaborn-colorblind')
-plt.rcParams['figure.figsize']  = (12, 8)
 ```
 
 
@@ -37,18 +71,6 @@ def despine(ax=None):
     ax.yaxis.set_ticks_position('left')
     ax.xaxis.set_ticks_position('bottom')
 ```
-
-# Aula 07 - Teorema Central do Limite
-
-## Objetivos
-
-1. Revisar conceitos de média de variânça
-1. Entender a ideia por trás do TCL
-
-## Resultados Esperados
-
-1. Simular médias de qualquer distribuição
-1. Mostrar como a distribuição de média segue uma normal
 
 ## Introdução
 
@@ -108,7 +130,7 @@ num_caras
 
 
 
-    4
+    2
 
 
 
@@ -123,7 +145,7 @@ np.random.binomial(5, 0.5, size=10)
 
 
 
-    array([4, 1, 2, 4, 4, 2, 3, 2, 2, 4])
+    array([2, 2, 3, 3, 3, 3, 3, 1, 2, 2])
 
 
 
@@ -142,7 +164,7 @@ despine()
 
 
     
-![png](07-tcl_files/07-tcl_9_0.png)
+![png](07-tcl_files/07-tcl_10_0.png)
     
 
 
@@ -166,7 +188,7 @@ despine()
 
 
     
-![png](07-tcl_files/07-tcl_11_1.png)
+![png](07-tcl_files/07-tcl_12_1.png)
     
 
 
@@ -190,7 +212,7 @@ despine()
 
 
     
-![png](07-tcl_files/07-tcl_13_0.png)
+![png](07-tcl_files/07-tcl_14_0.png)
     
 
 
@@ -206,7 +228,8 @@ plt.plot(x, y, label='Aproximação Normal')
 
 num_caras_a_cada_5 = np.random.binomial(10, 0.5, size=1000000)
 ticks = np.linspace(-0.5, 10.5, num=12)
-plt.hist(num_caras_a_cada_5, bins=ticks, edgecolor='k', label='Dados')
+plt.hist(num_caras_a_cada_5, bins=ticks, edgecolor='k', label='Dados',
+         density=True)
 plt.plot(x, y)
 plt.xlabel('Jogadas de moedas')
 plt.ylabel('Número de caras')
@@ -217,7 +240,7 @@ despine()
 
 
     
-![png](07-tcl_files/07-tcl_14_0.png)
+![png](07-tcl_files/07-tcl_15_0.png)
     
 
 
@@ -247,7 +270,7 @@ despine()
 
 
     
-![png](07-tcl_files/07-tcl_16_0.png)
+![png](07-tcl_files/07-tcl_17_0.png)
     
 
 
@@ -274,7 +297,7 @@ dados
 
 
 
-    array([3, 6, 4, ..., 6, 7, 5])
+    array([ 5, 10,  1, ...,  4,  7,  6])
 
 
 
@@ -293,7 +316,7 @@ media = soma / n_amostra
 print(media)
 ```
 
-    4.8
+    5.43
 
 
 Vamos repetir o processo algumas vezes. Tipo, 10000 vezes.
@@ -328,7 +351,7 @@ despine()
 
 
     
-![png](07-tcl_files/07-tcl_24_0.png)
+![png](07-tcl_files/07-tcl_25_0.png)
     
 
 
@@ -347,7 +370,7 @@ y = ss.distributions.norm.pdf(loc=mean, scale=std, x=x)
 
 plt.plot(x, y, label='Aproximação Normal')
 
-plt.hist(medias, bins=20, edgecolor='k')
+plt.hist(medias, bins=20, edgecolor='k', density=True)
 plt.ylabel('P(X = x)')
 plt.xlabel('Média das matérias - x')
 plt.title('CLT na Prática')
@@ -356,7 +379,7 @@ despine()
 
 
     
-![png](07-tcl_files/07-tcl_26_0.png)
+![png](07-tcl_files/07-tcl_27_0.png)
     
 
 
@@ -449,7 +472,7 @@ despine()
 
 
     
-![png](07-tcl_files/07-tcl_29_0.png)
+![png](07-tcl_files/07-tcl_30_0.png)
     
 
 
@@ -477,7 +500,7 @@ y = ss.distributions.norm.pdf(loc=mean, scale=std, x=x)
 
 plt.plot(x, y, label='Aproximação Normal')
 
-plt.hist(medias, bins=20, edgecolor='k')
+plt.hist(medias, bins=20, edgecolor='k', density=True)
 plt.ylabel('P(X = x)')
 plt.xlabel('Salário da NBA - x')
 plt.title('CLT na Prática')
@@ -486,7 +509,7 @@ despine()
 
 
     
-![png](07-tcl_files/07-tcl_31_0.png)
+![png](07-tcl_files/07-tcl_32_0.png)
     
 
 
@@ -520,7 +543,7 @@ despine()
 
 
     
-![png](07-tcl_files/07-tcl_34_0.png)
+![png](07-tcl_files/07-tcl_35_0.png)
     
 
 
@@ -541,7 +564,7 @@ despine()
 
 
     
-![png](07-tcl_files/07-tcl_36_0.png)
+![png](07-tcl_files/07-tcl_37_0.png)
     
 
 
@@ -558,7 +581,7 @@ y = ss.distributions.norm.pdf(loc=mean, scale=std, x=x)
 
 plt.plot(x, y, label='Aproximação Normal')
 
-plt.hist(data, bins=20, edgecolor='k')
+plt.hist(data, bins=20, edgecolor='k', density=True)
 plt.ylabel('P(X = x)')
 plt.title('CLT na Prática')
 despine()
@@ -566,17 +589,6 @@ despine()
 
 
     
-![png](07-tcl_files/07-tcl_37_0.png)
+![png](07-tcl_files/07-tcl_38_0.png)
     
 
-
-## Para exploração futura
-
-* Veja o material do Open-intro stats para uma definição mais formal do TCL.
-* O Wikipedia também é um bom local.
-
-
-```python
-#In: 
-
-```

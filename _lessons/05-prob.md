@@ -1,20 +1,18 @@
+---
 layout: page
 title: Revisão Probabilidade
 nav_order: 5
 ---
 
+[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/icd-ufmg/icd-ufmg.github.io/blob/master/_lessons/05-prob.ipynb)
+
+
 # Revisão Probabilidade
 
 {: .no_toc .mb-2 }
 
-Revisão de um pré-requisito.
+Revisão básica de probabilidade.
 {: .fs-6 .fw-300 }
-
-{: .no_toc .text-delta }
-Objetivos
-
-1. Revisão básica de probabilidade
-1. Aprender como filtros levam a um entendimento de probabilidade
 
 {: .no_toc .text-delta }
 Resultado Esperado
@@ -37,9 +35,14 @@ Resultado Esperado
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+```
 
-# Para evitar a confusão da aula passada, colocando alguns defaults!
-plt.rcParams['figure.figsize']  = (18, 10)
+
+```python
+#In: 
+plt.style.use('seaborn-colorblind')
+
+plt.rcParams['figure.figsize']  = (16, 10)
 plt.rcParams['axes.labelsize']  = 20
 plt.rcParams['axes.titlesize']  = 20
 plt.rcParams['legend.fontsize'] = 20
@@ -51,9 +54,7 @@ plt.rcParams['lines.linewidth'] = 4
 
 ```python
 #In: 
-plt.style.use('seaborn-colorblind')
 plt.ion()
-plt.rcParams['figure.figsize']  = (18, 10)
 ```
 
 # Teoria da Probabilidade
@@ -91,7 +92,7 @@ np.random.rand()
 
 
 
-    0.05012622897102659
+    0.41151332551951625
 
 
 
@@ -104,7 +105,7 @@ np.random.rand()
 
 
 
-    1.0073174595659482
+    1.4669434051162973
 
 
 
@@ -118,7 +119,7 @@ round(1 + np.random.rand() * 5)
 
 
 
-    4
+    3
 
 
 
@@ -151,7 +152,7 @@ np.random.randint(1, 7)
 
 
 
-    1
+    3
 
 
 
@@ -175,12 +176,12 @@ pd.Series(count)
 
 
 
-    0    1623.0
-    1    1715.0
-    2    1661.0
-    3    1692.0
-    4    1684.0
-    5    1625.0
+    0    1720.0
+    1    1688.0
+    2    1615.0
+    3    1668.0
+    4    1656.0
+    5    1653.0
     dtype: float64
 
 
@@ -203,7 +204,7 @@ plt.xlabel('Valor do dado - x')
 
 
     
-![png](05-prob_files/05-prob_13_1.png)
+![png](05-prob_files/05-prob_14_1.png)
     
 
 
@@ -219,7 +220,7 @@ prob
 
 
 
-    array([0.1623, 0.1715, 0.1661, 0.1692, 0.1684, 0.1625])
+    array([0.172 , 0.1688, 0.1615, 0.1668, 0.1656, 0.1653])
 
 
 
@@ -241,7 +242,7 @@ plt.xlabel('Valor do dado - x')
 
 
     
-![png](05-prob_files/05-prob_16_1.png)
+![png](05-prob_files/05-prob_17_1.png)
     
 
 
@@ -263,7 +264,7 @@ plt.xlabel('Valor do dado - x')
 
 
     
-![png](05-prob_files/05-prob_17_1.png)
+![png](05-prob_files/05-prob_18_1.png)
     
 
 
@@ -291,13 +292,13 @@ plt.plot(p6)
 
 
 
-    [<matplotlib.lines.Line2D at 0x7fdf8ac6b160>]
+    [<matplotlib.lines.Line2D at 0x7f3a33dfa2e0>]
 
 
 
 
     
-![png](05-prob_files/05-prob_19_1.png)
+![png](05-prob_files/05-prob_20_1.png)
     
 
 
@@ -376,8 +377,8 @@ print ("P(both | either): ", both_girls / either_girl)
 
 ```
 
-    P(both | older): 0.5045834994021523
-    P(both | either):  0.33549754869484566
+    P(both | older): 0.4984851545142395
+    P(both | either):  0.32893509262961484
 
 
 Podemos resolver de forma mais simples com numpy + pandas
@@ -394,11 +395,11 @@ X
 
     array([['boy', 'boy'],
            ['girl', 'girl'],
-           ['girl', 'boy'],
+           ['boy', 'boy'],
            ...,
            ['boy', 'boy'],
-           ['girl', 'boy'],
-           ['boy', 'girl']], dtype='<U4')
+           ['boy', 'boy'],
+           ['girl', 'girl']], dtype='<U4')
 
 
 
@@ -447,7 +448,7 @@ df
     </tr>
     <tr>
       <th>2</th>
-      <td>girl</td>
+      <td>boy</td>
       <td>boy</td>
     </tr>
     <tr>
@@ -457,8 +458,8 @@ df
     </tr>
     <tr>
       <th>4</th>
-      <td>girl</td>
       <td>boy</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>...</th>
@@ -467,13 +468,13 @@ df
     </tr>
     <tr>
       <th>4995</th>
-      <td>girl</td>
-      <td>girl</td>
+      <td>boy</td>
+      <td>boy</td>
     </tr>
     <tr>
       <th>4996</th>
-      <td>girl</td>
       <td>boy</td>
+      <td>girl</td>
     </tr>
     <tr>
       <th>4997</th>
@@ -482,12 +483,12 @@ df
     </tr>
     <tr>
       <th>4998</th>
-      <td>girl</td>
+      <td>boy</td>
       <td>boy</td>
     </tr>
     <tr>
       <th>4999</th>
-      <td>boy</td>
+      <td>girl</td>
       <td>girl</td>
     </tr>
   </tbody>
@@ -507,7 +508,7 @@ len(filtro)
 
 
 
-    2485
+    2510
 
 
 
@@ -520,7 +521,7 @@ len(filtro)
 
 
 
-    0.4985789687373122
+    0.5087291920422249
 
 
 
@@ -535,7 +536,7 @@ df[df['second'] == 'girl'].groupby('first').size()
 
     first
     boy     1257
-    girl    1228
+    girl    1253
     dtype: int64
 
 
@@ -644,7 +645,7 @@ plt.ylabel('P(X = x)')
 
 
     
-![png](05-prob_files/05-prob_33_1.png)
+![png](05-prob_files/05-prob_34_1.png)
     
 
 
@@ -679,7 +680,7 @@ plt.show()
 
 
     
-![png](05-prob_files/05-prob_36_0.png)
+![png](05-prob_files/05-prob_37_0.png)
     
 
 
@@ -716,7 +717,7 @@ plt.show()
 
 
     
-![png](05-prob_files/05-prob_40_0.png)
+![png](05-prob_files/05-prob_41_0.png)
     
 
 
@@ -769,7 +770,7 @@ plt.show()
 
 
     
-![png](05-prob_files/05-prob_44_0.png)
+![png](05-prob_files/05-prob_45_0.png)
     
 
 
@@ -847,13 +848,13 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x7fdf883da2b0>
+    <matplotlib.legend.Legend at 0x7f3a33e2a3d0>
 
 
 
 
     
-![png](05-prob_files/05-prob_51_1.png)
+![png](05-prob_files/05-prob_52_1.png)
     
 
 
@@ -911,7 +912,7 @@ plt.ylabel('P(X = x)')
 
 
     
-![png](05-prob_files/05-prob_54_1.png)
+![png](05-prob_files/05-prob_55_1.png)
     
 
 
@@ -943,7 +944,7 @@ plt.ylabel('P(X = x)')
 
 
     
-![png](05-prob_files/05-prob_56_1.png)
+![png](05-prob_files/05-prob_57_1.png)
     
 
 
@@ -961,13 +962,13 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x7fdf83f37e20>
+    <matplotlib.legend.Legend at 0x7f3a3131ae20>
 
 
 
 
     
-![png](05-prob_files/05-prob_57_1.png)
+![png](05-prob_files/05-prob_58_1.png)
     
 
 
@@ -1146,7 +1147,7 @@ df.groupby('Start Station').size().sort_values()[::-1][:20].plot.bar()
 
 
     
-![png](05-prob_files/05-prob_62_1.png)
+![png](05-prob_files/05-prob_63_1.png)
     
 
 
@@ -1243,6 +1244,6 @@ df.groupby('End Station').size().sort_values()[::-1].plot.bar()
 
 
     
-![png](05-prob_files/05-prob_73_1.png)
+![png](05-prob_files/05-prob_74_1.png)
     
 

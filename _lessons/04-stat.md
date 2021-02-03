@@ -1,8 +1,12 @@
+---
 layout: page
 title: Estatística Básica
 nav_order: 4
 has_toc: true
 ---
+
+[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/icd-ufmg/icd-ufmg.github.io/blob/master/_lessons/04-stat.ipynb)
+
 
 # Estatística Básica
 {: .no_toc .mb-2 }
@@ -11,17 +15,12 @@ Um breve resumo de alguns comandos python.
 {: .fs-6 .fw-300 }
 
 {: .no_toc .text-delta }
-Objetivos
-
-1. Entender como sumarizar dados.
-1. Relembrar tendências centrais de dados.
-1. Mais importante, entender as falácias de sumarização de dados.
-
-{: .no_toc .text-delta }
 Resultado Esperado
 
 1. Entendimento de médias, medianas, desvio padrão e quartis.
 1. Entendimento de propriedades das médias
+1. Entender como sumarizar dados.
+1. Mais importante, entender as falácias de sumarização de dados.
 
 ---
 **Sumário**
@@ -37,8 +36,14 @@ Resultado Esperado
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+```
 
-# Para evitar a confusão da aula passada, colocando alguns defaults!
+
+```python
+#In: 
+plt.style.use('seaborn-colorblind')
+
+plt.rcParams['figure.figsize']  = (16, 10)
 plt.rcParams['axes.labelsize']  = 20
 plt.rcParams['axes.titlesize']  = 20
 plt.rcParams['legend.fontsize'] = 20
@@ -50,9 +55,7 @@ plt.rcParams['lines.linewidth'] = 4
 
 ```python
 #In: 
-plt.style.use('seaborn-colorblind')
 plt.ion()
-plt.rcParams['figure.figsize']  = (18, 10)
 ```
 
 
@@ -232,7 +235,7 @@ plt.show()
 
 
     
-![png](04-stat_files/04-stat_14_0.png)
+![png](04-stat_files/04-stat_15_0.png)
     
 
 
@@ -270,7 +273,7 @@ plt.show()
 
 
     
-![png](04-stat_files/04-stat_18_0.png)
+![png](04-stat_files/04-stat_19_0.png)
     
 
 
@@ -292,7 +295,7 @@ plt.show()
 
 
     
-![png](04-stat_files/04-stat_20_0.png)
+![png](04-stat_files/04-stat_21_0.png)
     
 
 
@@ -531,7 +534,7 @@ plt.show()
 
 
     
-![png](04-stat_files/04-stat_48_0.png)
+![png](04-stat_files/04-stat_49_0.png)
     
 
 
@@ -621,7 +624,7 @@ plt.show()
 
 
     
-![png](04-stat_files/04-stat_55_0.png)
+![png](04-stat_files/04-stat_56_0.png)
     
 
 
@@ -649,7 +652,7 @@ plt.show()
 
 
     
-![png](04-stat_files/04-stat_57_1.png)
+![png](04-stat_files/04-stat_58_1.png)
     
 
 
@@ -769,26 +772,26 @@ palavras.head(20)
 
 
 
-    minutes       65
-    hoes         364
-    and         6359
-    now         3558
-    sorrow        32
-    next         584
-    broke        369
-    losin         49
-    ceilin        20
-    fit          160
-    down        3086
-    real        1081
-    another      833
-    feel        1993
-    love        3280
-    minute       284
-    demons        49
-    know        4582
-    who         1476
-    feelings     174
+    would       1230
+    swallow       73
+    that        5460
+    take        2578
+    drown         76
+    way         2529
+    to          6369
+    colorado       7
+    out         3553
+    race          78
+    kiddin         9
+    no          3738
+    oh          2697
+    like        4549
+    givin        115
+    a           6101
+    mind        1280
+    grinnin        7
+    am           987
+    admit        119
     dtype: int64
 
 
@@ -807,7 +810,7 @@ plt.show()
 
 
     
-![png](04-stat_files/04-stat_72_0.png)
+![png](04-stat_files/04-stat_73_0.png)
     
 
 
@@ -827,7 +830,7 @@ plt.show()
 
 
     
-![png](04-stat_files/04-stat_73_0.png)
+![png](04-stat_files/04-stat_74_0.png)
     
 
 
@@ -876,7 +879,7 @@ Como a mediana, o intervalo não depende realmente de todo o conjunto de dados. 
 
 Uma medida mais complexa de dispersão é a variância $s^2$. Quando a variância da população é estimada usando $n$ amostras aleatórias $x_1, x_2, ..., x_n$ a fórmula seguinte é um estimador não enviesado:
 
-$$s^{2}={\frac {1}{n-1}}\sum _{{i=1}}^{n}\left(x_{i}-\overline {x}\right)^{2}$$
+$$s^{2}={\frac {1}{n-1}}\sum _{i=1}^{n}\left(x_{i}-\overline {x}\right)^{2}$$
 
 O código abaixo faz o mesmo:
 
@@ -967,8 +970,8 @@ print("IQR:", interquartile_range(palavras))
 
     Dispersão para as palavras:
     Intervalo: 6527
-    Variância: 35806.28050708675
-    Desvio padrão: 189.22547531209096
+    Variância: 35806.28050708674
+    Desvio padrão: 189.22547531209094
     IQR: 3
 
 
@@ -1014,20 +1017,14 @@ for indice, row in letra_e_musica.iterrows():
 
 ```python
 #In: 
-plt.scatter(x, y)
+plt.scatter(x, y, edgecolor='k', s=80)
 plt.xlabel('Número de palavras na letra')
-plt.ylabel('Duração');
+plt.ylabel('Duração')
+despine()
 ```
 
 
-
-
-    Text(0, 0.5, 'Duração')
-
-
-
-
     
-![png](04-stat_files/04-stat_95_1.png)
+![png](04-stat_files/04-stat_96_0.png)
     
 

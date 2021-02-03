@@ -1,3 +1,34 @@
+---
+layout: page
+title: Testes - Conceitos Avançados
+nav_order: 13
+---
+
+[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/icd-ufmg/icd-ufmg.github.io/blob/master/_lessons/13-poder.ipynb)
+
+
+# Testes - Conceitos Avançados
+{: .no_toc .mb-2 }
+
+Explorar conceitos como poder e tipos de erro
+{: .fs-6 .fw-300 }
+
+{: .no_toc .text-delta }
+Resultados Esperados
+
+1. Entendimento de erros tipo 1 e tipo 2
+1. Entendimento de poder de testes
+1. Entendimento de *p-hacking*
+
+---
+**Sumário**
+1. TOC
+{:toc}
+---
+
+
+```python
+#In: 
 # -*- coding: utf8
 
 from scipy import stats as ss
@@ -5,9 +36,14 @@ from scipy import stats as ss
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+```
 
-# Para evitar a confusão da aula passada, colocando alguns defaults!
-plt.rcParams['figure.figsize']  = (18, 10)
+
+```python
+#In: 
+plt.style.use('seaborn-colorblind')
+
+plt.rcParams['figure.figsize']  = (16, 10)
 plt.rcParams['axes.labelsize']  = 20
 plt.rcParams['axes.titlesize']  = 20
 plt.rcParams['legend.fontsize'] = 20
@@ -20,8 +56,6 @@ plt.rcParams['lines.linewidth'] = 4
 ```python
 #In: 
 plt.ion()
-plt.style.use('seaborn-colorblind')
-plt.rcParams['figure.figsize']  = (12, 8)
 ```
 
 
@@ -39,9 +73,7 @@ def despine(ax=None):
     ax.xaxis.set_ticks_position('bottom')
 ```
 
-# Aula 12 - Poder de um Teste
-
-## Um problema de Motivação
+## Introdução
 
 Usando dados que existem publicamente, um professor de Computação tentou fazer uso de testes de hipóteses para verificar uma lenda francesa de que existem mais nascimentos em dias de lua cheia.
 
@@ -143,7 +175,7 @@ despine()
 
 
     
-![png](13-poder_files/13-poder_8_0.png)
+![png](13-poder_files/13-poder_10_0.png)
     
 
 
@@ -251,7 +283,7 @@ despine()
 
 
     
-![png](13-poder_files/13-poder_17_0.png)
+![png](13-poder_files/13-poder_19_0.png)
     
 
 
@@ -310,7 +342,7 @@ despine()
 
 
     
-![png](13-poder_files/13-poder_23_0.png)
+![png](13-poder_files/13-poder_25_0.png)
     
 
 
@@ -336,7 +368,7 @@ despine()
 
 
     
-![png](13-poder_files/13-poder_24_0.png)
+![png](13-poder_files/13-poder_26_0.png)
     
 
 
@@ -374,7 +406,7 @@ despine()
 
 
     
-![png](13-poder_files/13-poder_26_0.png)
+![png](13-poder_files/13-poder_28_0.png)
     
 
 
@@ -405,7 +437,7 @@ despine()
 
 
     
-![png](13-poder_files/13-poder_28_0.png)
+![png](13-poder_files/13-poder_30_0.png)
     
 
 
@@ -477,7 +509,7 @@ despine()
 
 
     
-![png](13-poder_files/13-poder_35_0.png)
+![png](13-poder_files/13-poder_37_0.png)
     
 
 
@@ -513,7 +545,7 @@ despine()
 
 
     
-![png](13-poder_files/13-poder_38_0.png)
+![png](13-poder_files/13-poder_40_0.png)
     
 
 
@@ -540,7 +572,7 @@ despine()
 
 
     
-![png](13-poder_files/13-poder_40_0.png)
+![png](13-poder_files/13-poder_42_0.png)
     
 
 
@@ -564,7 +596,7 @@ despine()
 
 
     
-![png](13-poder_files/13-poder_42_0.png)
+![png](13-poder_files/13-poder_44_0.png)
     
 
 
@@ -795,7 +827,7 @@ despine()
 
 
     
-![png](13-poder_files/13-poder_51_0.png)
+![png](13-poder_files/13-poder_53_0.png)
     
 
 
@@ -816,7 +848,7 @@ despine()
 
 
     
-![png](13-poder_files/13-poder_52_0.png)
+![png](13-poder_files/13-poder_54_0.png)
     
 
 
@@ -881,7 +913,7 @@ despine()
 
 
     
-![png](13-poder_files/13-poder_58_0.png)
+![png](13-poder_files/13-poder_60_0.png)
     
 
 
@@ -929,7 +961,7 @@ despine()
 
 
     
-![png](13-poder_files/13-poder_60_0.png)
+![png](13-poder_files/13-poder_62_0.png)
     
 
 
@@ -941,14 +973,3 @@ Ao realizar um teste sempre indique:
 1. Qual o tamanho do efeito
 
 Com muitas amostras, até efeitos pequenos são significativos. Porém, sem muitas consequências na prática!
-
-## Para maior exploração
-
-* O Coursera oferece um [curso de Análise de Dados e Inferência Estatística](https://www.coursera.org/specializations/statistics) que abrange muitos desses tópicos.
-* O All of Statistics aborda tal problema com mais detalhes teóricos.
-
-
-```python
-#In: 
-
-```
