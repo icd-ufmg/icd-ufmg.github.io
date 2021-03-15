@@ -18,8 +18,9 @@ title: Módulo 04 - Aprendizado de Máquina Simples
   : [Data100 Capt-23](https://www.textbook.ds100.org/ch/23/classification_intro.html)
 
 15 Mar
-: [Árvores e Florestas](TODO)
-
+: [Fluxo Completo com SKLearn]( https://www.youtube.com/playlist?list=PL4B0y0yqpKCLBgpTM9w8WeYk3VzvCS88g)
+  : [Vídeo Berkeley](https://www.youtube.com/watch?v=lFzRiinHSzU&t=923s)
+  
 17 Mar
 : [Aprendizado sem Supervisão 1](TODO)
 
