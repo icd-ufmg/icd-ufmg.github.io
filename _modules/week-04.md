@@ -22,7 +22,7 @@ title: Módulo 04 - Aprendizado de Máquina Simples
   : [Vídeo Berkeley](https://www.youtube.com/watch?v=lFzRiinHSzU&t=923s)
   
 17 Mar
-: [Aprendizado sem Supervisão 1 (Ainda sem Material, Extra na Ementa)](TODO)
+: [K-Means](https://www.youtube.com/watch?v=WqMnQuC19Rg)
 
 22 Mar
 : [Aprendizado sem Supervisão 2 (Ainda sem Material, Extra na Ementa)](TODO)
