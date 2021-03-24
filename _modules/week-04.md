@@ -23,9 +23,11 @@ title: Módulo 04 - Aprendizado de Máquina Simples
 
 17 Mar
 : [K-Means](https://www.youtube.com/watch?v=WqMnQuC19Rg)
+  : [Notebook](https://github.com/icd-ufmg/icd-ufmg.github.io/blob/master/_lessons/26-tutorial-sklearn-regressao.ipynb)
 
 22 Mar
 : [Aprendizado sem Supervisão 2 (Ainda sem Material, Extra na Ementa)](TODO)
 
 24 Mar
 : [Revisão Síncrona e Fechamento](https://youtu.be/snp08XKVf-U)
+  : [Notebook](https://github.com/icd-ufmg/icd-ufmg.github.io/blob/master/_lessons/26b-tutorial-sklearn-classification.ipynb)
