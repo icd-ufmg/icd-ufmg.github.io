@@ -20,7 +20,7 @@ title: Módulo 04 - Aprendizado de Máquina Simples
 15 Mar
 : [Fluxo Completo com SKLearn]( https://www.youtube.com/playlist?list=PL4B0y0yqpKCLBgpTM9w8WeYk3VzvCS88g)
   : [Vídeo Berkeley](https://www.youtube.com/watch?v=lFzRiinHSzU&t=923s)
-  
+
 17 Mar
 : [K-Means](https://www.youtube.com/watch?v=WqMnQuC19Rg)
 
@@ -28,4 +28,4 @@ title: Módulo 04 - Aprendizado de Máquina Simples
 : [Aprendizado sem Supervisão 2 (Ainda sem Material, Extra na Ementa)](TODO)
 
 24 Mar
-: Revisão Síncrona e Fechamento
+: [Revisão Síncrona e Fechamento](https://youtu.be/snp08XKVf-U)

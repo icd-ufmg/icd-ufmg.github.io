@@ -47,4 +47,4 @@ title: Módulo 02 - Testes de Hipótese
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLS5laDUoNKh2pgp7CF3juU)
 
 27 Jan
-: Revisão Síncrona
+: [Revisão Síncrona](https://youtu.be/bX5LVTsij-w)

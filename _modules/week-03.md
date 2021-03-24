@@ -38,4 +38,4 @@ title: Módulo 03 - Regressão
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCJHhLSEO3QvjCdZsuWyQij8)
 
 01 Mar
-: Revisão Síncrona
+: [Revisão Síncrona](https://youtu.be/yRzIy-7mfMc)
