@@ -36,13 +36,13 @@ antes de entregar seu projeto.
 
 ## Tarefas
 
-|   | Nome                               | Pontos | Data               |
-|---|------------------------------------|--------|--------------------|
-| 1 | Tema e Equipe                      | 1 pto  | 31 Dez             |
-| 1 | Primeira Entrevista                | 2 pto  | 27 Jan             |
-| 1 | Segunda Entrevista                 | 2 pto  | 28 Fev             |
-| 1 | Terceira Entrevista                | 2 pto  | 26 Mar             |
-| 1 | Entrega                            | 23 ptos| 26 Mar             |
+|   | Nome                               | Pontos | 
+|---|------------------------------------|--------|
+| 1 | Tema e Equipe                      | 1 pto  |
+| 1 | Primeira Entrevista                | 2 pto  |
+| 1 | Segunda Entrevista                 | 2 pto  |
+| 1 | Terceira Entrevista                | 2 pto  |
+| 1 | Entrega                            | 23 ptos|
 
 Com base no cronograma abaixo, você vai ser avaliado nas seguintes tarefas:
 1. Definir o Grupo + Tema (1 pts)
