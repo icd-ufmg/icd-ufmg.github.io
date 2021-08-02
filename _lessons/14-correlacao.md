@@ -4,7 +4,7 @@ title: Correlação
 nav_order: 14
 ---
 
-[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/icd-ufmg/icd-ufmg.github.io/blob/master/_lessons/14-correlacao}.ipynb)
+[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/icd-ufmg/icd-ufmg.github.io/blob/master/_lessons/14-correlacao.ipynb)
 
 # Correlação
 
