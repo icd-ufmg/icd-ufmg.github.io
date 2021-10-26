@@ -13,40 +13,34 @@ title: Módulo 01 - Análise Exploratória de Dados
 : [Videoaula 15h](https://youtu.be/WsagNXG2OKs)
 : [Videoaula 19h](https://youtu.be/QqYwazjQyf0)
 
-19 de Maio
+18 de Out
 : [Tabelas e Tipos de Dados]({{ site.baseurl }}{% link _lessons/02-tabelas.md %})
   : [Data100 Capt-06](https://www.textbook.ds100.org/ch/06/pandas_intro.html),
   : [Data100 Capt-07](https://www.textbook.ds100.org/ch/07/repr_intro.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCK952UN4pch9XKHZ3WqpVeb)
 
-Live
-: [Live Cobrindo as Últimas Aulas](https://www.youtube.com/watch?v=ssdytP7fbiQ)
-
-24 de Maio
+20 de Out
 : [Análise Exploratória e Visualização de Dados I]({{ site.baseurl }}{% link _lessons/03-viz.md %})
   : [Data100 Capt-07](https://www.textbook.ds100.org/ch/07/repr_intro.html),
   : [Data100 Capt-10](https://www.textbook.ds100.org/ch/10/viz_intro.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCIZU1IrnrdeAMim8mj3pVe4)
 
-26 de Maio
+25 de Out
 : [Análise Exploratória e Visualização de Dados II]({{ site.baseurl }}{% link _lessons/03-viz.md %})
   : [Data100 Capt-07](https://www.textbook.ds100.org/ch/07/repr_intro.html),
   : [Data100 Capt-10](https://www.textbook.ds100.org/ch/10/viz_intro.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLj07qACbfwrXJf2_-F0oAq)
 
-Live
-: [Live Cobrindo as Últimas Aulas](https://www.youtube.com/watch?v=8cZPbeugfe8)
-
-31 de Maio
+27 de Out
 : [Estatísticas Básicas]({{ site.baseurl }}{% link _lessons/04-stat.md %})
   : Sem Leitura Extra
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCIlIfvBX2DchddE5sqieelH)
 
-02 de Junho
+01 de Nov
 : [Revisão de Probabilidade]({{ site.baseurl }}{% link _lessons/05-prob.md %})
   : [Data100 Capt-02](https://www.textbook.ds100.org/ch/02/design_intro.html#),
   : [Data100 Capt-A1](https://www.textbook.ds100.org/ch/a01/prob_review.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLRQi3cQ9FWDriusBFYBaU7)
 
-7 de Junho
+03 de Nov
 : [Revisão Síncrona](https://www.youtube.com/watch?v=e7Jq6AQ51SE)
