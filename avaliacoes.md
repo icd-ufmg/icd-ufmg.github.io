@@ -29,12 +29,12 @@ Segue um sumário do formato.
 
 |   | Nome      | Pontos | Data               |
 |---|-----------|--------|--------------------|
-| 1 | Listas M1 | 12     | 07 de Junho        |
-| 1 | Listas M2 | 12     | 06 de Julho        |
-| 1 | Listas M3 | 12     | 27 de Julho        |
-| 1 | Listas M4 | 12     | 23 de Agosto       |
+| 1 | Listas M1 | 12     | 10 de Nov          |
+| 1 | Listas M2 | 12     | 15 de Dez          |
+| 1 | Listas M3 | 12     | 31 de Jan          |
+| 1 | Listas M4 | 12     | 15 de Fev          |
 | 1 | Quizzes   | 22     | Mesmas Datas acima |
-| 1 | Projeto   | 30     | 30 de Agosto       |
+| 1 | Projeto   | 30     | 15 de Fev          |
 
 ## Quizzes
 
