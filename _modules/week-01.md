@@ -5,13 +5,11 @@ title: Módulo 01 - Análise Exploratória de Dados
 ## {{ page.title }}
 {: .text-gamma }
 
-17 de Maio
+14 de Out
 : [Apresentação do Curso e Causalidade]({{ site.baseurl }}{% link _lessons/01-causalidade.md %})
   : [Data8 Capt-01](https://www.inferentialthinking.com/chapters/01/what-is-data-science.html),
   : [Data8 Capt-02](https://www.inferentialthinking.com/chapters/02/causality-and-experiments.html),
   : [Data100 Capt-1](https://www.textbook.ds100.org/ch/01/lifecycle_intro.html)
-: [Videoaula 15h](https://youtu.be/WsagNXG2OKs)
-: [Videoaula 19h](https://youtu.be/QqYwazjQyf0)
 
 18 de Out
 : [Tabelas e Tipos de Dados]({{ site.baseurl }}{% link _lessons/02-tabelas.md %})
