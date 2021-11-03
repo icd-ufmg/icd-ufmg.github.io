@@ -19,14 +19,14 @@ title: Módulo 01 - Análise Exploratória de Dados
 
 20 de Out
 : [Análise Exploratória e Visualização de Dados I]({{ site.baseurl }}{% link _lessons/03-viz.md %})
-  : [Data100 Capt-07](https://www.textbook.ds100.org/ch/07/repr_intro.html),
-  : [Data100 Capt-10](https://www.textbook.ds100.org/ch/10/viz_intro.html)
+  : [Data100 Capt-07](https://www.textbook.ds100.org/ch/08/repr_intro.html),
+  : [Data100 Capt-10](https://www.textbook.ds100.org/ch/11/viz_intro.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCIZU1IrnrdeAMim8mj3pVe4)
 
 25 de Out
 : [Análise Exploratória e Visualização de Dados II]({{ site.baseurl }}{% link _lessons/03-viz.md %})
-  : [Data100 Capt-07](https://www.textbook.ds100.org/ch/07/repr_intro.html),
-  : [Data100 Capt-10](https://www.textbook.ds100.org/ch/10/viz_intro.html)
+  : [Data100 Capt-07](https://www.textbook.ds100.org/ch/08/repr_intro.html),
+  : [Data100 Capt-10](https://www.textbook.ds100.org/ch/11/viz_intro.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLj07qACbfwrXJf2_-F0oAq)
 
 27 de Out
