@@ -9,8 +9,7 @@ description: Lista dos Módulos e Tópicos.
 ---
 
 1. [Todo o Material em Notebooks](https://github.com/icd-ufmg/icd-ufmg.github.io)
-1. [Como Baixar todos os Notebooks](https://youtu.be/9oI9G3-ER-Q)
-1. [Slides](https://drive.google.com/drive/u/0/folders/1ALz3IT3TdVqFE1wDhgs61SbxXMP_Ysv-)
+1. [Slides](https://drive.google.com/drive/u/0/folders/1gED50i2EqS70g4UTYqXo8pl3n1pyN6Qr)
 
 ---
 {% for module in site.modules %}
