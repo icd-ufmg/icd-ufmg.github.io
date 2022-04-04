@@ -7,8 +7,14 @@ description: Lista dos Módulos e Tópicos.
 # Plano de Aulas
 {: .no_toc .mb-2 }
 
-Plano geral do curso.
+Tudo que você precisa e um pouco mais.
 {: .fs-6 .fw-300 }
+
+---
+
+**Sumário**
+1. TOC
+{:toc}
 
 ---
 
