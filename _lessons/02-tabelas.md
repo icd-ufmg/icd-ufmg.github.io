@@ -43,8 +43,6 @@ A maioria dos nossos notebooks vai iniciar com os imports abaixo.
 A chamada `plt.ion` habilita gráficos do matplotlib no notebook diretamente. Caso necesse salvar alguma figura, chame `plt.savefig` após seu plot.
 
 
-<details>
-  
 ```python
 #In: 
 import pandas as pd
@@ -53,8 +51,7 @@ import numpy as np
 
 plt.ion()
 ```
-  
-</details>
+
 
 ## Series
 
