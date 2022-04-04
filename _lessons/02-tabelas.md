@@ -44,6 +44,7 @@ A chamada `plt.ion` habilita gráficos do matplotlib no notebook diretamente. Ca
 
 
 <details>
+  
 ```python
 #In: 
 import pandas as pd
@@ -52,6 +53,7 @@ import numpy as np
 
 plt.ion()
 ```
+  
 </details>
 
 ## Series
