@@ -36,26 +36,60 @@ import numpy as np
 import pandas as pd
 ```
 
+<details>
+<summary>Código de Configurar Plot (Oculto)</summary>
+
 
 ```python
 #In: 
-# Colocando alguns defaults para embelezar os plots!
-plt.style.use('seaborn-colorblind')
+plt.rcParams['figure.figsize'] = (16, 10)
 
-plt.rcParams['figure.figsize']  = (16, 10)
-plt.rcParams['axes.labelsize']  = 20
-plt.rcParams['axes.titlesize']  = 20
-plt.rcParams['legend.fontsize'] = 20
-plt.rcParams['xtick.labelsize'] = 20
-plt.rcParams['ytick.labelsize'] = 20
+plt.rcParams['axes.axisbelow'] = True 
+plt.rcParams['axes.grid'] = True
+plt.rcParams['axes.labelsize'] = 16
+plt.rcParams['axes.linewidth'] = 2
+plt.rcParams['axes.spines.bottom'] = True
+plt.rcParams['axes.spines.left'] = True
+plt.rcParams['axes.titlesize'] = 16
+plt.rcParams['axes.ymargin'] = 0.1
+
+plt.rcParams['font.family'] = 'serif'
+
+plt.rcParams['grid.color'] = 'lightgrey'
+plt.rcParams['grid.linewidth'] = .1
+
+plt.rcParams['xtick.bottom'] = True
+plt.rcParams['xtick.direction'] = 'out' 
+plt.rcParams['xtick.labelsize'] = 16
+plt.rcParams['xtick.major.size'] = 12
+plt.rcParams['xtick.major.width'] = 1
+plt.rcParams['xtick.minor.size'] = 6
+plt.rcParams['xtick.minor.width'] = 1
+plt.rcParams['xtick.minor.visible'] = True
+
+plt.rcParams['ytick.direction'] = 'out'
+plt.rcParams['ytick.labelsize'] = 16
+plt.rcParams['ytick.left'] = True
+plt.rcParams['ytick.major.size'] = 12
+plt.rcParams['ytick.major.width'] = 1
+plt.rcParams['ytick.minor.size'] = 6
+plt.rcParams['ytick.minor.width'] = 1
+plt.rcParams['ytick.minor.visible'] = True
+
+plt.rcParams['legend.fontsize'] = 16
+
 plt.rcParams['lines.linewidth'] = 4
+plt.rcParams['lines.markersize'] = 80
 ```
 
 
 ```python
 #In: 
-plt.ion() # Liga plots no notebook
+plt.style.use('tableau-colorblind10')
+plt.ion();
 ```
+
+</details>
 
 ## Introdução
 
@@ -780,15 +814,8 @@ plt.ylabel('Num Births');
 ```
 
 
-
-
-    Text(0, 0.5, 'Num Births')
-
-
-
-
     
-![png](03-viz_files/03-viz_16_1.png)
+![png](03-viz_files/03-viz_18_0.png)
     
 
 
@@ -962,15 +989,8 @@ plt.xlabel('');
 ```
 
 
-
-
-    Text(0.5, 0, '')
-
-
-
-
     
-![png](03-viz_files/03-viz_22_1.png)
+![png](03-viz_files/03-viz_24_0.png)
     
 
 
@@ -1001,102 +1021,23 @@ pib = [300.2, 543.3, 1075.9, 2862.5, 5979.6, 10289.7, 14958.3]
 ```python
 #In: 
 # cria um gráfico de linhas, com os anos no eixo x e o pib no eixo y
-plt.plot(anos, pib)
+fig, ax = plt.subplots()
+
+ax.plot(anos, pib)
 
 # Adiciona um título
-plt.title('Nominal GDP')
-
-# Label nos eixos
-plt.ylabel('Billions of USD')
-plt.xlabel('Ano')
-
-plt.show()
+ax.set(
+    title = 'Nominal GDP',
+    xlabel = 'Ano',
+    ylabel = 'USD em Bilhões'
+);
 ```
 
 
     
-![png](03-viz_files/03-viz_26_0.png)
+![png](03-viz_files/03-viz_28_0.png)
     
 
-
-Podemos mudar a aparência usando estilos.
-
-
-```python
-#In: 
-# comentado para não mudar, mas essa é chamada.
-plt.style.use('seaborn')
-```
-
-
-```python
-#In: 
-# cria um gráfico de linhas, com os anos no eixo x e o pib no eixo y
-plt.plot(anos, pib)
-
-# Adiciona um título
-plt.title('Nominal GDP')
-
-# Label nos eixos
-plt.ylabel('Billions of USD')
-plt.xlabel('Ano')
-
-plt.show()
-```
-
-
-    
-![png](03-viz_files/03-viz_29_0.png)
-    
-
-
-Em particular, eu acho bom usar os estilos colorblind. Ajudam a fazer artigos científicos e garantir que todos entendam eu plot.
-
-
-```python
-#In: 
-plt.style.available
-```
-
-
-
-
-    ['Solarize_Light2',
-     '_classic_test_patch',
-     'bmh',
-     'classic',
-     'dark_background',
-     'fast',
-     'fivethirtyeight',
-     'ggplot',
-     'grayscale',
-     'seaborn',
-     'seaborn-bright',
-     'seaborn-colorblind',
-     'seaborn-dark',
-     'seaborn-dark-palette',
-     'seaborn-darkgrid',
-     'seaborn-deep',
-     'seaborn-muted',
-     'seaborn-notebook',
-     'seaborn-paper',
-     'seaborn-pastel',
-     'seaborn-poster',
-     'seaborn-talk',
-     'seaborn-ticks',
-     'seaborn-white',
-     'seaborn-whitegrid',
-     'tableau-colorblind10']
-
-
-
-
-```python
-#In: 
-# Voltando
-plt.style.use('seaborn-colorblind')
-plt.rcParams['figure.figsize']  = (12, 8) # não sei o motivo, mas o use acima reseta o size.
-```
 
 Podemos também usar vetores numpy sem problemas
 
@@ -1156,7 +1097,7 @@ plt.show()
 
 
     
-![png](03-viz_files/03-viz_35_0.png)
+![png](03-viz_files/03-viz_31_0.png)
     
 
 
@@ -1177,7 +1118,7 @@ plt.ylabel('Cosine')
 
 
     
-![png](03-viz_files/03-viz_36_1.png)
+![png](03-viz_files/03-viz_32_1.png)
     
 
 
@@ -1293,15 +1234,8 @@ mean_g.sort_values()[::-1].plot.bar(edgecolor='k');
 ```
 
 
-
-
-    <AxesSubplot:xlabel='Studio'>
-
-
-
-
     
-![png](03-viz_files/03-viz_41_1.png)
+![png](03-viz_files/03-viz_37_0.png)
     
 
 
@@ -1320,7 +1254,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_42_0.png)
+![png](03-viz_files/03-viz_38_0.png)
     
 
 
@@ -1342,7 +1276,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_43_0.png)
+![png](03-viz_files/03-viz_39_0.png)
     
 
 
@@ -1856,7 +1790,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_46_0.png)
+![png](03-viz_files/03-viz_42_0.png)
     
 
 
@@ -1877,7 +1811,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_48_0.png)
+![png](03-viz_files/03-viz_44_0.png)
     
 
 
@@ -1897,7 +1831,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_49_0.png)
+![png](03-viz_files/03-viz_45_0.png)
     
 
 
@@ -1917,7 +1851,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_50_0.png)
+![png](03-viz_files/03-viz_46_0.png)
     
 
 
@@ -1948,7 +1882,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_52_0.png)
+![png](03-viz_files/03-viz_48_0.png)
     
 
 
@@ -1973,7 +1907,7 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
 
 
     
-![png](03-viz_files/03-viz_53_0.png)
+![png](03-viz_files/03-viz_49_0.png)
     
 
 
@@ -2159,6 +2093,6 @@ plt.show()
 
 
     
-![png](03-viz_files/03-viz_58_0.png)
+![png](03-viz_files/03-viz_54_0.png)
     
 
