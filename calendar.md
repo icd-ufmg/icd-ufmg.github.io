@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Calendário
+title: Aulas, Slides e Vídeos
 description: Lista dos Módulos e Tópicos.
 ---
 
