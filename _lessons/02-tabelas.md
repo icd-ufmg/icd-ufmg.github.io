@@ -11,7 +11,7 @@ nav_order: 2
 
 {: .no_toc .mb-2 }
 
-Um breve resumo de alguns comandos python.
+Um entendimento básico de pandas.
 {: .fs-6 .fw-300 }
 
 {: .no_toc .text-delta }
@@ -21,8 +21,6 @@ Resultados Esperados
 1. Entender diferentes tipos de dados
 1. Básico de filtros e seleções
 1. Aplicação de filtros básicos para gerar insights nos dados de dados tabulares
-
-
 
 ---
 **Sumário**
@@ -45,6 +43,7 @@ A maioria dos nossos notebooks vai iniciar com os imports abaixo.
 A chamada `plt.ion` habilita gráficos do matplotlib no notebook diretamente. Caso necesse salvar alguma figura, chame `plt.savefig` após seu plot.
 
 
+<details>
 ```python
 #In: 
 import pandas as pd
@@ -53,6 +52,7 @@ import numpy as np
 
 plt.ion()
 ```
+</details>
 
 ## Series
 
