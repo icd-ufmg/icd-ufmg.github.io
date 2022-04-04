@@ -4,19 +4,30 @@ title: Aulas, Slides e Vídeos
 description: Lista dos Módulos e Tópicos.
 ---
 
-# Calendário
+# Plano de Aulas
+{: .no_toc .mb-2 }
+
+Plano geral do curso.
+{: .fs-6 .fw-300 }
 
 ---
+
+## Slides
 
 1. [Todo o Material em Notebooks](https://github.com/icd-ufmg/icd-ufmg.github.io)
 1. [Slides](https://drive.google.com/drive/u/0/folders/1gED50i2EqS70g4UTYqXo8pl3n1pyN6Qr)
 
 ---
+
+## Aulas e Vídeos
+
 {% for module in site.modules %}
 {{ module }}
 {% endfor %}
 
-# Bibliografia
+---
+
+## Bibliografia
 
   1. [Principles and Techniques of Data Science - Data100](https://www.textbook.ds100.org/) <br>
       Sam Lau, Joey Gonzalez, and Deb Nolan. <br>
