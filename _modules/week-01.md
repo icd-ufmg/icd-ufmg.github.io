@@ -26,14 +26,12 @@ Aula 3
   : [D100-11](https://www.textbook.ds100.org/ch/11/viz_intro.html),
   : [OI-4](https://openintro-ims.netlify.app/explore-categorical.html),
   : [OI-5](https://openintro-ims.netlify.app/explore-numerical.html),
-  : [OI-6](https://openintro-ims.netlify.app/explore-applications.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCIZU1IrnrdeAMim8mj3pVe4)
 
 Aula 4
 : [Análise Exploratória e Visualização de Dados II]({{ site.baseurl }}{% link _lessons/03-viz.md %})
   : [D100-10](https://www.textbook.ds100.org/ch/10/eda_intro.html),
   : [D100-11](https://www.textbook.ds100.org/ch/11/viz_intro.html),
-  : [OI-4](https://openintro-ims.netlify.app/explore-categorical.html),
   : [OI-5](https://openintro-ims.netlify.app/explore-numerical.html),
   : [OI-6](https://openintro-ims.netlify.app/explore-applications.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLj07qACbfwrXJf2_-F0oAq)
