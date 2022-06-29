@@ -163,6 +163,10 @@ fazer uso de todo conhecimento de forma coerente.
   1. [Principles and Techniques of Data Science](https://www.textbook.ds100.org/) <br>
       Sam Lau, Joey Gonzalez, and Deb Nolan. <br>
      **Apenas em inglês. Aberto!**
+     
+  1. [Open Intro Modern Statistics](https://openintro-ims.netlify.app/) <br>
+      Mine Çetinkaya-Rundel, and Johanna Hardin. <br>
+     **Apenas em inglês. Aberto!**
 
   1. [Computational and Inferential Thinking: The Foundations of Data Science](http://www.inferentialthinking.com/) <br>
      Ani Adhikari and John DeNero <br>
