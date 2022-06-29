@@ -32,6 +32,6 @@ Aula 18
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLoSeaCRR9Mz6LkLDJuADKB)
 
 Aula 19
-: [Regressão e Previsões](TODO)
+: [Regressão e Previsões]({{ site.baseurl }}{% link _lessons/21-pratica.md %})
   : [Data 100 Capt-21](https://www.textbook.ds100.org/ch/21/bias_intro.html)
-: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCJHhLSEO3QvjCdZsuWyQij8)
+: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLBgpTM9w8WeYk3VzvCS88g)
