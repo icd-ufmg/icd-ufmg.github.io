@@ -7,13 +7,13 @@ title: Módulo 03 - Regressão
 
 Aula 14
 : [Correlação]({{ site.baseurl }}{% link _lessons/14-correlacao.md %})
-  : [OI-5](https://openintro-ims.netlify.app/explore-numerical.html)
+  : [OI-5](https://openintro-ims.netlify.app/explore-numerical.html),
   : [D8-16](https://www.inferentialthinking.com/chapters/16/Inference_for_Regression.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCKvQoR__Z77ndyw-9cgsm83)
 
 Aula 15
 : [Regressão Linear via Perda]({{ site.baseurl }}{% link _lessons/15-linear.md %})
-  : [D100-15](https://www.textbook.ds100.org/ch/15/linear_models.html)
+  : [D100-15](https://www.textbook.ds100.org/ch/15/linear_models.html),
   : [OI-24](https://openintro-ims.netlify.app/inf-model-slr.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCJLZn3s9D1G6y13FhRLiNa2)
 
@@ -29,13 +29,13 @@ Aula 17
 
 Aula 18
 : [Regressão Múltipla]({{ site.baseurl }}{% link _lessons/18-multipla.md %})
-  : [D100-19](https://www.textbook.ds100.org/ch/19/mult_intro.html)
-  : [D100-20](https://www.textbook.ds100.org/ch/20/feature_engineering.html)
+  : [D100-19](https://www.textbook.ds100.org/ch/19/mult_intro.html),
+  : [D100-20](https://www.textbook.ds100.org/ch/20/feature_engineering.html),
   : [OI-25](https://openintro-ims.netlify.app/inf-model-mlr.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLoSeaCRR9Mz6LkLDJuADKB)
 
 Aula 19
 : [Regressão e Previsões]({{ site.baseurl }}{% link _lessons/21-pratica.md %})
-  : [D100-21](https://www.textbook.ds100.org/ch/21/bias_intro.html)
+  : [D100-21](https://www.textbook.ds100.org/ch/21/bias_intro.html),
   : [OI-27](https://openintro-ims.netlify.app/inf-model-applications.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLBgpTM9w8WeYk3VzvCS88g)
