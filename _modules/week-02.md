@@ -12,21 +12,21 @@ Aula 7
 
 Aula 8
 : [Teorema Central do Limite]({{ site.baseurl }}{% link _lessons/07-tcl.md %})
-: [(Extra) Amostragem]({{ site.baseurl }}{% link _lessons/08-amostragem.md %})
+: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCJTfEuPbRXfb8UcH1Z_Tbjt)
   : [OI-13](https://openintro-ims.netlify.app/foundations-mathematical.html),
   : [D8-10](https://www.inferentialthinking.com/chapters/10/Sampling_and_Empirical_Distributions.html),
   : [D8-14](https://www.inferentialthinking.com/chapters/14/Why_the_Mean_Matters.html),
-: [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCJTfEuPbRXfb8UcH1Z_Tbjt)
+: [(Extra) Amostragem]({{ site.baseurl }}{% link _lessons/08-amostragem.md %})
 
 Aula 9
 : [Intervalos de Confiança]({{ site.baseurl }}{% link _lessons/09-ics.md %})
-  : [OI-13](https://openintro-ims.netlify.app/foundations-mathematical.html),
+  : [OI-13](https://openintro-ims.netlify.app/foundations-mathematical.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCKSlU6M0AGEMz6PG9Fll7WW)
 
 Aula 10
 : [Bootstrap e Testes A/B]({{ site.baseurl }}{% link _lessons/10-ab.md %})
   : [OI-13](https://openintro-ims.netlify.app/foundations-bootstrapping.html),
-  : [D8-13](https://www.inferentialthinking.com/chapters/13/Estimation.html),
+  : [D8-13](https://www.inferentialthinking.com/chapters/13/Estimation.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCIALxnvBUBz6OEWPeDYEZSd)
 
 Aula 11
@@ -39,7 +39,7 @@ Aula 11
 
 Aula 12
 : [Ciência e Ciência de Dados (Relembrando Causalidade)]({{ site.baseurl }}{% link _lessons/12-causalidade.md %})
-  : [OI-14](https://openintro-ims.netlify.app/foundations-applications.html)
+  : [OI-14](https://openintro-ims.netlify.app/foundations-applications.html),
   : [OI-23](https://openintro-ims.netlify.app/inference-applications.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLFtqPq8nl_OCrVlZHsAoeC)
 
