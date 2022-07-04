@@ -6,13 +6,14 @@ title: Módulo 04 - Aprendizado de Máquina Simples
 {: .text-gamma }
 
 Aula 20
-: [Regularização (Videoaula Apenas)](https://www.youtube.com/playlist?list=PL4B0y0yqpKCIZMSeRFpXKohgQDEglZ3nU)
+: Regularização
+: [Videoaula Apenas](https://www.youtube.com/playlist?list=PL4B0y0yqpKCIZMSeRFpXKohgQDEglZ3nU)
   : [D100-22](https://www.textbook.ds100.org/ch/22/reg_intro.html)
 
 Aula 21
 : [Regressão Logística]({{ site.baseurl }}{% link _lessons/19-logistica.md %})
 : [Videoaula](https://www.youtube.com/watch?v=cFFpJ5scAhI&list=PL4B0y0yqpKCK9Fnt9M89uVmhHVqvOmN83)
-  : [D100-24](https://www.textbook.ds100.org/ch/24/classification_intro.html)
+  : [D100-24](https://www.textbook.ds100.org/ch/24/classification_intro.html),
   : [OI-26](https://openintro-ims.netlify.app/inf-model-logistic.html)
 
 Aula 22
@@ -23,7 +24,7 @@ Aula 22
 Aula 23
 : [Fluxo Completo com SKLearn](% link _lessons/21-pratica.md %)
 : [Videoaula]( https://www.youtube.com/playlist?list=PL4B0y0yqpKCLBgpTM9w8WeYk3VzvCS88g)
-  : [Vídeo Berkeley](https://www.youtube.com/watch?v=lFzRiinHSzU&t=923s)
+  : [Vídeo Berkeley](https://www.youtube.com/watch?v=lFzRiinHSzU&t=923s),
   : [OI-27](https://openintro-ims.netlify.app/inf-model-applications.html)
 
 Aula 24
