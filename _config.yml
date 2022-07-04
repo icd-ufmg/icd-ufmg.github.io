@@ -22,13 +22,13 @@ url: 'https://icd-ufmg.github.io'
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
 # Theme settings
-remote_theme: pdmosses/just-the-docs@pages-and-collections
-color_scheme: light
+remote_theme: pmarsceill/just-the-docs@v0.3.3
+color_scheme: neu
 search_enabled: true
 heading_anchors: true
 permalink: pretty
 aux_links_new_tab: true
-footer_content: 'Flavio Figueiredo &copy; 2020 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>'
+footer_content: 'Flavio Figueiredo &copy; 2022 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>'
 
 # Collections for website data
 collections:
