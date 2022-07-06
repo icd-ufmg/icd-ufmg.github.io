@@ -29,7 +29,8 @@ Aula 23
 
 Aula 24
 : [SVD]({{ site.baseurl }}{% link _lessons/22-svd-e-pca.md %})
-: [Videoaula](https://drive.google.com/file/d/1WPEiiDaff84TOOq7fMxIpTnnEJECtM9g/view?usp=sharing)
+: [Videoaula (1)](https://drive.google.com/file/d/1WPEiiDaff84TOOq7fMxIpTnnEJECtM9g/view?usp=sharing)
+: [Videoaula (2, mesma da 1, outra turma)](https://drive.google.com/file/d/14AiVxb1qITCFp_sYX4omf_q_qzPXCs0X/view?usp=sharing)
   : [D100-26](https://www.textbook.ds100.org/ch/26/pca_intro.html)
   
 Aula 26
