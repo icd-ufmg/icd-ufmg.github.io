@@ -37,6 +37,7 @@ Aula 26
 : [PCA]({{ site.baseurl }}{% link _lessons/22-svd-e-pca.md %})
 : [Videoaula](EM BREVE)
   : [D100-26](https://www.textbook.ds100.org/ch/26/pca_intro.html)
+  : [Exemplos](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/05.09-Principal-Component-Analysis.ipynb)
   
 Aula 27
 : [K-Means](https://www.youtube.com/watch?v=WqMnQuC19Rg)
