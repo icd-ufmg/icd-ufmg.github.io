@@ -35,8 +35,8 @@ Aula 24
   
 Aula 26
 : [PCA]({{ site.baseurl }}{% link _lessons/22-svd-e-pca.md %})
-: [Videoaula](EM BREVE)
-  : [D100-26](https://www.textbook.ds100.org/ch/26/pca_intro.html)
+: [Videoaula](https://drive.google.com/file/d/19HOhsnXnrQ2Ry-OOLQzN90VcCs-725GN/view?usp=sharing)
+  : [D100-26](https://www.textbook.ds100.org/ch/26/pca_intro.html),
   : [Exemplos](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/05.09-Principal-Component-Analysis.ipynb)
   
 Aula 27
