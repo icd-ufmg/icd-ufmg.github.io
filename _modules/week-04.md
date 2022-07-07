@@ -19,7 +19,8 @@ Aula 21
 Aula 22
 : [KNN e o Fluxo de Trabalho do Aprendizado]({{ site.baseurl }}{% link _lessons/20-knn.md %})
 : [Videoaula](https://www.youtube.com/watch?v=T1_OfmiD3I8&list=PL4B0y0yqpKCLCHYrDvTwG9wC-fqWRCIoG)
-  : [D100-24](https://www.textbook.ds100.org/ch/24/classification_intro.html)
+  : [D100-24](https://www.textbook.ds100.org/ch/24/classification_intro.html),
+  : [Uso do GridSearchCV (valid. cruzada em sklearn)](https://www.youtube.com/watch?v=yAo87tvdZaM)
 
 Aula 23
 : [Fluxo Completo com SKLearn](% link _lessons/21-pratica.md %)
