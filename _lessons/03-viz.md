@@ -29,8 +29,6 @@ Resultados Esperados
 
 ```python
 #In: 
-# -*- coding: utf8
-
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -556,7 +554,7 @@ Voltando para os dados de nomes.
 
 ```python
 #In: 
-df = pd.read_csv('https://media.githubusercontent.com/media/icd-ufmg/material/master/aulas/04-EDA-e-Vis/baby.csv')
+df = pd.read_csv('baby.csv')
 df.head()
 ```
 
@@ -844,6 +842,10 @@ dates = pd.to_datetime(['15-6-{}'.format(str(x)) for x in new_series.index])
 new_series.index = pd.DatetimeIndex(dates)
 new_series.head()
 ```
+
+    /tmp/ipykernel_94185/1159144160.py:1: UserWarning: Parsing dates in DD/MM/YYYY format when dayfirst=False (the default) was specified. This may lead to inconsistently parsed dates! Specify a format to ensure consistent parsing.
+      dates = pd.to_datetime(['15-6-{}'.format(str(x)) for x in new_series.index])
+
 
 
 
@@ -1227,6 +1229,10 @@ df.head(6)
 mean_g = df.groupby('Studio').mean()['Gross (Adjusted)']
 ```
 
+    /tmp/ipykernel_94185/4007597827.py:1: FutureWarning: The default value of numeric_only in DataFrameGroupBy.mean is deprecated. In a future version, numeric_only will default to False. Either specify numeric_only or select only columns which should be valid for the function.
+      mean_g = df.groupby('Studio').mean()['Gross (Adjusted)']
+
+
 
 ```python
 #In: 
@@ -1252,9 +1258,13 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
     item.set_fontsize(20)
 ```
 
+    /tmp/ipykernel_94185/25471854.py:2: FutureWarning: The default value of numeric_only in DataFrameGroupBy.mean is deprecated. In a future version, numeric_only will default to False. Either specify numeric_only or select only columns which should be valid for the function.
+      mean_g = df.groupby('Studio').mean()['Gross (Adjusted)']
+
+
 
     
-![png](03-viz_files/03-viz_38_0.png)
+![png](03-viz_files/03-viz_38_1.png)
     
 
 
@@ -1274,9 +1284,13 @@ for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
     item.set_fontsize(20)
 ```
 
+    /tmp/ipykernel_94185/2013192506.py:1: FutureWarning: The default value of numeric_only in DataFrameGroupBy.mean is deprecated. In a future version, numeric_only will default to False. Either specify numeric_only or select only columns which should be valid for the function.
+      mean_g = df.groupby('Studio').mean()['Gross (Adjusted)']
+
+
 
     
-![png](03-viz_files/03-viz_39_0.png)
+![png](03-viz_files/03-viz_39_1.png)
     
 
 

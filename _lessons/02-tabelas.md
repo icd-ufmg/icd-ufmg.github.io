@@ -52,16 +52,62 @@ A chamada `plt.ion` habilita gráficos do matplotlib no notebook diretamente. Ca
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+```
 
-plt.ion()
+<details>
+<summary>Código de Configurar Plot (Oculto)</summary>
+
+
+```python
+#In: 
+plt.rcParams['figure.figsize'] = (16, 10)
+
+plt.rcParams['axes.axisbelow'] = True 
+plt.rcParams['axes.grid'] = True
+plt.rcParams['axes.labelsize'] = 16
+plt.rcParams['axes.linewidth'] = 2
+plt.rcParams['axes.spines.bottom'] = True
+plt.rcParams['axes.spines.left'] = True
+plt.rcParams['axes.titlesize'] = 16
+plt.rcParams['axes.ymargin'] = 0.1
+
+plt.rcParams['font.family'] = 'serif'
+
+plt.rcParams['grid.color'] = 'lightgrey'
+plt.rcParams['grid.linewidth'] = .1
+
+plt.rcParams['xtick.bottom'] = True
+plt.rcParams['xtick.direction'] = 'out' 
+plt.rcParams['xtick.labelsize'] = 16
+plt.rcParams['xtick.major.size'] = 12
+plt.rcParams['xtick.major.width'] = 1
+plt.rcParams['xtick.minor.size'] = 6
+plt.rcParams['xtick.minor.width'] = 1
+plt.rcParams['xtick.minor.visible'] = True
+
+plt.rcParams['ytick.direction'] = 'out'
+plt.rcParams['ytick.labelsize'] = 16
+plt.rcParams['ytick.left'] = True
+plt.rcParams['ytick.major.size'] = 12
+plt.rcParams['ytick.major.width'] = 1
+plt.rcParams['ytick.minor.size'] = 6
+plt.rcParams['ytick.minor.width'] = 1
+plt.rcParams['ytick.minor.visible'] = True
+
+plt.rcParams['legend.fontsize'] = 16
+
+plt.rcParams['lines.linewidth'] = 4
+plt.rcParams['lines.markersize'] = 80
 ```
 
 
+```python
+#In: 
+plt.style.use('tableau-colorblind10')
+plt.ion();
+```
 
-
-    <matplotlib.pyplot._IonContext at 0x7fbb344327d0>
-
-
+</details>
 
 ## Series
 
@@ -70,8 +116,10 @@ Existem dois tipos base de dados em pandas. O primeiro, Series, representa uma c
 
 ```python
 #In: 
-data = pd.Series([0.25, 0.5, 0.75, 1.0],
-                 index=['a', 'b', 'c', 'd'])
+data = pd.Series(
+    [0.25, 0.5, 0.75, 1.0],
+    index=['a', 'b', 'c', 'd']
+)
 ```
 
 
@@ -574,48 +622,58 @@ Tudo que executamos com `!` é um comando do terminal do unix. Então, este note
 !ls .
 ```
 
-    01-causalidade.md     12-causalidade.ipynb
-    02-tabelas	      12-causalidade.md
-    02-tabelas.ipynb      13-poder
-    02-tabelas.md	      13-poder_files
-    03-viz		      13-poder.ipynb
-    03-viz_files	      13-poder.md
-    03-viz.ipynb	      14-correlacao
-    03-viz.md	      14-correlacao_files
-    04-stat		      14-correlacao.ipynb
-    04-stat_files	      14-correlacao.md
-    04-stat.ipynb	      15-linear
-    04-stat.md	      15-linear_files
-    05-prob		      15-linear.ipynb
-    05-prob_files	      15-linear.md
-    05-prob.ipynb	      16-vero
-    05-prob.md	      16-vero_files
-    06-risco	      16-vero.ipynb
-    06-risco_files	      16-vero.md
-    06-risco.ipynb	      17-gradiente
-    06-risco.md	      17-gradiente_files
-    07-tcl		      17-gradiente.ipynb
-    07-tcl_files	      17-gradiente.md
-    07-tcl.ipynb	      18-multipla
-    07-tcl.md	      18-multipla_files
-    08-amostragem	      18-multipla.ipynb
-    08-amostragem_files   18-multipla.md
-    08-amostragem.ipynb   26b-tutorial-sklearn-classification.ipynb
-    08-amostragem.md      26-tutorial-sklearn-regressao.ipynb
-    09-ics		      27-revisao
-    09-ics_files	      27-revisao_files
-    09-ics.ipynb	      27-revisao.ipynb
-    09-ics.md	      27-revisao.md
-    10-ab		      baby.csv
-    10-ab_files	      capital.json
-    10-ab.ipynb	      colab_favicon.ico
-    10-ab.md	      colab_favicon.png
-    11-hipoteses	      colab_favicon_small.png
-    11-hipoteses_files    compile_all.sh
-    11-hipoteses.ipynb    compile_notebook.sh
-    11-hipoteses.md       dom-casmurro.txt
-    12-causalidade	      f2.png
-    12-causalidade_files  f.png
+    01-causalidade.md     15-linear
+    02-tabelas	      15-linear_files
+    02-tabelas.ipynb      15-linear.ipynb
+    02-tabelas.md	      15-linear.md
+    03-viz		      16-vero
+    03-viz_files	      16-vero_files
+    03-viz.ipynb	      16-vero.ipynb
+    03-viz.md	      16-vero.md
+    04-stat		      17-gradiente
+    04-stat_files	      17-gradiente_files
+    04-stat.ipynb	      17-gradiente.ipynb
+    04-stat.md	      17-gradiente.md
+    05-prob		      18-multipla
+    05-prob_files	      18-multipla_files
+    05-prob.ipynb	      18-multipla.ipynb
+    05-prob.md	      18-multipla.md
+    06-risco	      19-logistica
+    06-risco_files	      19-logistica_files
+    06-risco.ipynb	      19-logistica.ipynb
+    06-risco.md	      19-logistica.md
+    07-tcl		      20-knn
+    07-tcl_files	      20-knn_files
+    07-tcl.ipynb	      20-knn.ipynb
+    07-tcl.md	      20-knn.md
+    08-amostragem	      21-pratica
+    08-amostragem_files   21-pratica_files
+    08-amostragem.ipynb   21-pratica.ipynb
+    08-amostragem.md      21-pratica.md
+    09-ics		      22-svd-e-pca
+    09-ics_files	      22-svd-e-pca_files
+    09-ics.ipynb	      22-svd-e-pca.ipynb
+    09-ics.md	      22-svd-e-pca.md
+    10-ab		      26b-tutorial-sklearn-classification.ipynb
+    10-ab_files	      26-tutorial-sklearn-regressao.ipynb
+    10-ab.ipynb	      27-revisao
+    10-ab.md	      27-revisao_files
+    11-hipoteses	      27-revisao.ipynb
+    11-hipoteses_files    27-revisao.md
+    11-hipoteses.ipynb    baby.csv
+    11-hipoteses.md       capital.json
+    12-causalidade	      colab_favicon.ico
+    12-causalidade_files  colab_favicon.png
+    12-causalidade.ipynb  colab_favicon_small.png
+    12-causalidade.md     compile_all.sh
+    13-poder	      compile_notebook.sh
+    13-poder_files	      dom-casmurro.txt
+    13-poder.ipynb	      drum.wav
+    13-poder.md	      f2.png
+    14-correlacao	      f.png
+    14-correlacao_files   proglanguages.json
+    14-correlacao.ipynb   states.txt
+    14-correlacao.md      walmart.csv
 
 
 Com a opção -lha, mostramos meta-dados dos arquivos como o owner, tamanho e permissões. Note que todos os arquivos são .csv, isto é comma separated.
@@ -623,98 +681,118 @@ Com a opção -lha, mostramos meta-dados dos arquivos como o owner, tamanho e pe
 
 ```python
 #In: 
-!ls -lha .
+! ls -lha .
 ```
 
-    total 160M
-    drwxr-xr-x 38 flaviovdf flaviovdf 4.0K Apr  4 12:47 .
-    drwxr-xr-x  9 flaviovdf flaviovdf 4.0K Apr  4 12:41 ..
-    -rw-r--r--  1 flaviovdf flaviovdf  618 Apr  4 12:01 01-causalidade.md
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 02-tabelas
-    -rw-r--r--  1 flaviovdf flaviovdf  99K Apr  4 12:49 02-tabelas.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  49K Apr  4 12:38 02-tabelas.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 03-viz
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 03-viz_files
-    -rw-r--r--  1 flaviovdf flaviovdf 759K Apr  4 12:01 03-viz.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  39K Apr  4 12:01 03-viz.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 04-stat
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 04-stat_files
-    -rw-r--r--  1 flaviovdf flaviovdf 360K Apr  4 12:01 04-stat.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  26K Apr  4 12:01 04-stat.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 05-prob
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 05-prob_files
-    -rw-r--r--  1 flaviovdf flaviovdf 892K Apr  4 12:01 05-prob.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  35K Apr  4 12:01 05-prob.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 06-risco
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 06-risco_files
-    -rw-r--r--  1 flaviovdf flaviovdf 291K Apr  4 12:01 06-risco.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  15K Apr  4 12:01 06-risco.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 07-tcl
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 07-tcl_files
-    -rw-r--r--  1 flaviovdf flaviovdf 445K Apr  4 12:01 07-tcl.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  14K Apr  4 12:01 07-tcl.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 08-amostragem
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 08-amostragem_files
-    -rw-r--r--  1 flaviovdf flaviovdf 232K Apr  4 12:01 08-amostragem.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf 117K Apr  4 12:01 08-amostragem.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 09-ics
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 09-ics_files
-    -rw-r--r--  1 flaviovdf flaviovdf 692K Apr  4 12:01 09-ics.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  91K Apr  4 12:01 09-ics.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 10-ab
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 10-ab_files
-    -rw-r--r--  1 flaviovdf flaviovdf 172K Apr  4 12:01 10-ab.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  17K Apr  4 12:01 10-ab.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 11-hipoteses
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 11-hipoteses_files
-    -rw-r--r--  1 flaviovdf flaviovdf 301K Apr  4 12:01 11-hipoteses.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  94K Apr  4 12:01 11-hipoteses.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 12-causalidade
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 12-causalidade_files
-    -rw-r--r--  1 flaviovdf flaviovdf  52K Apr  4 12:01 12-causalidade.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf 9.6K Apr  4 12:01 12-causalidade.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 13-poder
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 13-poder_files
-    -rw-r--r--  1 flaviovdf flaviovdf 837K Apr  4 12:01 13-poder.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  25K Apr  4 12:01 13-poder.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 14-correlacao
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 14-correlacao_files
-    -rw-r--r--  1 flaviovdf flaviovdf 1.8M Apr  4 12:01 14-correlacao.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  39K Apr  4 12:01 14-correlacao.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 15-linear
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 15-linear_files
-    -rw-r--r--  1 flaviovdf flaviovdf 992K Apr  4 12:01 15-linear.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  25K Apr  4 12:01 15-linear.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 16-vero
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 16-vero_files
-    -rw-r--r--  1 flaviovdf flaviovdf 1.0M Apr  4 12:01 16-vero.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  30K Apr  4 12:01 16-vero.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 17-gradiente
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 17-gradiente_files
-    -rw-r--r--  1 flaviovdf flaviovdf 731K Apr  4 12:01 17-gradiente.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  58K Apr  4 12:01 17-gradiente.md
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 18-multipla
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 18-multipla_files
-    -rw-r--r--  1 flaviovdf flaviovdf 671K Apr  4 12:01 18-multipla.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf 136K Apr  4 12:01 18-multipla.md
-    -rw-r--r--  1 flaviovdf flaviovdf  47K Apr  4 12:01 26b-tutorial-sklearn-classification.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf 203K Apr  4 12:01 26-tutorial-sklearn-regressao.ipynb
-    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Apr  4 12:01 27-revisao
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 27-revisao_files
-    -rw-r--r--  1 flaviovdf flaviovdf  63K Apr  4 12:01 27-revisao.ipynb
-    -rw-r--r--  1 flaviovdf flaviovdf  17K Apr  4 12:01 27-revisao.md
-    -rw-r--r--  1 flaviovdf flaviovdf 148M Apr  4 12:41 baby.csv
-    -rw-r--r--  1 flaviovdf flaviovdf 172K Apr  4 12:01 capital.json
-    -rw-r--r--  1 flaviovdf flaviovdf  72K Apr  4 12:01 colab_favicon.ico
-    -rw-r--r--  1 flaviovdf flaviovdf 7.8K Apr  4 12:01 colab_favicon.png
-    -rw-r--r--  1 flaviovdf flaviovdf 2.2K Apr  4 12:01 colab_favicon_small.png
-    -rw-r--r--  1 flaviovdf flaviovdf   85 Apr  4 12:01 compile_all.sh
-    -rw-r--r--  1 flaviovdf flaviovdf 1.1K Apr  4 12:01 compile_notebook.sh
-    -rw-r--r--  1 flaviovdf flaviovdf 401K Apr  4 12:01 dom-casmurro.txt
-    -rw-r--r--  1 flaviovdf flaviovdf 125K Apr  4 12:01 f2.png
-    -rw-r--r--  1 flaviovdf flaviovdf  57K Apr  4 12:01 f.png
-    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Apr  4 12:01 .ipynb_checkpoints
-    -rw-r--r--  1 flaviovdf flaviovdf  29K Apr  4 12:01 .nbgrader.log
+    total 180M
+    drwxr-xr-x 46 flaviovdf flaviovdf 4.0K Mar 21 18:36 .
+    drwxr-xr-x  9 flaviovdf flaviovdf 4.0K Mar 14 18:52 ..
+    -rw-r--r--  1 flaviovdf flaviovdf  618 Mar 14 18:20 01-causalidade.md
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 21 18:19 02-tabelas
+    -rw-r--r--  1 flaviovdf flaviovdf 107K Mar 21 18:36 02-tabelas.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  49K Mar 21 18:16 02-tabelas.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 21 18:36 03-viz
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 21 18:36 03-viz_files
+    -rw-r--r--  1 flaviovdf flaviovdf 1.2M Mar 21 18:36 03-viz.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  40K Mar 21 18:36 03-viz.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 04-stat
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 04-stat_files
+    -rw-r--r--  1 flaviovdf flaviovdf 360K Mar 14 18:20 04-stat.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  26K Mar 14 18:20 04-stat.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 05-prob
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 05-prob_files
+    -rw-r--r--  1 flaviovdf flaviovdf 892K Mar 14 18:20 05-prob.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  35K Mar 14 18:20 05-prob.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 06-risco
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 06-risco_files
+    -rw-r--r--  1 flaviovdf flaviovdf 291K Mar 14 18:20 06-risco.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  15K Mar 14 18:20 06-risco.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 07-tcl
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 07-tcl_files
+    -rw-r--r--  1 flaviovdf flaviovdf 445K Mar 14 18:20 07-tcl.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  14K Mar 14 18:20 07-tcl.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 08-amostragem
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 08-amostragem_files
+    -rw-r--r--  1 flaviovdf flaviovdf 232K Mar 14 18:20 08-amostragem.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf 117K Mar 14 18:20 08-amostragem.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 09-ics
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 09-ics_files
+    -rw-r--r--  1 flaviovdf flaviovdf 692K Mar 14 18:20 09-ics.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  91K Mar 14 18:20 09-ics.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 10-ab
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 10-ab_files
+    -rw-r--r--  1 flaviovdf flaviovdf 172K Mar 14 18:20 10-ab.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  17K Mar 14 18:20 10-ab.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 11-hipoteses
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 11-hipoteses_files
+    -rw-r--r--  1 flaviovdf flaviovdf 301K Mar 14 18:20 11-hipoteses.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  94K Mar 14 18:20 11-hipoteses.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 12-causalidade
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 12-causalidade_files
+    -rw-r--r--  1 flaviovdf flaviovdf  52K Mar 14 18:20 12-causalidade.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf 9.6K Mar 14 18:20 12-causalidade.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 13-poder
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 13-poder_files
+    -rw-r--r--  1 flaviovdf flaviovdf 837K Mar 14 18:20 13-poder.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  25K Mar 14 18:20 13-poder.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 14-correlacao
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 14-correlacao_files
+    -rw-r--r--  1 flaviovdf flaviovdf 1.8M Mar 14 18:20 14-correlacao.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  39K Mar 14 18:20 14-correlacao.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 15-linear
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 15-linear_files
+    -rw-r--r--  1 flaviovdf flaviovdf 992K Mar 14 18:20 15-linear.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  25K Mar 14 18:20 15-linear.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 16-vero
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 16-vero_files
+    -rw-r--r--  1 flaviovdf flaviovdf 1.0M Mar 14 18:20 16-vero.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  30K Mar 14 18:20 16-vero.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 17-gradiente
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 17-gradiente_files
+    -rw-r--r--  1 flaviovdf flaviovdf 731K Mar 14 18:20 17-gradiente.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  58K Mar 14 18:20 17-gradiente.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 18-multipla
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 18-multipla_files
+    -rw-r--r--  1 flaviovdf flaviovdf 671K Mar 14 18:20 18-multipla.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf 136K Mar 14 18:20 18-multipla.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 19-logistica
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 19-logistica_files
+    -rw-r--r--  1 flaviovdf flaviovdf 886K Mar 14 18:20 19-logistica.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  79K Mar 14 18:20 19-logistica.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 20-knn
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 20-knn_files
+    -rw-r--r--  1 flaviovdf flaviovdf 790K Mar 14 18:20 20-knn.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  19K Mar 14 18:20 20-knn.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 21-pratica
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 21-pratica_files
+    -rw-r--r--  1 flaviovdf flaviovdf 280K Mar 14 18:20 21-pratica.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  72K Mar 14 18:20 21-pratica.md
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 22-svd-e-pca
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 22-svd-e-pca_files
+    -rw-r--r--  1 flaviovdf flaviovdf 9.5M Mar 14 18:20 22-svd-e-pca.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf 6.7M Mar 14 18:20 22-svd-e-pca.md
+    -rw-r--r--  1 flaviovdf flaviovdf  47K Mar 14 18:20 26b-tutorial-sklearn-classification.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf 203K Mar 14 18:20 26-tutorial-sklearn-regressao.ipynb
+    drwxr-xr-x  3 flaviovdf flaviovdf 4.0K Mar 14 18:20 27-revisao
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 27-revisao_files
+    -rw-r--r--  1 flaviovdf flaviovdf  63K Mar 14 18:20 27-revisao.ipynb
+    -rw-r--r--  1 flaviovdf flaviovdf  17K Mar 14 18:20 27-revisao.md
+    -rw-r--r--  1 flaviovdf flaviovdf 148M Mar 21 18:02 baby.csv
+    -rw-r--r--  1 flaviovdf flaviovdf 172K Mar 14 18:20 capital.json
+    -rw-r--r--  1 flaviovdf flaviovdf  72K Mar 14 18:20 colab_favicon.ico
+    -rw-r--r--  1 flaviovdf flaviovdf 7.8K Mar 14 18:20 colab_favicon.png
+    -rw-r--r--  1 flaviovdf flaviovdf 2.2K Mar 14 18:20 colab_favicon_small.png
+    -rw-r--r--  1 flaviovdf flaviovdf   85 Mar 14 18:20 compile_all.sh
+    -rw-r--r--  1 flaviovdf flaviovdf 1.1K Mar 14 18:20 compile_notebook.sh
+    -rw-r--r--  1 flaviovdf flaviovdf 401K Mar 14 18:20 dom-casmurro.txt
+    -rw-r--r--  1 flaviovdf flaviovdf 331K Mar 14 18:20 drum.wav
+    -rw-r--r--  1 flaviovdf flaviovdf 125K Mar 14 18:20 f2.png
+    -rw-r--r--  1 flaviovdf flaviovdf  57K Mar 14 18:20 f.png
+    drwxr-xr-x  2 flaviovdf flaviovdf 4.0K Mar 14 18:20 .ipynb_checkpoints
+    -rw-r--r--  1 flaviovdf flaviovdf  29K Mar 14 18:20 .nbgrader.log
+    -rw-r--r--  1 flaviovdf flaviovdf 3.1K Mar 14 18:20 proglanguages.json
+    -rw-r--r--  1 flaviovdf flaviovdf 131K Mar 14 18:20 states.txt
+    -rw-r--r--  1 flaviovdf flaviovdf 715K Mar 14 18:20 walmart.csv
 
 
 Vamos identificar qual a cara de um csv. O programa `head` imprime as primeiras `n` linhas de um arquivo.
@@ -1287,6 +1365,74 @@ df[['Name', 'Gender']].head(6)
 
 
 
+
+```python
+#In: 
+df[['Name', 'Gender']].head(6)
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Mary</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Annie</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Anna</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Margaret</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Helen</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Elsie</td>
+      <td>F</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
 ## Groupby
 
 Vamos responder algumas perguntas com a função groupby. Lembrando a ideia é separar os dados com base em valores comuns, ou seja, agrupar por nomes e realizar alguma operação. O comando abaixo agrupa todos os recem-náscidos por nome. Imagine a mesma fazendo uma operação equivalente ao laço abaixo:
@@ -1334,7 +1480,7 @@ Observe o resultado da agregação abaixo. Qual o problema com a coluna `Year`??
 
 ```python
 #In: 
-gb.mean()
+gb[['Year', 'Count']].mean()
 ```
 
 
@@ -1432,10 +1578,53 @@ gb.mean()
 
 Não faz tanto sentido somar o ano, embora seja um número aqui representa uma categoria. Vamos somar as contagens apenas.
 
+**Observe como a chamada abaixo tem um enter depois de cada ponto. Isso é um truque para deixar o código mais legível**
 
 ```python
 #In: 
-gb.sum()['Count'].sort_values()
+
+# Leia dessa forma
+
+(dados[['coluna1', 'coluna2']].    # selecione algumas colunas
+ operacao_a().                     # realize uma operação
+ operacao_b()                      # realize outra
+)
+
+# É o mesmo de
+
+dados[['coluna1', 'coluna2']].operacao_a().operacao_b()
+
+```
+
+Cada chamada pandas retorna um DataFrame novo. Ao fazer `.` chamamos um novo método. Quebrando a linha no ponto fica mais fácil separa a lógica de cada operação. Compare os casos abaixo.
+
+```python
+#In: 
+
+# Leia dessa forma
+
+(dados[['coluna1', 'coluna2']].    # selecione algumas colunas
+ operacao_a().                     # realize uma operação
+ operacao_b().                     # realize outra
+ operaca_c().
+ operaca_d().
+ operaca_e().
+ operaca_f().
+)
+
+# É o mesmo de
+
+dados[['coluna1', 'coluna2']].operacao_a().operacao_c().operacao_d().operacao_e().operacao_f()
+
+```
+
+
+```python
+#In: 
+(gb['Count'].
+ sum().
+ sort_values()
+)
 ```
 
 
@@ -1462,7 +1651,10 @@ E ordenar...
 
 ```python
 #In: 
-gb.sum()['Count'].sort_values()
+(gb['Count'].
+ sum().
+ sort_values()
+)
 ```
 
 
@@ -1586,7 +1778,7 @@ ORDERBY SUM(Count)
 
 ```python
 #In: 
-(df.
+(df[['Name', 'Year', 'Count']].
  groupby(['Name', 'Year']).
  sum()
 )
