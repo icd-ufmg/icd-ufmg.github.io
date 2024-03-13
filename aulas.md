@@ -35,7 +35,7 @@ Tudo que você precisa e um pouco mais.
 
 ## Bibliografia
 
-  1. [Principles and Techniques of Data Science - D100](https://www.textbook.ds100.org/) <br>
+  1. [Learning Data Science](https://learningds.org) <br>
       Sam Lau, Joey Gonzalez, and Deb Nolan. <br>
      **Apenas em inglês. Aberto!**
 
