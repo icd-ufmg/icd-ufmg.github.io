@@ -7,12 +7,13 @@ title: Módulo 02 - Testes de Hipótese
 
 Aula 7
 : [Risco]({{ site.baseurl }}{% link _lessons/06-risco.md %})
-  : [D100-4](https://www.textbook.ds100.org/ch/04/modeling_intro.html)
+  : [D100-4](https://learningds.org/ch/04/modeling_intro.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCI-QQDnMN739YgyP2lQ78WH)
 
 Aula 8
 : [Teorema Central do Limite]({{ site.baseurl }}{% link _lessons/07-tcl.md %})
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCJTfEuPbRXfb8UcH1Z_Tbjt)
+  : [D100-17](https://learningds.org/ch/17/inf_pred_gen_intro.html),
   : [OI-13](https://openintro-ims.netlify.app/foundations-mathematical.html),
   : [D8-10](https://www.inferentialthinking.com/chapters/10/Sampling_and_Empirical_Distributions.html),
   : [D8-14](https://www.inferentialthinking.com/chapters/14/Why_the_Mean_Matters.html),
@@ -20,21 +21,23 @@ Aula 8
 
 Aula 9
 : [Intervalos de Confiança]({{ site.baseurl }}{% link _lessons/09-ics.md %})
+  : [D100-17](https://learningds.org/ch/17/inf_pred_gen_intro.html),
   : [OI-13](https://openintro-ims.netlify.app/foundations-mathematical.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCKSlU6M0AGEMz6PG9Fll7WW)
 
 Aula 10
 : [Bootstrap e Testes A/B]({{ site.baseurl }}{% link _lessons/10-ab.md %})
+  : [D100-17](https://learningds.org/ch/17/inf_pred_gen_intro.html),
   : [OI-13](https://openintro-ims.netlify.app/foundations-bootstrapping.html),
   : [D8-13](https://www.inferentialthinking.com/chapters/13/Estimation.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCIALxnvBUBz6OEWPeDYEZSd)
 
 Aula 11
 : [Testes de Hipóteses via Permutação]({{ site.baseurl }}{% link _lessons/11-hipoteses.md %})
+  : [D100-17](https://learningds.org/ch/17/inf_pred_gen_intro.html),
   : [OI-12](https://openintro-ims.netlify.app/foundations-randomization.html),
   : [D8-11](https://www.inferentialthinking.com/chapters/11/Testing_Hypotheses.html),
   : [D8-12](https://www.inferentialthinking.com/chapters/12/Comparing_Two_Samples.html),
-  : [D100 A3](https://www.textbook.ds100.org/ch/a03/hyp_intro.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLXYzhcdDEUby8280aCyCsl)
 
 Aula 12
@@ -45,7 +48,7 @@ Aula 12
 
 Aula 13
 : [Fim Testes (Entendendo Poder/Múltiplos)]({{ site.baseurl }}{% link _lessons/13-poder.md %})
-  : [D100 A3](https://www.textbook.ds100.org/ch/a03/hyp_intro.html)
+  : [D100-17](https://learningds.org/ch/17/inf_pred_gen_intro.html),
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLS5laDUoNKh2pgp7CF3juU)
 
 Após os links acima eu recomendo uma leitura dos capítulos
