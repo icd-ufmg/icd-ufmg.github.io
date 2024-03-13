@@ -13,29 +13,28 @@ Aula 14
 
 Aula 15
 : [Regressão Linear via Perda]({{ site.baseurl }}{% link _lessons/15-linear.md %})
-  : [D100-15](https://www.textbook.ds100.org/ch/15/linear_models.html),
+  : [D100-15](https://learningds.org/ch/15/linear_intro.html),
   : [OI-24](https://openintro-ims.netlify.app/inf-model-slr.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCJLZn3s9D1G6y13FhRLiNa2)
 
 Aula 16
 : [Verossimilhança]({{ site.baseurl }}{% link _lessons/16-vero.md %})
-  : [D100-16](https://www.textbook.ds100.org/ch/16/prob_and_gen.html)
+  : [D100-15](https://learningds.org/ch/15/linear_intro.html),
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCIk7hyajkrnuYNkbjEow_e4)
 
 Aula 17
 : [Maximizando e Minimizando Funções]({{ site.baseurl }}{% link _lessons/17-gradiente.md %})
-  : [D100-17](https://www.textbook.ds100.org/ch/17/gradient_descent.html)
+  : [D100-20](https://learningds.org/ch/20/gd_intro.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCKfamZgFXYgWPx2-uUsQYIm)
 
 Aula 18
 : [Regressão Múltipla]({{ site.baseurl }}{% link _lessons/18-multipla.md %})
-  : [D100-19](https://www.textbook.ds100.org/ch/19/mult_intro.html),
-  : [D100-20](https://www.textbook.ds100.org/ch/20/feature_engineering.html),
+  : [D100-18](https://learningds.org/ch/18/donkey_intro.html),
   : [OI-25](https://openintro-ims.netlify.app/inf-model-mlr.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLoSeaCRR9Mz6LkLDJuADKB)
 
 Aula 19
 : [Regressão e Previsões]({{ site.baseurl }}{% link _lessons/21-pratica.md %})
-  : [D100-21](https://www.textbook.ds100.org/ch/21/bias_intro.html),
+  : [D100-18](https://learningds.org/ch/18/donkey_intro.html),
   : [OI-27](https://openintro-ims.netlify.app/inf-model-applications.html)
 : [Videoaula](https://www.youtube.com/playlist?list=PL4B0y0yqpKCLBgpTM9w8WeYk3VzvCS88g)
