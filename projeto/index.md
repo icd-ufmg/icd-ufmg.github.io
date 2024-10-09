@@ -38,21 +38,21 @@ antes de entregar seu projeto.
 
 |   | Nome                               | Pontos | 
 |---|------------------------------------|--------|
-| 1 | Tema e Equipe                      | 1 pto  |
-| 1 | Primeira Entrevista                | 2 pto  |
-| 1 | Segunda Entrevista                 | 2 pto  |
-| 1 | Terceira Entrevista                | 2 pto  |
+| 1 | Tema e Equipe                      | 0 pto  |
+| 1 | Primeira Entrevista                | 3 pto  |
+| 1 | Segunda Entrevista                 | 3 pto  |
+| 1 | Terceira Entrevista                | 4 pto  |
 | 1 | Entrega                            | 23 ptos|
 
 Com base no cronograma abaixo, você vai ser avaliado nas seguintes tarefas:
-1. Definir o Grupo + Tema (1 pts)
+1. Definir o Grupo + Tema
     1. Preencher planilha. Grupos de no máximo quatro pessoas!
        Quanto mais pessoas mais trabalho será esperado do relatório.
 1. Ao definir o tema, defina:
-    1. Uma base de dados. Caso esteja sem ideias, recomendo a base de COVID19
+    1. Uma base de dados. Caso esteja sem ideias, procure os monitores
     1. Quais são as perguntas de ciência de dados que vão ser abordadas
     1. Recomendo já começar um entendimento da base
-1. Discussão com Monitores (6 pts)
+1. Discussão com Monitores
     1. Após definir o passo acima, você já pode iniciar o trabalho do projeto.
        Você tem que fazer três reuniões com os monitores até as datas definidas.
        Cada reunião vale 2 ptos.
@@ -60,14 +60,14 @@ Com base no cronograma abaixo, você vai ser avaliado nas seguintes tarefas:
        tirar dúvidas e acompanhar o andamento do projeto.
 1. Relatório Final: Entregue um relatório sobre os resultados que você levantou
    para responder às suas perguntas. Sua análise dos dados deve apresentar:
-    1. Uma caracterização (análise exploratória) inicial dos dados (4pts)
-    1. Pelo menos, dois testes de hipótese/intervalos de confiança (5pts).
+    1. Uma caracterização (análise exploratória) inicial dos dados
+    1. Pelo menos, dois testes de hipótese/intervalos de confiança
        Os ICs podem ser apresentados nos resultados de regressão e classificação
        abaixo. Os testes de hipótese também podem ser utilizados abaixo para
        comparar modelos.
-    1. Pelo menos uma regressão e/ou uma classificação (9pts)
+    1. Pelo menos uma regressão e/ou uma classificação
 
-1. No seu relatório, você deve apresentar pelo menos os seguintes pontos (2pts):
+1. No seu relatório, você deve apresentar pelo menos os seguintes pontos:
     1. Introdução com Motivação e Pergunta de Pesquisa
     1. Metodologia
         1. Descreva sua base
@@ -78,9 +78,6 @@ Com base no cronograma abaixo, você vai ser avaliado nas seguintes tarefas:
     1. Conclusões
     1. Aqui os pontos são pela organização do relatório! Faça o mesmo em
        Jupyter ou em Latex
-
-1. Vídeo no Youtube 5 minutos. Pode ser um vídeo só dos slides!!
-   Com as falas, claro. (3pts).
 
 ## Bases Sugeridas
 
