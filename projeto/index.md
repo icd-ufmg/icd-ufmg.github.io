@@ -42,7 +42,7 @@ antes de entregar seu projeto.
 | 1 | Primeira Entrevista                | 3 pto  |
 | 1 | Segunda Entrevista                 | 3 pto  |
 | 1 | Terceira Entrevista                | 4 pto  |
-| 1 | Entrega                            | 23 ptos|
+| 1 | Entrega                            | 10 ptos|
 
 Com base no cronograma abaixo, você vai ser avaliado nas seguintes tarefas:
 1. Definir o Grupo + Tema
