@@ -28,8 +28,8 @@ Notebook), Provas e um Projeto. Segue um sumário do formato.
 
 |   | Nome      | Pontos |
 |---|-----------|--------|
-| 1 | Listas    | 22     |
-| 1 | Provas    | 48     |
+| 1 | Listas    | 10     |
+| 1 | Provas    | 60     |
 | 1 | Quizzes   | 0      |
 | 1 | Projeto   | 30     |
 
